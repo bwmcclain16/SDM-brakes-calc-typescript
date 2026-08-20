@@ -1,0 +1,706 @@
+{
+ "functions": {
+  "boiling_margin": [
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": null,
+      "density_kg_m3": null,
+      "dot_rating": null,
+      "dry_boiling_point_c": 320.0,
+      "manufacturer": null,
+      "name": "X",
+      "wet_boiling_point_c": 200.0
+     }
+    ],
+    "kwargs": {
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 30.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": false,
+     "dry_boiling_point_c": 320.0,
+     "dry_margin_c": 140.0,
+     "fluid_name": "X",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 30.0,
+     "wet_boiling_point_c": 200.0,
+     "wet_margin_c": 20.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": null,
+      "density_kg_m3": null,
+      "dot_rating": null,
+      "dry_boiling_point_c": 352.0,
+      "manufacturer": null,
+      "name": "DryOnly",
+      "wet_boiling_point_c": null
+     }
+    ],
+    "kwargs": {
+     "operating_temperature_c": 200.0,
+     "required_margin_c": 50.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 352.0,
+     "dry_margin_c": 152.0,
+     "fluid_name": "DryOnly",
+     "operating_temperature_c": 200.0,
+     "required_margin_c": 50.0,
+     "wet_boiling_point_c": null,
+     "wet_margin_c": null
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": true,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 325.0,
+      "manufacturer": "Motul",
+      "name": "Motul RBF660 Factory Line",
+      "wet_boiling_point_c": 205.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 325.0,
+     "dry_margin_c": 145.0,
+     "fluid_name": "Motul RBF660 Factory Line",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 205.0,
+     "wet_margin_c": 25.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 312.0,
+      "manufacturer": "Motul",
+      "name": "Motul RBF600 Factory Line",
+      "wet_boiling_point_c": 216.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 312.0,
+     "dry_margin_c": 132.0,
+     "fluid_name": "Motul RBF600 Factory Line",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 216.0,
+     "wet_margin_c": 36.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 336.0,
+      "manufacturer": "Motul",
+      "name": "Motul RBF700 Factory Line",
+      "wet_boiling_point_c": 205.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 336.0,
+     "dry_margin_c": 156.0,
+     "fluid_name": "Motul RBF700 Factory Line",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 205.0,
+     "wet_margin_c": 25.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 310.0,
+      "manufacturer": "Castrol",
+      "name": "Castrol React SRF Racing",
+      "wet_boiling_point_c": 270.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 310.0,
+     "dry_margin_c": 130.0,
+     "fluid_name": "Castrol React SRF Racing",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 270.0,
+     "wet_margin_c": 90.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 325.0,
+      "manufacturer": "AP Racing",
+      "name": "AP Racing Radi-CAL R3 (PRF660)",
+      "wet_boiling_point_c": 195.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 325.0,
+     "dry_margin_c": 145.0,
+     "fluid_name": "AP Racing Radi-CAL R3 (PRF660)",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 195.0,
+     "wet_margin_c": 15.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 330.0,
+      "manufacturer": "Wilwood",
+      "name": "Wilwood EXP 600 Plus",
+      "wet_boiling_point_c": 214.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 330.0,
+     "dry_margin_c": 150.0,
+     "fluid_name": "Wilwood EXP 600 Plus",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 214.0,
+     "wet_margin_c": 34.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 330.0,
+      "manufacturer": "StopTech",
+      "name": "StopTech STR-660",
+      "wet_boiling_point_c": 205.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 330.0,
+     "dry_margin_c": 150.0,
+     "fluid_name": "StopTech STR-660",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 205.0,
+     "wet_margin_c": 25.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 300.0,
+      "manufacturer": "Brembo",
+      "name": "Brembo LCF 600 Plus",
+      "wet_boiling_point_c": 210.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 300.0,
+     "dry_margin_c": 120.0,
+     "fluid_name": "Brembo LCF 600 Plus",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 210.0,
+     "wet_margin_c": 30.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 323.0,
+      "manufacturer": "Endless",
+      "name": "Endless RF-650",
+      "wet_boiling_point_c": 218.0
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 323.0,
+     "dry_margin_c": 143.0,
+     "fluid_name": "Endless RF-650",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": 218.0,
+     "wet_margin_c": 38.0
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 352.0,
+      "manufacturer": "Performance Friction",
+      "name": "Performance Friction RH665",
+      "wet_boiling_point_c": null
+     },
+     180.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "BoilingMargin",
+     "acceptable": true,
+     "dry_boiling_point_c": 352.0,
+     "dry_margin_c": 172.0,
+     "fluid_name": "Performance Friction RH665",
+     "operating_temperature_c": 180.0,
+     "required_margin_c": 0.0,
+     "wet_boiling_point_c": null,
+     "wet_margin_c": null
+    }
+   }
+  ],
+  "fluid_compliance_m3_per_pa": [
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": null,
+      "density_kg_m3": null,
+      "dot_rating": null,
+      "dry_boiling_point_c": 320.0,
+      "manufacturer": null,
+      "name": "NoK",
+      "wet_boiling_point_c": null
+     },
+     500.0
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "NeedsInputError"
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": false,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": null,
+      "dot_rating": null,
+      "dry_boiling_point_c": 320.0,
+      "manufacturer": null,
+      "name": "K",
+      "wet_boiling_point_c": null
+     },
+     500.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 2.9411764705882354e-13
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeFluid",
+      "base_fluid": true,
+      "bulk_modulus_pa": 1700000000.0,
+      "density_kg_m3": 1070.0,
+      "dot_rating": "DOT 4",
+      "dry_boiling_point_c": 325.0,
+      "manufacturer": "Motul",
+      "name": "Motul RBF660 Factory Line",
+      "wet_boiling_point_c": 205.0
+     },
+     250.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.4705882352941177e-13
+   }
+  ],
+  "rank_fluids_by_wet_margin": [
+   {
+    "args": [
+     {
+      "AP Racing Radi-CAL R3 (PRF660)": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 325.0,
+       "manufacturer": "AP Racing",
+       "name": "AP Racing Radi-CAL R3 (PRF660)",
+       "wet_boiling_point_c": 195.0
+      },
+      "Brembo LCF 600 Plus": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 300.0,
+       "manufacturer": "Brembo",
+       "name": "Brembo LCF 600 Plus",
+       "wet_boiling_point_c": 210.0
+      },
+      "Castrol React SRF Racing": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 310.0,
+       "manufacturer": "Castrol",
+       "name": "Castrol React SRF Racing",
+       "wet_boiling_point_c": 270.0
+      },
+      "Endless RF-650": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 323.0,
+       "manufacturer": "Endless",
+       "name": "Endless RF-650",
+       "wet_boiling_point_c": 218.0
+      },
+      "Motul RBF600 Factory Line": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 312.0,
+       "manufacturer": "Motul",
+       "name": "Motul RBF600 Factory Line",
+       "wet_boiling_point_c": 216.0
+      },
+      "Motul RBF660 Factory Line": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": true,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 325.0,
+       "manufacturer": "Motul",
+       "name": "Motul RBF660 Factory Line",
+       "wet_boiling_point_c": 205.0
+      },
+      "Motul RBF700 Factory Line": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 336.0,
+       "manufacturer": "Motul",
+       "name": "Motul RBF700 Factory Line",
+       "wet_boiling_point_c": 205.0
+      },
+      "Performance Friction RH665": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 352.0,
+       "manufacturer": "Performance Friction",
+       "name": "Performance Friction RH665",
+       "wet_boiling_point_c": null
+      },
+      "StopTech STR-660": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 330.0,
+       "manufacturer": "StopTech",
+       "name": "StopTech STR-660",
+       "wet_boiling_point_c": 205.0
+      },
+      "Wilwood EXP 600 Plus": {
+       "__dataclass__": "BrakeFluid",
+       "base_fluid": false,
+       "bulk_modulus_pa": 1700000000.0,
+       "density_kg_m3": 1070.0,
+       "dot_rating": "DOT 4",
+       "dry_boiling_point_c": 330.0,
+       "manufacturer": "Wilwood",
+       "name": "Wilwood EXP 600 Plus",
+       "wet_boiling_point_c": 214.0
+      }
+     }
+    ],
+    "kwargs": {
+     "operating_temperature_c": 180.0
+    },
+    "ok": true,
+    "result": [
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 310.0,
+      "dry_margin_c": 130.0,
+      "fluid_name": "Castrol React SRF Racing",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 270.0,
+      "wet_margin_c": 90.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 323.0,
+      "dry_margin_c": 143.0,
+      "fluid_name": "Endless RF-650",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 218.0,
+      "wet_margin_c": 38.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 312.0,
+      "dry_margin_c": 132.0,
+      "fluid_name": "Motul RBF600 Factory Line",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 216.0,
+      "wet_margin_c": 36.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 330.0,
+      "dry_margin_c": 150.0,
+      "fluid_name": "Wilwood EXP 600 Plus",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 214.0,
+      "wet_margin_c": 34.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 300.0,
+      "dry_margin_c": 120.0,
+      "fluid_name": "Brembo LCF 600 Plus",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 210.0,
+      "wet_margin_c": 30.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 325.0,
+      "dry_margin_c": 145.0,
+      "fluid_name": "Motul RBF660 Factory Line",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 205.0,
+      "wet_margin_c": 25.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 336.0,
+      "dry_margin_c": 156.0,
+      "fluid_name": "Motul RBF700 Factory Line",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 205.0,
+      "wet_margin_c": 25.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 330.0,
+      "dry_margin_c": 150.0,
+      "fluid_name": "StopTech STR-660",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 205.0,
+      "wet_margin_c": 25.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 325.0,
+      "dry_margin_c": 145.0,
+      "fluid_name": "AP Racing Radi-CAL R3 (PRF660)",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": 195.0,
+      "wet_margin_c": 15.0
+     },
+     {
+      "__dataclass__": "BoilingMargin",
+      "acceptable": true,
+      "dry_boiling_point_c": 352.0,
+      "dry_margin_c": 172.0,
+      "fluid_name": "Performance Friction RH665",
+      "operating_temperature_c": 180.0,
+      "required_margin_c": 0.0,
+      "wet_boiling_point_c": null,
+      "wet_margin_c": null
+     }
+    ]
+   }
+  ]
+ },
+ "module": "sdm_brakes.solvers.fluid",
+ "signatures": {
+  "boiling_margin": [
+   {
+    "hasDefault": false,
+    "name": "fluid"
+   },
+   {
+    "hasDefault": false,
+    "name": "operating_temperature_c"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "required_margin_c"
+   }
+  ],
+  "fluid_compliance_m3_per_pa": [
+   {
+    "hasDefault": false,
+    "name": "fluid"
+   },
+   {
+    "hasDefault": false,
+    "name": "system_volume_ml"
+   }
+  ],
+  "rank_fluids_by_wet_margin": [
+   {
+    "hasDefault": false,
+    "name": "fluids"
+   },
+   {
+    "hasDefault": false,
+    "name": "operating_temperature_c"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "required_margin_c"
+   }
+  ]
+ }
+}

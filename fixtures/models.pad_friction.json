@@ -1,0 +1,204 @@
+{
+ "functions": {
+  "PadFrictionModel.mu_at": [
+   {
+    "args": [
+     {
+      "__dataclass__": "PadFrictionModel",
+      "design_mu": 0.48,
+      "mu_values": [
+       0.54,
+       0.55,
+       0.475
+      ],
+      "name": "H38 test",
+      "temperatures_c": [
+       100.0,
+       200.0,
+       600.0
+      ]
+     },
+     150.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.545
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "PadFrictionModel",
+      "design_mu": 0.48,
+      "mu_values": [
+       0.54,
+       0.55,
+       0.475
+      ],
+      "name": "H38 test",
+      "temperatures_c": [
+       100.0,
+       200.0,
+       600.0
+      ]
+     },
+     20.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.54
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "PadFrictionModel",
+      "design_mu": 0.48,
+      "mu_values": [
+       0.54,
+       0.55,
+       0.475
+      ],
+      "name": "H38 test",
+      "temperatures_c": [
+       100.0,
+       200.0,
+       600.0
+      ]
+     },
+     100.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.54
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "PadFrictionModel",
+      "design_mu": 0.48,
+      "mu_values": [
+       0.54,
+       0.55,
+       0.475
+      ],
+      "name": "H38 test",
+      "temperatures_c": [
+       100.0,
+       200.0,
+       600.0
+      ]
+     },
+     600.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.475
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "PadFrictionModel",
+      "design_mu": 0.48,
+      "mu_values": [
+       0.54,
+       0.55,
+       0.475
+      ],
+      "name": "H38 test",
+      "temperatures_c": [
+       100.0,
+       200.0,
+       600.0
+      ]
+     },
+     650.0
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "PadTemperatureLimitExceeded"
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "PadFrictionModel",
+      "design_mu": 0.48,
+      "mu_values": [
+       0.54,
+       0.55,
+       0.545,
+       0.54,
+       0.535,
+       0.525,
+       0.505,
+       0.475
+      ],
+      "name": "Brembo H38 sintered",
+      "temperatures_c": [
+       100.0,
+       200.0,
+       300.0,
+       400.0,
+       450.0,
+       500.0,
+       550.0,
+       600.0
+      ]
+     },
+     300.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.545
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "PadFrictionModel",
+      "design_mu": 0.48,
+      "mu_values": [
+       0.54,
+       0.55,
+       0.545,
+       0.54,
+       0.535,
+       0.525,
+       0.505,
+       0.475
+      ],
+      "name": "Brembo H38 sintered",
+      "temperatures_c": [
+       100.0,
+       200.0,
+       300.0,
+       400.0,
+       450.0,
+       500.0,
+       550.0,
+       600.0
+      ]
+     },
+     700.0
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "PadTemperatureLimitExceeded"
+    }
+   }
+  ]
+ },
+ "module": "sdm_brakes.models.pad_friction",
+ "signatures": {
+  "PadFrictionModel.mu_at": [
+   {
+    "hasDefault": false,
+    "name": "self"
+   },
+   {
+    "hasDefault": false,
+    "name": "temperature_c"
+   }
+  ]
+ }
+}

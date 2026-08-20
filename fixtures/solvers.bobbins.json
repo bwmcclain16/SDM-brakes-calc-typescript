@@ -1,0 +1,2409 @@
+{
+ "functions": {
+  "bobbin_loads": [
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 9.744,
+     "bearing_stress_pa": 35919540.22988506,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1149.4252873563219,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 22.2048371941516,
+     "shear_stress_pa": 22867089.52469761,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     },
+     {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     }
+    ],
+    "kwargs": {
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 9.744,
+     "bearing_stress_pa": 35919540.22988506,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1149.4252873563219,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 22.2048371941516,
+     "shear_stress_pa": 22867089.52469761,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": 4.0,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     },
+     {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     }
+    ],
+    "kwargs": {
+     "rotor_thickness_mm": 99.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 9.744,
+     "bearing_stress_pa": 35919540.22988506,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1149.4252873563219,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 22.2048371941516,
+     "shear_stress_pa": 22867089.52469761,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": null
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": null,
+     "bearing_stress_pa": null,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1149.4252873563219,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 22.2048371941516,
+     "shear_stress_pa": 22867089.52469761,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 12,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     },
+     {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     }
+    ],
+    "kwargs": {
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 19.488,
+     "bearing_stress_pa": 17959770.11494253,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 574.7126436781609,
+     "per_button_nominal_force_n": 287.35632183908046,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 44.4096743883032,
+     "shear_stress_pa": 11433544.762348805,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 3.0
+     },
+     {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     }
+    ],
+    "kwargs": {
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 4.872,
+     "bearing_stress_pa": 71839080.45977011,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 2298.8505747126437,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 11.1024185970758,
+     "shear_stress_pa": 45734179.04939522,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 1.0,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     },
+     {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     }
+    ],
+    "kwargs": {
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 12.991999999999999,
+     "bearing_stress_pa": 26939655.172413796,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 862.0689655172414,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 29.60644959220214,
+     "shear_stress_pa": 17150317.143523205,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 3.0,
+      "count": 3,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 1.8270000000000002,
+     "bearing_stress_pa": 191570881.22605363,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 2298.8505747126437,
+     "per_button_nominal_force_n": 1149.4252873563219,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 7.068583470577034e-06,
+     "shear_safety_factor": 1.5612776152137846,
+     "shear_stress_pa": 325220828.7956993,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 4.0,
+      "count": 3,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 2.436,
+     "bearing_stress_pa": 143678160.91954023,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 2298.8505747126437,
+     "per_button_nominal_force_n": 1149.4252873563219,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 1.2566370614359172e-05,
+     "shear_safety_factor": 2.77560464926895,
+     "shear_stress_pa": 182936716.19758087,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 5.0,
+      "count": 3,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 3.045,
+     "bearing_stress_pa": 114942528.73563218,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 2298.8505747126437,
+     "per_button_nominal_force_n": 1149.4252873563219,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 1.9634954084936207e-05,
+     "shear_safety_factor": 4.3368822644827345,
+     "shear_stress_pa": 117079498.36645176,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 3.0,
+      "count": 4,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 2.436,
+     "bearing_stress_pa": 143678160.91954023,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1724.1379310344828,
+     "per_button_nominal_force_n": 862.0689655172414,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 7.068583470577034e-06,
+     "shear_safety_factor": 2.081703486951713,
+     "shear_stress_pa": 243915621.5967745,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 4.0,
+      "count": 4,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 3.2479999999999998,
+     "bearing_stress_pa": 107758620.68965518,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1724.1379310344828,
+     "per_button_nominal_force_n": 862.0689655172414,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 1.2566370614359172e-05,
+     "shear_safety_factor": 3.7008061990252674,
+     "shear_stress_pa": 137202537.14818564,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 5.0,
+      "count": 4,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 4.0600000000000005,
+     "bearing_stress_pa": 86206896.55172414,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1724.1379310344828,
+     "per_button_nominal_force_n": 862.0689655172414,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 1.9634954084936207e-05,
+     "shear_safety_factor": 5.78250968597698,
+     "shear_stress_pa": 87809623.7748388,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 3.0,
+      "count": 5,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 3.045,
+     "bearing_stress_pa": 114942528.73563218,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1379.3103448275863,
+     "per_button_nominal_force_n": 689.6551724137931,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 7.068583470577034e-06,
+     "shear_safety_factor": 2.602129358689641,
+     "shear_stress_pa": 195132497.2774196,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 4.0,
+      "count": 5,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 4.06,
+     "bearing_stress_pa": 86206896.55172415,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1379.3103448275863,
+     "per_button_nominal_force_n": 689.6551724137931,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 1.2566370614359172e-05,
+     "shear_safety_factor": 4.626007748781584,
+     "shear_stress_pa": 109762029.71854852,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 5.0,
+      "count": 5,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 5.075,
+     "bearing_stress_pa": 68965517.2413793,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1379.3103448275863,
+     "per_button_nominal_force_n": 689.6551724137931,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 1.9634954084936207e-05,
+     "shear_safety_factor": 7.228137107471224,
+     "shear_stress_pa": 70247699.01987106,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 3.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 3.6540000000000004,
+     "bearing_stress_pa": 95785440.61302681,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1149.4252873563219,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 7.068583470577034e-06,
+     "shear_safety_factor": 3.122555230427569,
+     "shear_stress_pa": 162610414.39784965,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 4.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 4.872,
+     "bearing_stress_pa": 71839080.45977011,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1149.4252873563219,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 1.2566370614359172e-05,
+     "shear_safety_factor": 5.5512092985379,
+     "shear_stress_pa": 91468358.09879044,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 5.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 6.09,
+     "bearing_stress_pa": 57471264.36781609,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1149.4252873563219,
+     "per_button_nominal_force_n": 574.7126436781609,
+     "rotor_torque_nm": 250.0,
+     "shear_area_m2": 1.9634954084936207e-05,
+     "shear_safety_factor": 8.673764528965469,
+     "shear_stress_pa": 58539749.18322588,
+     "total_tangential_force_n": 3448.2758620689656
+    }
+   },
+   {
+    "args": [
+     1000000.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 5.0,
+      "count": 3,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 0.0007612500000000002,
+     "bearing_stress_pa": 459770114942.5286,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 9195402.298850574,
+     "per_button_nominal_force_n": 4597701.149425288,
+     "rotor_torque_nm": 1000000.0,
+     "shear_area_m2": 1.9634954084936207e-05,
+     "shear_safety_factor": 0.0010842205661206839,
+     "shear_stress_pa": 468317993465.80695,
+     "total_tangential_force_n": 13793103.448275862
+    }
+   },
+   {
+    "args": [
+     1000000.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 6.0,
+      "count": 3,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 0.0009135000000000001,
+     "bearing_stress_pa": 383141762452.10724,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 9195402.298850574,
+     "per_button_nominal_force_n": 4597701.149425288,
+     "rotor_torque_nm": 1000000.0,
+     "shear_area_m2": 2.8274333882308137e-05,
+     "shear_safety_factor": 0.0015612776152137847,
+     "shear_stress_pa": 325220828795.6993,
+     "total_tangential_force_n": 13793103.448275862
+    }
+   },
+   {
+    "args": [
+     1000000.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 5.0,
+      "count": 4,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 0.001015,
+     "bearing_stress_pa": 344827586206.89655,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 6896551.724137931,
+     "per_button_nominal_force_n": 3448275.8620689656,
+     "rotor_torque_nm": 1000000.0,
+     "shear_area_m2": 1.9634954084936207e-05,
+     "shear_safety_factor": 0.0014456274214942452,
+     "shear_stress_pa": 351238495099.3552,
+     "total_tangential_force_n": 13793103.448275862
+    }
+   },
+   {
+    "args": [
+     1000000.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 6.0,
+      "count": 4,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 0.0012180000000000001,
+     "bearing_stress_pa": 287356321839.08044,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 6896551.724137931,
+     "per_button_nominal_force_n": 3448275.8620689656,
+     "rotor_torque_nm": 1000000.0,
+     "shear_area_m2": 2.8274333882308137e-05,
+     "shear_safety_factor": 0.0020817034869517127,
+     "shear_stress_pa": 243915621596.77448,
+     "total_tangential_force_n": 13793103.448275862
+    }
+   },
+   {
+    "args": [
+     -1.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     },
+     {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     }
+    ],
+    "kwargs": {
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": false,
+    "result": {
+     "__raises__": "ValueError"
+    }
+   },
+   {
+    "args": [
+     250.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     }
+    },
+    "ok": false,
+    "result": {
+     "__raises__": "NeedsInputError"
+    }
+   },
+   {
+    "args": [
+     0.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": null
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": null,
+     "bearing_stress_pa": null,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 0.0,
+     "per_button_nominal_force_n": 0.0,
+     "rotor_torque_nm": 0.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": {
+      "__float__": "inf"
+     },
+     "shear_stress_pa": 0.0,
+     "total_tangential_force_n": 0.0
+    }
+   },
+   {
+    "args": [
+     0.0,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": {
+      "__float__": "inf"
+     },
+     "bearing_stress_pa": 0.0,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 0.0,
+     "per_button_nominal_force_n": 0.0,
+     "rotor_torque_nm": 0.0,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": {
+      "__float__": "inf"
+     },
+     "shear_stress_pa": 0.0,
+     "total_tangential_force_n": 0.0
+    }
+   },
+   {
+    "args": [
+     135.88008080054558,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 17.927572501047695,
+     "bearing_stress_pa": 19523000.11502092,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 624.7360036806693,
+     "per_button_nominal_force_n": 312.36800184033467,
+     "rotor_torque_nm": 135.88008080054558,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 40.853738574724275,
+     "shear_stress_pa": 12428727.889156882,
+     "total_tangential_force_n": 1874.2080110420081
+    }
+   },
+   {
+    "args": [
+     271.76016160109117,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 8.963786250523848,
+     "bearing_stress_pa": 39046000.23004184,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 1249.4720073613387,
+     "per_button_nominal_force_n": 624.7360036806693,
+     "rotor_torque_nm": 271.76016160109117,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 20.426869287362138,
+     "shear_stress_pa": 24857455.778313763,
+     "total_tangential_force_n": 3748.4160220840163
+    }
+   },
+   {
+    "args": [
+     543.5203232021823,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 4.481893125261924,
+     "bearing_stress_pa": 78092000.46008368,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 2498.9440147226774,
+     "per_button_nominal_force_n": 1249.4720073613387,
+     "rotor_torque_nm": 543.5203232021823,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 10.213434643681069,
+     "shear_stress_pa": 49714911.55662753,
+     "total_tangential_force_n": 7496.832044168033
+    }
+   },
+   {
+    "args": [
+     67.94004040027279,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 35.85514500209539,
+     "bearing_stress_pa": 9761500.05751046,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 312.36800184033467,
+     "per_button_nominal_force_n": 156.18400092016734,
+     "rotor_torque_nm": 67.94004040027279,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 81.70747714944855,
+     "shear_stress_pa": 6214363.944578441,
+     "total_tangential_force_n": 937.1040055210041
+    }
+   },
+   {
+    "args": [
+     100.92632091045937,
+     {
+      "__dataclass__": "BobbinConfiguration",
+      "bolt_circle_diameter_mm": 145.0,
+      "button_diameter_mm": 8.0,
+      "count": 6,
+      "load_sharing_factor": 0.75,
+      "material": {
+       "__dataclass__": "FastenerMaterial",
+       "density_kg_m3": 4430.0,
+       "name": "Ti-6Al-4V",
+       "shear_yield_strength_pa": null,
+       "ultimate_strength_pa": 950000000.0,
+       "yield_strength_pa": 880000000.0
+      },
+      "rotor_tab_thickness_mm": null,
+      "shear_plane_count": 1,
+      "stress_concentration_factor": 1.5
+     }
+    ],
+    "kwargs": {
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinLoadResult",
+     "allowable_shear_pa": 507759999.99999994,
+     "bearing_safety_factor": 24.13641930097888,
+     "bearing_stress_pa": 14500908.17679014,
+     "bobbin_radius_m": 0.0725,
+     "per_button_design_force_n": 464.0290616572845,
+     "per_button_nominal_force_n": 232.01453082864225,
+     "rotor_torque_nm": 100.92632091045937,
+     "shear_area_m2": 5.0265482457436686e-05,
+     "shear_safety_factor": 55.00259247003432,
+     "shear_stress_pa": 9231564.86263134,
+     "total_tangential_force_n": 1392.0871849718535
+    }
+   }
+  ],
+  "optimize_bobbins": [
+   {
+    "args": [],
+    "kwargs": {
+     "bolt_circle_diameter_mm": 145.0,
+     "counts": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "diameters_mm": [
+      3.0,
+      4.0,
+      5.0
+     ],
+     "material": {
+      "__dataclass__": "FastenerMaterial",
+      "density_kg_m3": 4430.0,
+      "name": "Ti-6Al-4V",
+      "shear_yield_strength_pa": null,
+      "ultimate_strength_pa": 950000000.0,
+      "yield_strength_pa": 880000000.0
+     },
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0,
+     "rotor_torque_nm": 250.0,
+     "target_bearing_sf": 5.0,
+     "target_shear_sf": 2.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinOptimizationResult",
+     "candidates": {
+      "__dataframe__": true,
+      "columns": [
+       "count",
+       "button_diameter_mm",
+       "per_button_nominal_force_n",
+       "per_button_design_force_n",
+       "shear_stress_mpa",
+       "shear_safety_factor",
+       "bearing_stress_mpa",
+       "bearing_safety_factor",
+       "passes"
+      ],
+      "records": [
+       {
+        "bearing_safety_factor": 1.8270000000000002,
+        "bearing_stress_mpa": 191.57088122605361,
+        "button_diameter_mm": 3.0,
+        "count": 3,
+        "passes": false,
+        "per_button_design_force_n": 2298.8505747126437,
+        "per_button_nominal_force_n": 1149.4252873563219,
+        "shear_safety_factor": 1.5612776152137846,
+        "shear_stress_mpa": 325.2208287956993
+       },
+       {
+        "bearing_safety_factor": 2.436,
+        "bearing_stress_mpa": 143.67816091954023,
+        "button_diameter_mm": 4.0,
+        "count": 3,
+        "passes": false,
+        "per_button_design_force_n": 2298.8505747126437,
+        "per_button_nominal_force_n": 1149.4252873563219,
+        "shear_safety_factor": 2.77560464926895,
+        "shear_stress_mpa": 182.93671619758086
+       },
+       {
+        "bearing_safety_factor": 3.045,
+        "bearing_stress_mpa": 114.94252873563218,
+        "button_diameter_mm": 5.0,
+        "count": 3,
+        "passes": false,
+        "per_button_design_force_n": 2298.8505747126437,
+        "per_button_nominal_force_n": 1149.4252873563219,
+        "shear_safety_factor": 4.3368822644827345,
+        "shear_stress_mpa": 117.07949836645176
+       },
+       {
+        "bearing_safety_factor": 2.436,
+        "bearing_stress_mpa": 143.67816091954023,
+        "button_diameter_mm": 3.0,
+        "count": 4,
+        "passes": false,
+        "per_button_design_force_n": 1724.1379310344828,
+        "per_button_nominal_force_n": 862.0689655172414,
+        "shear_safety_factor": 2.081703486951713,
+        "shear_stress_mpa": 243.91562159677449
+       },
+       {
+        "bearing_safety_factor": 3.2479999999999998,
+        "bearing_stress_mpa": 107.75862068965519,
+        "button_diameter_mm": 4.0,
+        "count": 4,
+        "passes": false,
+        "per_button_design_force_n": 1724.1379310344828,
+        "per_button_nominal_force_n": 862.0689655172414,
+        "shear_safety_factor": 3.7008061990252674,
+        "shear_stress_mpa": 137.20253714818563
+       },
+       {
+        "bearing_safety_factor": 4.0600000000000005,
+        "bearing_stress_mpa": 86.20689655172414,
+        "button_diameter_mm": 5.0,
+        "count": 4,
+        "passes": false,
+        "per_button_design_force_n": 1724.1379310344828,
+        "per_button_nominal_force_n": 862.0689655172414,
+        "shear_safety_factor": 5.78250968597698,
+        "shear_stress_mpa": 87.80962377483881
+       },
+       {
+        "bearing_safety_factor": 3.045,
+        "bearing_stress_mpa": 114.94252873563218,
+        "button_diameter_mm": 3.0,
+        "count": 5,
+        "passes": false,
+        "per_button_design_force_n": 1379.3103448275863,
+        "per_button_nominal_force_n": 689.6551724137931,
+        "shear_safety_factor": 2.602129358689641,
+        "shear_stress_mpa": 195.1324972774196
+       },
+       {
+        "bearing_safety_factor": 4.06,
+        "bearing_stress_mpa": 86.20689655172416,
+        "button_diameter_mm": 4.0,
+        "count": 5,
+        "passes": false,
+        "per_button_design_force_n": 1379.3103448275863,
+        "per_button_nominal_force_n": 689.6551724137931,
+        "shear_safety_factor": 4.626007748781584,
+        "shear_stress_mpa": 109.76202971854852
+       },
+       {
+        "bearing_safety_factor": 5.075,
+        "bearing_stress_mpa": 68.9655172413793,
+        "button_diameter_mm": 5.0,
+        "count": 5,
+        "passes": true,
+        "per_button_design_force_n": 1379.3103448275863,
+        "per_button_nominal_force_n": 689.6551724137931,
+        "shear_safety_factor": 7.228137107471224,
+        "shear_stress_mpa": 70.24769901987105
+       },
+       {
+        "bearing_safety_factor": 3.6540000000000004,
+        "bearing_stress_mpa": 95.78544061302681,
+        "button_diameter_mm": 3.0,
+        "count": 6,
+        "passes": false,
+        "per_button_design_force_n": 1149.4252873563219,
+        "per_button_nominal_force_n": 574.7126436781609,
+        "shear_safety_factor": 3.122555230427569,
+        "shear_stress_mpa": 162.61041439784964
+       },
+       {
+        "bearing_safety_factor": 4.872,
+        "bearing_stress_mpa": 71.83908045977012,
+        "button_diameter_mm": 4.0,
+        "count": 6,
+        "passes": false,
+        "per_button_design_force_n": 1149.4252873563219,
+        "per_button_nominal_force_n": 574.7126436781609,
+        "shear_safety_factor": 5.5512092985379,
+        "shear_stress_mpa": 91.46835809879043
+       },
+       {
+        "bearing_safety_factor": 6.09,
+        "bearing_stress_mpa": 57.47126436781609,
+        "button_diameter_mm": 5.0,
+        "count": 6,
+        "passes": true,
+        "per_button_design_force_n": 1149.4252873563219,
+        "per_button_nominal_force_n": 574.7126436781609,
+        "shear_safety_factor": 8.673764528965469,
+        "shear_stress_mpa": 58.53974918322588
+       }
+      ]
+     },
+     "recommended": {
+      "__dataclass__": "BobbinLoadResult",
+      "allowable_shear_pa": 507759999.99999994,
+      "bearing_safety_factor": 5.075,
+      "bearing_stress_pa": 68965517.2413793,
+      "bobbin_radius_m": 0.0725,
+      "per_button_design_force_n": 1379.3103448275863,
+      "per_button_nominal_force_n": 689.6551724137931,
+      "rotor_torque_nm": 250.0,
+      "shear_area_m2": 1.9634954084936207e-05,
+      "shear_safety_factor": 7.228137107471224,
+      "shear_stress_pa": 70247699.01987106,
+      "total_tangential_force_n": 3448.2758620689656
+     },
+     "recommended_count": 5,
+     "recommended_diameter_mm": 5.0
+    }
+   },
+   {
+    "args": [],
+    "kwargs": {
+     "bolt_circle_diameter_mm": 145.0,
+     "counts": [
+      3,
+      4
+     ],
+     "diameters_mm": [
+      5.0,
+      6.0
+     ],
+     "material": {
+      "__dataclass__": "FastenerMaterial",
+      "density_kg_m3": 4430.0,
+      "name": "Ti-6Al-4V",
+      "shear_yield_strength_pa": null,
+      "ultimate_strength_pa": 950000000.0,
+      "yield_strength_pa": 880000000.0
+     },
+     "rotor_material": {
+      "__dataclass__": "RotorMaterial",
+      "density_kg_m3": 7870.0,
+      "emissivity": 0.6,
+      "name": "1020 steel",
+      "poissons_ratio": 0.29,
+      "specific_heat_j_kgk": 486.0,
+      "thermal_conductivity_w_mk": 51.9,
+      "thermal_expansion_1_k": 1.17e-05,
+      "yield_strength_pa": 350000000.0,
+      "youngs_modulus_pa": 205000000000.0
+     },
+     "rotor_thickness_mm": 4.0,
+     "rotor_torque_nm": 1000000.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "BobbinOptimizationResult",
+     "candidates": {
+      "__dataframe__": true,
+      "columns": [
+       "count",
+       "button_diameter_mm",
+       "per_button_nominal_force_n",
+       "per_button_design_force_n",
+       "shear_stress_mpa",
+       "shear_safety_factor",
+       "bearing_stress_mpa",
+       "bearing_safety_factor",
+       "passes"
+      ],
+      "records": [
+       {
+        "bearing_safety_factor": 0.0007612500000000002,
+        "bearing_stress_mpa": 459770.1149425286,
+        "button_diameter_mm": 5.0,
+        "count": 3,
+        "passes": false,
+        "per_button_design_force_n": 9195402.298850574,
+        "per_button_nominal_force_n": 4597701.149425288,
+        "shear_safety_factor": 0.0010842205661206839,
+        "shear_stress_mpa": 468317.99346580694
+       },
+       {
+        "bearing_safety_factor": 0.0009135000000000001,
+        "bearing_stress_mpa": 383141.7624521072,
+        "button_diameter_mm": 6.0,
+        "count": 3,
+        "passes": false,
+        "per_button_design_force_n": 9195402.298850574,
+        "per_button_nominal_force_n": 4597701.149425288,
+        "shear_safety_factor": 0.0015612776152137847,
+        "shear_stress_mpa": 325220.8287956993
+       },
+       {
+        "bearing_safety_factor": 0.001015,
+        "bearing_stress_mpa": 344827.5862068965,
+        "button_diameter_mm": 5.0,
+        "count": 4,
+        "passes": false,
+        "per_button_design_force_n": 6896551.724137931,
+        "per_button_nominal_force_n": 3448275.8620689656,
+        "shear_safety_factor": 0.0014456274214942452,
+        "shear_stress_mpa": 351238.49509935523
+       },
+       {
+        "bearing_safety_factor": 0.0012180000000000001,
+        "bearing_stress_mpa": 287356.3218390804,
+        "button_diameter_mm": 6.0,
+        "count": 4,
+        "passes": false,
+        "per_button_design_force_n": 6896551.724137931,
+        "per_button_nominal_force_n": 3448275.8620689656,
+        "shear_safety_factor": 0.0020817034869517127,
+        "shear_stress_mpa": 243915.62159677446
+       }
+      ]
+     },
+     "recommended": null,
+     "recommended_count": null,
+     "recommended_diameter_mm": null
+    }
+   }
+  ],
+  "rotor_mount_forces": [
+   {
+    "args": [],
+    "kwargs": {
+     "button_count": 3,
+     "button_diameter_mm": 10.0,
+     "mount_ear_count": 1,
+     "mount_tab_thickness_mm": 5.0,
+     "mount_yield_pa": 503000000.0,
+     "per_button_force_n": 1200.0,
+     "rotor_tab_thickness_mm": 4.0,
+     "rotor_yield_pa": 350000000.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": 11.666666666666668,
+     "friction_ring_bearing_stress_pa": 29999999.999999996,
+     "friction_ring_force_n": 1200.0,
+     "mount_bearing_sf": 20.958333333333332,
+     "mount_bearing_stress_pa": 24000000.0,
+     "mount_ear_count": 1,
+     "mount_ear_force_n": 1200.0,
+     "per_button_force_n": 1200.0,
+     "total_mount_reaction_n": 3600.0,
+     "total_ring_reaction_n": 3600.0
+    }
+   },
+   {
+    "args": [
+     1200.0,
+     3,
+     10.0,
+     4.0,
+     350000000.0,
+     4.0,
+     350000000.0
+    ],
+    "kwargs": {
+     "mount_ear_count": 1
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": 11.666666666666668,
+     "friction_ring_bearing_stress_pa": 29999999.999999996,
+     "friction_ring_force_n": 1200.0,
+     "mount_bearing_sf": 11.666666666666668,
+     "mount_bearing_stress_pa": 29999999.999999996,
+     "mount_ear_count": 1,
+     "mount_ear_force_n": 1200.0,
+     "per_button_force_n": 1200.0,
+     "total_mount_reaction_n": 3600.0,
+     "total_ring_reaction_n": 3600.0
+    }
+   },
+   {
+    "args": [
+     1200.0,
+     3,
+     10.0,
+     4.0,
+     350000000.0,
+     4.0,
+     350000000.0
+    ],
+    "kwargs": {
+     "mount_ear_count": 2
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": 11.666666666666668,
+     "friction_ring_bearing_stress_pa": 29999999.999999996,
+     "friction_ring_force_n": 1200.0,
+     "mount_bearing_sf": 23.333333333333336,
+     "mount_bearing_stress_pa": 14999999.999999998,
+     "mount_ear_count": 2,
+     "mount_ear_force_n": 600.0,
+     "per_button_force_n": 1200.0,
+     "total_mount_reaction_n": 3600.0,
+     "total_ring_reaction_n": 3600.0
+    }
+   },
+   {
+    "args": [
+     1200.0,
+     3,
+     0.0,
+     4.0,
+     350000000.0,
+     4.0,
+     350000000.0
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "ValueError"
+    }
+   },
+   {
+    "args": [
+     1200.0,
+     3,
+     10.0,
+     4.0,
+     350000000.0,
+     4.0,
+     350000000.0
+    ],
+    "kwargs": {
+     "mount_ear_count": 0
+    },
+    "ok": false,
+    "result": {
+     "__raises__": "ValueError"
+    }
+   },
+   {
+    "args": [
+     -1.0,
+     3,
+     10.0,
+     4.0,
+     350000000.0,
+     4.0,
+     350000000.0
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "ValueError"
+    }
+   },
+   {
+    "args": [],
+    "kwargs": {
+     "button_count": 6,
+     "button_diameter_mm": 8.0,
+     "mount_tab_thickness_mm": 4.0,
+     "mount_yield_pa": 350000000.0,
+     "per_button_force_n": 0.0,
+     "rotor_tab_thickness_mm": 4.0,
+     "rotor_yield_pa": 350000000.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": {
+      "__float__": "inf"
+     },
+     "friction_ring_bearing_stress_pa": 0.0,
+     "friction_ring_force_n": 0.0,
+     "mount_bearing_sf": {
+      "__float__": "inf"
+     },
+     "mount_bearing_stress_pa": 0.0,
+     "mount_ear_count": 1,
+     "mount_ear_force_n": 0.0,
+     "per_button_force_n": 0.0,
+     "total_mount_reaction_n": 0.0,
+     "total_ring_reaction_n": 0.0
+    }
+   },
+   {
+    "args": [],
+    "kwargs": {
+     "button_count": 6,
+     "button_diameter_mm": 8.0,
+     "mount_tab_thickness_mm": 4.0,
+     "mount_yield_pa": 350000000.0,
+     "per_button_force_n": 624.7360036806693,
+     "rotor_tab_thickness_mm": 4.0,
+     "rotor_yield_pa": 350000000.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": 17.927572501047695,
+     "friction_ring_bearing_stress_pa": 19523000.11502092,
+     "friction_ring_force_n": 624.7360036806693,
+     "mount_bearing_sf": 17.927572501047695,
+     "mount_bearing_stress_pa": 19523000.11502092,
+     "mount_ear_count": 1,
+     "mount_ear_force_n": 624.7360036806693,
+     "per_button_force_n": 624.7360036806693,
+     "total_mount_reaction_n": 3748.416022084016,
+     "total_ring_reaction_n": 3748.416022084016
+    }
+   },
+   {
+    "args": [],
+    "kwargs": {
+     "button_count": 6,
+     "button_diameter_mm": 8.0,
+     "mount_tab_thickness_mm": 4.0,
+     "mount_yield_pa": 350000000.0,
+     "per_button_force_n": 1249.4720073613387,
+     "rotor_tab_thickness_mm": 4.0,
+     "rotor_yield_pa": 350000000.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": 8.963786250523848,
+     "friction_ring_bearing_stress_pa": 39046000.23004184,
+     "friction_ring_force_n": 1249.4720073613387,
+     "mount_bearing_sf": 8.963786250523848,
+     "mount_bearing_stress_pa": 39046000.23004184,
+     "mount_ear_count": 1,
+     "mount_ear_force_n": 1249.4720073613387,
+     "per_button_force_n": 1249.4720073613387,
+     "total_mount_reaction_n": 7496.832044168032,
+     "total_ring_reaction_n": 7496.832044168032
+    }
+   },
+   {
+    "args": [],
+    "kwargs": {
+     "button_count": 6,
+     "button_diameter_mm": 8.0,
+     "mount_tab_thickness_mm": 4.0,
+     "mount_yield_pa": 350000000.0,
+     "per_button_force_n": 2498.9440147226774,
+     "rotor_tab_thickness_mm": 4.0,
+     "rotor_yield_pa": 350000000.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": 4.481893125261924,
+     "friction_ring_bearing_stress_pa": 78092000.46008368,
+     "friction_ring_force_n": 2498.9440147226774,
+     "mount_bearing_sf": 4.481893125261924,
+     "mount_bearing_stress_pa": 78092000.46008368,
+     "mount_ear_count": 1,
+     "mount_ear_force_n": 2498.9440147226774,
+     "per_button_force_n": 2498.9440147226774,
+     "total_mount_reaction_n": 14993.664088336063,
+     "total_ring_reaction_n": 14993.664088336063
+    }
+   },
+   {
+    "args": [],
+    "kwargs": {
+     "button_count": 6,
+     "button_diameter_mm": 8.0,
+     "mount_tab_thickness_mm": 4.0,
+     "mount_yield_pa": 350000000.0,
+     "per_button_force_n": 312.36800184033467,
+     "rotor_tab_thickness_mm": 4.0,
+     "rotor_yield_pa": 350000000.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": 35.85514500209539,
+     "friction_ring_bearing_stress_pa": 9761500.05751046,
+     "friction_ring_force_n": 312.36800184033467,
+     "mount_bearing_sf": 35.85514500209539,
+     "mount_bearing_stress_pa": 9761500.05751046,
+     "mount_ear_count": 1,
+     "mount_ear_force_n": 312.36800184033467,
+     "per_button_force_n": 312.36800184033467,
+     "total_mount_reaction_n": 1874.208011042008,
+     "total_ring_reaction_n": 1874.208011042008
+    }
+   },
+   {
+    "args": [],
+    "kwargs": {
+     "button_count": 6,
+     "button_diameter_mm": 8.0,
+     "mount_tab_thickness_mm": 4.0,
+     "mount_yield_pa": 350000000.0,
+     "per_button_force_n": 464.0290616572845,
+     "rotor_tab_thickness_mm": 4.0,
+     "rotor_yield_pa": 350000000.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "MountForceResult",
+     "friction_ring_bearing_sf": 24.13641930097888,
+     "friction_ring_bearing_stress_pa": 14500908.17679014,
+     "friction_ring_force_n": 464.0290616572845,
+     "mount_bearing_sf": 24.13641930097888,
+     "mount_bearing_stress_pa": 14500908.17679014,
+     "mount_ear_count": 1,
+     "mount_ear_force_n": 464.0290616572845,
+     "per_button_force_n": 464.0290616572845,
+     "total_mount_reaction_n": 2784.174369943707,
+     "total_ring_reaction_n": 2784.174369943707
+    }
+   }
+  ]
+ },
+ "module": "sdm_brakes.solvers.bobbins",
+ "signatures": {
+  "bobbin_loads": [
+   {
+    "hasDefault": false,
+    "name": "rotor_torque_nm"
+   },
+   {
+    "hasDefault": false,
+    "name": "config"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "rotor_material"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "rotor_thickness_mm"
+   }
+  ],
+  "optimize_bobbins": [
+   {
+    "hasDefault": false,
+    "name": "rotor_torque_nm"
+   },
+   {
+    "hasDefault": false,
+    "name": "bolt_circle_diameter_mm"
+   },
+   {
+    "hasDefault": false,
+    "name": "material"
+   },
+   {
+    "hasDefault": false,
+    "name": "rotor_material"
+   },
+   {
+    "hasDefault": false,
+    "name": "rotor_thickness_mm"
+   },
+   {
+    "default": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "hasDefault": true,
+    "name": "counts"
+   },
+   {
+    "default": [
+     5.0,
+     6.0,
+     7.0,
+     8.0,
+     9.0,
+     10.0,
+     12.0
+    ],
+    "hasDefault": true,
+    "name": "diameters_mm"
+   },
+   {
+    "default": 2.0,
+    "hasDefault": true,
+    "name": "target_shear_sf"
+   },
+   {
+    "default": 1.5,
+    "hasDefault": true,
+    "name": "target_bearing_sf"
+   },
+   {
+    "default": 1,
+    "hasDefault": true,
+    "name": "shear_plane_count"
+   },
+   {
+    "default": 0.75,
+    "hasDefault": true,
+    "name": "load_sharing_factor"
+   },
+   {
+    "default": 1.5,
+    "hasDefault": true,
+    "name": "stress_concentration_factor"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "rotor_tab_thickness_mm"
+   }
+  ],
+  "rotor_mount_forces": [
+   {
+    "hasDefault": false,
+    "name": "per_button_force_n"
+   },
+   {
+    "hasDefault": false,
+    "name": "button_count"
+   },
+   {
+    "hasDefault": false,
+    "name": "button_diameter_mm"
+   },
+   {
+    "hasDefault": false,
+    "name": "rotor_tab_thickness_mm"
+   },
+   {
+    "hasDefault": false,
+    "name": "rotor_yield_pa"
+   },
+   {
+    "hasDefault": false,
+    "name": "mount_tab_thickness_mm"
+   },
+   {
+    "hasDefault": false,
+    "name": "mount_yield_pa"
+   },
+   {
+    "default": 1,
+    "hasDefault": true,
+    "name": "mount_ear_count"
+   }
+  ]
+ }
+}

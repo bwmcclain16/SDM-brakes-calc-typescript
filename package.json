@@ -1,0 +1,13 @@
+{
+  "name": "@sdm/core",
+  "version": "0.1.0",
+  "description": "SDM Brakes calculator core — framework-agnostic TypeScript solvers",
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test --experimental-strip-types \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": { "typescript": "^5.7.0", "@types/node": "^22.10.0" }
+}

@@ -1,0 +1,2384 @@
+{
+ "functions": {
+  "braking_duration_s": [
+   {
+    "args": [
+     35.0,
+     0.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.2272990580567582
+   },
+   {
+    "args": [
+     25.0,
+     0.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.8766421843262558
+   },
+   {
+    "args": [
+     30.0,
+     0.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.051970621191507
+   },
+   {
+    "args": [
+     55.0,
+     0.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.928612805517763
+   }
+  ],
+  "driver_masses_kg": [
+   {
+    "args": [
+     {
+      "__dataclass__": "DriverMassSweep",
+      "max_kg": 110.22,
+      "min_kg": 42.64,
+      "points": 9
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__ndarray__": true,
+     "data": [
+      42.64,
+      51.0875,
+      59.535,
+      67.9825,
+      76.43,
+      84.8775,
+      93.325,
+      101.77250000000001,
+      110.22
+     ],
+     "shape": [
+      9
+     ]
+    }
+   }
+  ],
+  "dynamic_axle_loads_n": [
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1928.7025870616271,
+     758.5156459383725
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.3,
+     289.13440499,
+     266.89329692
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2217.836992051627,
+     1025.4089428583725
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.8
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1678.861545464078,
+     1008.3566875359215
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     42.64,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1700.9352134490653,
+     668.9398255509348
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     51.0875,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1760.3933373239763,
+     692.3233775510237
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     59.535,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1819.8514611988871,
+     715.7069295511127
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     67.9825,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1879.3095850737977,
+     739.0904815512021
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     76.43,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1938.7677089487092,
+     762.474033551291
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     84.8775,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1998.2258328236203,
+     785.85758555138
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     93.325,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2057.683956698531,
+     809.2411375514693
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     101.77250000000001,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2117.142080573442,
+     832.6246895515583
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     110.22,
+     1.3,
+     0.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2176.6002044483525,
+     856.0082415516471
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.4
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1978.670795381137,
+     708.5474376188628
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1928.7025870616271,
+     758.5156459383725
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.2
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1878.7343787421173,
+     808.4838542578823
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.0999999999999999
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1828.7661704226075,
+     858.4520625773921
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1778.7979621030977,
+     908.4202708969019
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.9
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1728.8297537835879,
+     958.3884792164117
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.7999999999999999
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1678.861545464078,
+     1008.3566875359215
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.7
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1628.8933371445682,
+     1058.3248958554314
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1578.9251288250584,
+     1108.2931041749412
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.5000000000000001
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1528.9569205055489,
+     1158.2613124944507
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.40000000000000013
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1478.988712186039,
+     1208.2295208139606
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1429.0205038665292,
+     1258.1977291334704
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.20000000000000007
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1379.0522955470194,
+     1308.1659374529802
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.1000000000000001
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1329.0840872275096,
+     1358.13414577249
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1279.1158789079998,
+     1408.1023540919998
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     2.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2578.2892952152542,
+     108.92893778474513
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     2.311111111111111
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2433.936693403337,
+     253.28153959666247
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     2.022222222222222
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2289.58409159142,
+     397.6341414085796
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.7333333333333336
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2145.231489779503,
+     541.9867432204967
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.4444444444444446
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     2000.8788879675858,
+     686.3393450324139
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.1555555555555554
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1856.5262861556685,
+     830.6919468443311
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.8666666666666668
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1712.1736843437513,
+     975.0445486562483
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.5777777777777781
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1567.8210825318342,
+     1119.3971504681654
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.28888888888888903
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1423.468480719917,
+     1263.7497522800827
+    ]
+   }
+  ],
+  "ideal_front_brake_fraction": [
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.7177320261437908
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     1.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.773516339869281
+   }
+  ],
+  "kinetic_energy_j": [
+   {
+    "args": [
+     274.02,
+     35.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 33541.395213849595
+   },
+   {
+    "args": [
+     241.66000000000003,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 15092.026590080002
+   },
+   {
+    "args": [
+     241.66000000000003,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 21732.5182897152
+   },
+   {
+    "args": [
+     250.10750000000002,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 15619.585534960002
+   },
+   {
+    "args": [
+     250.10750000000002,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 22492.2031703424
+   },
+   {
+    "args": [
+     258.555,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 16147.144479840003
+   },
+   {
+    "args": [
+     258.555,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 23251.8880509696
+   },
+   {
+    "args": [
+     267.0025,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 16674.703424720003
+   },
+   {
+    "args": [
+     267.0025,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 24011.5729315968
+   },
+   {
+    "args": [
+     275.45000000000005,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 17202.262369600005
+   },
+   {
+    "args": [
+     275.45000000000005,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 24771.257812224
+   },
+   {
+    "args": [
+     283.89750000000004,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 17729.821314480003
+   },
+   {
+    "args": [
+     283.89750000000004,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 25530.9426928512
+   },
+   {
+    "args": [
+     292.345,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 18257.380259360005
+   },
+   {
+    "args": [
+     292.345,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 26290.6275734784
+   },
+   {
+    "args": [
+     300.7925,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 18784.939204240003
+   },
+   {
+    "args": [
+     300.7925,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 27050.3124541056
+   },
+   {
+    "args": [
+     309.24,
+     25.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 19312.49814912
+   },
+   {
+    "args": [
+     309.24,
+     30.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 27809.997334732798
+   },
+   {
+    "args": [
+     241.66000000000003,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 73045.40869598721
+   },
+   {
+    "args": [
+     250.10750000000002,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 75598.7939892064
+   },
+   {
+    "args": [
+     258.555,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 78152.1792824256
+   },
+   {
+    "args": [
+     267.0025,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 80705.56457564479
+   },
+   {
+    "args": [
+     275.45000000000005,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 83258.949868864
+   },
+   {
+    "args": [
+     283.89750000000004,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 85812.33516208321
+   },
+   {
+    "args": [
+     292.345,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 88365.7204553024
+   },
+   {
+    "args": [
+     300.7925,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 90919.1057485216
+   },
+   {
+    "args": [
+     309.24,
+     55.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 93472.4910417408
+   }
+  ],
+  "longitudinal_load_transfer_n": [
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 649.5867081536273
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.8
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 399.74566655607833
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     42.64,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 572.8746948850653
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     51.0875,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 592.9001810434763
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     59.535,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 612.9256672018872
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     67.9825,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 632.951153360298
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     76.43,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 652.9766395187092
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     84.8775,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 673.0021256771201
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     93.325,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 693.027611835531
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     101.77250000000001,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 713.053097993942
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     110.22,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 733.0785841523528
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.4
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 699.554916473137
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.2
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 599.6184998341175
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.0999999999999999
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 549.6502915146077
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 499.6820831950979
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.9
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 449.71387487558815
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.7999999999999999
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 399.74566655607833
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.7
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 349.7774582365685
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 299.80924991705876
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.5000000000000001
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 249.84104159754898
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.40000000000000013
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 199.87283327803925
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 149.90462495852938
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.20000000000000007
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 99.93641663901963
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.1000000000000001
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 49.968208319509834
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.0
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     2.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1299.1734163072547
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     2.311111111111111
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1154.8208144953373
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     2.022222222222222
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1010.4682126834202
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.7333333333333336
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 866.1156108715031
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.4444444444444446
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 721.7630090595859
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     1.1555555555555554
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 577.4104072476687
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.8666666666666668
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 433.05780543575156
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.5777777777777781
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 288.70520362383445
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0,
+     0.28888888888888903
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 144.35260181191722
+   }
+  ],
+  "static_axle_loads_n": [
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1279.1158789079998,
+     1408.1023540919998
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     42.64
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1128.060518564,
+     1241.814520436
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     51.0875
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1167.4931562805,
+     1285.2235585945
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     59.535
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1206.925793997,
+     1328.632596753
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     67.9825
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1246.3584317134998,
+     1372.0416349115
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     76.43
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1285.79106943,
+     1415.4506730700002
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     84.8775
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1325.2237071465001,
+     1458.8597112285001
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     93.325
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1364.656344863,
+     1502.2687493870003
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     101.77250000000001
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1404.0889825795,
+     1545.6777875455002
+    ]
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     110.22
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     1443.5216202959998,
+     1589.086825704
+    ]
+   }
+  ],
+  "stopping_distance_m": [
+   {
+    "args": [
+     35.0,
+     0.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 9.601405990989631
+   },
+   {
+    "args": [
+     25.0,
+     0.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 4.898676526015118
+   },
+   {
+    "args": [
+     30.0,
+     0.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 7.054094197461769
+   },
+   {
+    "args": [
+     55.0,
+     0.0,
+     1.3
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 23.709594385913167
+   }
+  ],
+  "total_mass_kg": [
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     75.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 274.02
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     42.64
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 241.66000000000003
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     51.0875
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 250.10750000000002
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     59.535
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 258.555
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     67.9825
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 267.0025
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     76.43
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 275.45000000000005
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     84.8775
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 283.89750000000004
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     93.325
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 292.345
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     101.77250000000001
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 300.7925
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "Vehicle",
+      "cg_height_m": 0.2845,
+      "front_track_m": 1.207,
+      "mass_without_driver_kg": 199.02,
+      "rear_track_m": 1.194,
+      "static_front_weight_fraction": 0.476,
+      "tire_rolling_radius_m": 0.1778,
+      "wheelbase_m": 1.53
+     },
+     110.22
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 309.24
+   }
+  ]
+ },
+ "module": "sdm_brakes.solvers.vehicle",
+ "signatures": {
+  "braking_duration_s": [
+   {
+    "hasDefault": false,
+    "name": "initial_speed_mph"
+   },
+   {
+    "hasDefault": false,
+    "name": "final_speed_mph"
+   },
+   {
+    "hasDefault": false,
+    "name": "deceleration_g"
+   }
+  ],
+  "driver_masses_kg": [
+   {
+    "hasDefault": false,
+    "name": "sweep"
+   }
+  ],
+  "dynamic_axle_loads_n": [
+   {
+    "hasDefault": false,
+    "name": "vehicle"
+   },
+   {
+    "hasDefault": false,
+    "name": "driver_mass_kg"
+   },
+   {
+    "hasDefault": false,
+    "name": "deceleration_g"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "front_aero_downforce_n"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "rear_aero_downforce_n"
+   }
+  ],
+  "ideal_front_brake_fraction": [
+   {
+    "hasDefault": false,
+    "name": "vehicle"
+   },
+   {
+    "hasDefault": false,
+    "name": "deceleration_g"
+   }
+  ],
+  "kinetic_energy_j": [
+   {
+    "hasDefault": false,
+    "name": "mass_kg"
+   },
+   {
+    "hasDefault": false,
+    "name": "speed_mph"
+   }
+  ],
+  "longitudinal_load_transfer_n": [
+   {
+    "hasDefault": false,
+    "name": "vehicle"
+   },
+   {
+    "hasDefault": false,
+    "name": "driver_mass_kg"
+   },
+   {
+    "hasDefault": false,
+    "name": "deceleration_g"
+   }
+  ],
+  "static_axle_loads_n": [
+   {
+    "hasDefault": false,
+    "name": "vehicle"
+   },
+   {
+    "hasDefault": false,
+    "name": "driver_mass_kg"
+   }
+  ],
+  "stopping_distance_m": [
+   {
+    "hasDefault": false,
+    "name": "initial_speed_mph"
+   },
+   {
+    "hasDefault": false,
+    "name": "final_speed_mph"
+   },
+   {
+    "hasDefault": false,
+    "name": "deceleration_g"
+   }
+  ],
+  "total_mass_kg": [
+   {
+    "hasDefault": false,
+    "name": "vehicle"
+   },
+   {
+    "hasDefault": false,
+    "name": "driver_mass_kg"
+   }
+  ]
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "functions": {
+  "FastenerMaterial.allowable_shear_pa": [
+   {
+    "args": [
+     {
+      "__dataclass__": "FastenerMaterial",
+      "density_kg_m3": 4430.0,
+      "name": "Ti-6Al-4V",
+      "shear_yield_strength_pa": null,
+      "ultimate_strength_pa": 950000000.0,
+      "yield_strength_pa": 880000000.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 507759999.99999994
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "FastenerMaterial",
+      "density_kg_m3": null,
+      "name": "x",
+      "shear_yield_strength_pa": 400000000.0,
+      "ultimate_strength_pa": null,
+      "yield_strength_pa": 600000000.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 400000000.0
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "FastenerMaterial",
+      "density_kg_m3": null,
+      "name": "y",
+      "shear_yield_strength_pa": null,
+      "ultimate_strength_pa": null,
+      "yield_strength_pa": 600000000.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 346200000.0
+   }
+  ]
+ },
+ "module": "sdm_brakes.models.bobbins",
+ "signatures": {
+  "FastenerMaterial.allowable_shear_pa": [
+   {
+    "hasDefault": false,
+    "name": "self"
+   }
+  ]
+ }
+}

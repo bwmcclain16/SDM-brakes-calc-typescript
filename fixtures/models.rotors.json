@@ -1,0 +1,933 @@
+{
+ "functions": {
+  "convective_area_m2": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.03448997494743554
+   }
+  ],
+  "effective_radius_m": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.07425
+   }
+  ],
+  "hat_radius_m": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.05
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "NeedsInputError"
+    }
+   }
+  ],
+  "inner_swept_radius_m": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.057
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 148.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": 0.29,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": 51.9,
+       "thermal_expansion_1_k": 1.17e-05,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": 205000000000.0
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.074
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 148.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": 51.9,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.074
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 148.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": 51.9,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 20.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.074
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 148.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": 51.9,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.074
+   }
+  ],
+  "net_area_m2": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.01844821746004266
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "NeedsInputError"
+    }
+   }
+  ],
+  "outer_radius_m": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.0915
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.0915
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 148.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": 0.29,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": 51.9,
+       "thermal_expansion_1_k": 1.17e-05,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": 205000000000.0
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.0915
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 148.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": 51.9,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.0915
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 148.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": 51.9,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 20.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.0915
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 148.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": 51.9,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.0915
+   }
+  ],
+  "polar_inertia_kg_m2": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.003157028972086394
+   }
+  ],
+  "rotor_mass_kg": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.5807498856421429
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "NeedsInputError"
+    }
+   }
+  ],
+  "solid_convective_area_m2": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.03448997494743554
+   }
+  ],
+  "structural_annulus_area_m2": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.01844821746004266
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "NeedsInputError"
+    }
+   }
+  ],
+  "swept_annulus_area_m2": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.016095164562503907
+   }
+  ],
+  "thermal_mass_j_k": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": 100.0,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 282.2444444220815
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {
+     "mass_kg": 0.83461128
+    },
+    "ok": true,
+    "result": 405.62108207999995
+   }
+  ],
+  "uniform_pressure_effective_radius_m": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.07558585858585858
+   }
+  ],
+  "uniform_wear_effective_radius_m": [
+   {
+    "args": [
+     {
+      "__dataclass__": "RotorGeometry",
+      "cutout_area_mm2": 0.0,
+      "hat_interface_diameter_mm": null,
+      "hole_area_mm2": 0.0,
+      "inner_swept_diameter_mm": 114.0,
+      "material": {
+       "__dataclass__": "RotorMaterial",
+       "density_kg_m3": 7870.0,
+       "emissivity": null,
+       "name": "1020 steel",
+       "poissons_ratio": null,
+       "specific_heat_j_kgk": 486.0,
+       "thermal_conductivity_w_mk": null,
+       "thermal_expansion_1_k": null,
+       "yield_strength_pa": null,
+       "youngs_modulus_pa": null
+      },
+      "outer_diameter_mm": 183.0,
+      "thickness_mm": 4.0
+     }
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.07425
+   }
+  ]
+ },
+ "module": "sdm_brakes.models.rotors",
+ "signatures": {
+  "convective_area_m2": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   },
+   {
+    "default": 1.0,
+    "hasDefault": true,
+    "name": "vane_area_multiplier"
+   }
+  ],
+  "effective_radius_m": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   },
+   {
+    "default": "uniform_wear",
+    "hasDefault": true,
+    "name": "method"
+   }
+  ],
+  "hat_radius_m": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "inner_swept_radius_m": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "net_area_m2": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "outer_radius_m": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "polar_inertia_kg_m2": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "mass_kg"
+   }
+  ],
+  "rotor_mass_kg": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "solid_convective_area_m2": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "structural_annulus_area_m2": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "swept_annulus_area_m2": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "thermal_mass_j_k": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "mass_kg"
+   }
+  ],
+  "uniform_pressure_effective_radius_m": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ],
+  "uniform_wear_effective_radius_m": [
+   {
+    "hasDefault": false,
+    "name": "geom"
+   }
+  ]
+ }
+}

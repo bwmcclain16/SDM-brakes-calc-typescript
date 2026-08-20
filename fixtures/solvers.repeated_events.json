@@ -1,0 +1,2206 @@
+{
+ "functions": {
+  "cool_over_gap_c": [
+   {
+    "args": [
+     200.0,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 167.98259305230818
+   },
+   {
+    "args": [
+     35.0,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 35.0
+   },
+   {
+    "args": [
+     39.93096646942801,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 38.980075472447304
+   },
+   {
+    "args": [
+     43.91104194187531,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 42.19243039777509
+   },
+   {
+    "args": [
+     47.1233968672031,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 44.78501776191414
+   },
+   {
+    "args": [
+     49.71598423134215,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 46.87732235973135
+   },
+   {
+    "args": [
+     51.80828882915936,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 48.56582356082336
+   },
+   {
+    "args": [
+     53.49679003025137,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 49.928414672098874
+   },
+   {
+    "args": [
+     54.85938114152688,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 51.02797666209653
+   },
+   {
+    "args": [
+     55.958943131524535,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 51.91526698540294
+   },
+   {
+    "args": [
+     56.846233454830944,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 52.63125402670885
+   },
+   {
+    "args": [
+     57.56222049613686,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 53.20900304837826
+   },
+   {
+    "args": [
+     58.139969517806264,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 53.6751994668791
+   },
+   {
+    "args": [
+     58.60616593630711,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 54.051378972486646
+   },
+   {
+    "args": [
+     58.98234544191465,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 54.35492075897935
+   },
+   {
+    "args": [
+     59.285887228407354,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 54.599849381833565
+   },
+   {
+    "args": [
+     59.53081585126157,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 54.797482051226616
+   },
+   {
+    "args": [
+     59.728448520654624,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 54.95695110993732
+   },
+   {
+    "args": [
+     59.88791757936533,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 55.085625735061726
+   },
+   {
+    "args": [
+     133.61932938856015,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 114.53981777992296
+   },
+   {
+    "args": [
+     213.15914716848312,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 178.5652196364433
+   },
+   {
+    "args": [
+     277.18454902500343,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 229.98797627561433
+   },
+   {
+    "args": [
+     328.6073056641745,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 271.1955402758139
+   },
+   {
+    "args": [
+     369.8148696643741,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 304.14623903959904
+   },
+   {
+    "args": [
+     402.7655684281592,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 330.44308583812096
+   },
+   {
+    "args": [
+     429.0624152266811,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 351.3936951970611
+   },
+   {
+    "args": [
+     450.0130245856212,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 368.0603941045161
+   },
+   {
+    "args": [
+     466.67972349307627,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 381.302694263759
+   },
+   {
+    "args": [
+     479.9220236523191,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 391.81334336178037
+   },
+   {
+    "args": [
+     490.43267275034054,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 400.1487692899587
+   },
+   {
+    "args": [
+     498.76809867851887,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 406.75458349911105
+   },
+   {
+    "args": [
+     505.37391288767117,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 411.9867592583041
+   },
+   {
+    "args": [
+     510.60608864686424,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 416.12907246158
+   },
+   {
+    "args": [
+     514.7484018501401,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 419.40735848621375
+   },
+   {
+    "args": [
+     518.0266878747739,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 422.00109261297405
+   },
+   {
+    "args": [
+     520.6204220015342,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 424.0527466660066
+   },
+   {
+    "args": [
+     522.6720760545668,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 425.67531595426414
+   },
+   {
+    "args": [
+     524.2946453428243,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 426.95835281713903
+   },
+   {
+    "args": [
+     525.5776822056991,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 427.9727891942495
+   },
+   {
+    "args": [
+     526.5921185828097,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 428.77478237758993
+   }
+  ],
+  "cooling_rate_c_per_s": [
+   {
+    "args": [
+     200.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.126413387549129
+   },
+   {
+    "args": [
+     199.91091983265562,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.1225247503691484
+   },
+   {
+    "args": [
+     199.9109684406204,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.122526872248478
+   },
+   {
+    "args": [
+     199.8219368281938,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.118640411099762
+   },
+   {
+    "args": [
+     199.82193684565047,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.1186404118617865
+   },
+   {
+    "args": [
+     199.7329538405022,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.11475612894718
+   },
+   {
+    "args": [
+     199.73300239403864,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.1147582483890215
+   },
+   {
+    "args": [
+     199.64406788944075,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.110876138905423
+   },
+   {
+    "args": [
+     199.6440679068778,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.110876139666569
+   },
+   {
+    "args": [
+     199.55518195513199,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.106996205814445
+   },
+   {
+    "args": [
+     199.55523045430513,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.106998322821889
+   },
+   {
+    "args": [
+     199.46639294880725,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.103120559804118
+   },
+   {
+    "args": [
+     199.4663929662247,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.103120560564385
+   },
+   {
+    "args": [
+     199.37760395921765,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.099244970579061
+   },
+   {
+    "args": [
+     199.37765240409246,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.099247085155192
+   },
+   {
+    "args": [
+     199.28891178909583,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.095373663411167
+   },
+   {
+    "args": [
+     199.28891180649367,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.095373664170557
+   },
+   {
+    "args": [
+     199.20021963569155,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.0915024128635515
+   },
+   {
+    "args": [
+     199.20026802633288,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.091504525011451
+   },
+   {
+    "args": [
+     199.11162419336839,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.087635439356282
+   },
+   {
+    "args": [
+     199.1116242107467,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.087635440114796
+   },
+   {
+    "args": [
+     199.02302876774527,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.083768522304814
+   },
+   {
+    "args": [
+     199.0230771042179,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.083770632027558
+   },
+   {
+    "args": [
+     198.934529944946,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.079905877283535
+   },
+   {
+    "args": [
+     198.93452996230477,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.079905878041175
+   },
+   {
+    "args": [
+     198.84603113882926,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.076043288554095
+   },
+   {
+    "args": [
+     198.84607942119783,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.076045395854753
+   },
+   {
+    "args": [
+     198.75762882740838,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.072184966851336
+   },
+   {
+    "args": [
+     198.75762884474764,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.072184967608102
+   },
+   {
+    "args": [
+     198.66922653265254,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.068326701276964
+   },
+   {
+    "args": [
+     198.6692747609817,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.068328806158605
+   },
+   {
+    "args": [
+     198.5809206245937,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.064472697732404
+   },
+   {
+    "args": [
+     198.58092064191342,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.064472698488297
+   },
+   {
+    "args": [
+     198.4926147331823,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.060618750153288
+   },
+   {
+    "args": [
+     198.4926629075365,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.06062085261897
+   },
+   {
+    "args": [
+     198.40440512059794,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.056769059613741
+   },
+   {
+    "args": [
+     198.40440513789824,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.056769060368763
+   },
+   {
+    "args": [
+     198.31619552464363,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.0529194248772065
+   },
+   {
+    "args": [
+     198.31624364508727,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.052921524929987
+   },
+   {
+    "args": [
+     198.22808209977498,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": -7.04907404219661
+   }
+  ],
+  "simulate_repeated_events": [
+   {
+    "args": [
+     0.0,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "RepeatedEventResult",
+     "converged": true,
+     "cyclic_average_temperature_c": 35.0,
+     "cyclic_min_temperature_c": 35.0,
+     "cyclic_peak_temperature_c": 35.0,
+     "events_to_convergence": 4,
+     "limit_exceeded": false,
+     "limit_exceeded_before_convergence": false,
+     "peak_temperatures_c": [
+      35.0,
+      35.0,
+      35.0,
+      35.0
+     ]
+    }
+   },
+   {
+    "args": [
+     2000.0,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "RepeatedEventResult",
+     "converged": true,
+     "cyclic_average_temperature_c": 57.486771657213524,
+     "cyclic_min_temperature_c": 55.085625735061726,
+     "cyclic_peak_temperature_c": 59.88791757936533,
+     "events_to_convergence": 17,
+     "limit_exceeded": false,
+     "limit_exceeded_before_convergence": false,
+     "peak_temperatures_c": [
+      39.93096646942801,
+      43.91104194187531,
+      47.1233968672031,
+      49.71598423134215,
+      51.80828882915936,
+      53.49679003025137,
+      54.85938114152688,
+      55.958943131524535,
+      56.846233454830944,
+      57.56222049613686,
+      58.139969517806264,
+      58.60616593630711,
+      58.98234544191465,
+      59.285887228407354,
+      59.53081585126157,
+      59.728448520654624,
+      59.88791757936533
+     ]
+    }
+   },
+   {
+    "args": [
+     40000.0,
+     5.0,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 500.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.0345,
+     0.0345,
+     405.6
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "RepeatedEventResult",
+     "converged": true,
+     "cyclic_average_temperature_c": 477.6834504801998,
+     "cyclic_min_temperature_c": 428.77478237758993,
+     "cyclic_peak_temperature_c": 526.5921185828097,
+     "events_to_convergence": 21,
+     "limit_exceeded": true,
+     "limit_exceeded_before_convergence": true,
+     "peak_temperatures_c": [
+      133.61932938856015,
+      213.15914716848312,
+      277.18454902500343,
+      328.6073056641745,
+      369.8148696643741,
+      402.7655684281592,
+      429.0624152266811,
+      450.0130245856212,
+      466.67972349307627,
+      479.9220236523191,
+      490.43267275034054,
+      498.76809867851887,
+      505.37391288767117,
+      510.60608864686424,
+      514.7484018501401,
+      518.0266878747739,
+      520.6204220015342,
+      522.6720760545668,
+      524.2946453428243,
+      525.5776822056991,
+      526.5921185828097
+     ]
+    }
+   },
+   {
+    "args": [
+     5000.0,
+     9.5,
+     {
+      "__dataclass__": "CoolingParameters",
+      "air_density_kg_m3": 1.16,
+      "air_specific_heat_j_kgk": 1005.0,
+      "allowable_rotor_temperature_c": 500.0,
+      "ambient_temperature_c": 35.0,
+      "convection_coefficient_w_m2k": 60.0,
+      "cooling_air_delta_t_c": 30.0,
+      "emissivity": 0.55,
+      "rotor_heat_fraction": 1.0,
+      "vane_area_multiplier": 1.0
+     },
+     0.022357144119271765,
+     0.022357144119271765,
+     139.2056659981189
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "RepeatedEventResult",
+     "converged": true,
+     "cyclic_average_temperature_c": 343.1252120533701,
+     "cyclic_min_temperature_c": 325.82552670032453,
+     "cyclic_peak_temperature_c": 360.42489740641565,
+     "events_to_convergence": 27,
+     "limit_exceeded": false,
+     "limit_exceeded_before_convergence": false,
+     "peak_temperatures_c": [
+      70.91807822008887,
+      103.47950510922252,
+      132.9339371889757,
+      159.51563543835408,
+      183.44633987983696,
+      204.93702661275682,
+      224.18880250153404,
+      241.39319140678788,
+      256.73204020540356,
+      270.37723358815555,
+      282.49036204911965,
+      293.22244372591524,
+      302.7137618904884,
+      311.0938481492611,
+      318.4816175026878,
+      324.9856449676155,
+      330.7045634519009,
+      335.72755766081235,
+      340.1349276463592,
+      343.99869695478526,
+      347.3832431725957,
+      350.34593224713257,
+      352.93774171893676,
+      355.2038615956224,
+      357.18426481527695,
+      358.9142419942708,
+      360.42489740641565
+     ]
+    }
+   }
+  ]
+ },
+ "module": "sdm_brakes.solvers.repeated_events",
+ "signatures": {
+  "cool_over_gap_c": [
+   {
+    "hasDefault": false,
+    "name": "start_temperature_c"
+   },
+   {
+    "hasDefault": false,
+    "name": "gap_s"
+   },
+   {
+    "hasDefault": false,
+    "name": "cooling"
+   },
+   {
+    "hasDefault": false,
+    "name": "convective_area_m2"
+   },
+   {
+    "hasDefault": false,
+    "name": "radiation_area_m2"
+   },
+   {
+    "hasDefault": false,
+    "name": "thermal_capacity_j_k"
+   },
+   {
+    "default": 200,
+    "hasDefault": true,
+    "name": "steps"
+   }
+  ],
+  "cooling_rate_c_per_s": [
+   {
+    "hasDefault": false,
+    "name": "temperature_c"
+   },
+   {
+    "hasDefault": false,
+    "name": "cooling"
+   },
+   {
+    "hasDefault": false,
+    "name": "convective_area_m2"
+   },
+   {
+    "hasDefault": false,
+    "name": "radiation_area_m2"
+   },
+   {
+    "hasDefault": false,
+    "name": "thermal_capacity_j_k"
+   }
+  ],
+  "simulate_repeated_events": [
+   {
+    "hasDefault": false,
+    "name": "energy_per_event_j"
+   },
+   {
+    "hasDefault": false,
+    "name": "gap_s"
+   },
+   {
+    "hasDefault": false,
+    "name": "cooling"
+   },
+   {
+    "hasDefault": false,
+    "name": "convective_area_m2"
+   },
+   {
+    "hasDefault": false,
+    "name": "radiation_area_m2"
+   },
+   {
+    "hasDefault": false,
+    "name": "thermal_capacity_j_k"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "initial_temperature_c"
+   },
+   {
+    "default": 5000,
+    "hasDefault": true,
+    "name": "max_events"
+   },
+   {
+    "default": 2.0,
+    "hasDefault": true,
+    "name": "convergence_tol_c"
+   },
+   {
+    "default": 0.01,
+    "hasDefault": true,
+    "name": "relative_tol"
+   },
+   {
+    "default": 3,
+    "hasDefault": true,
+    "name": "consecutive_required"
+   }
+  ]
+ }
+}

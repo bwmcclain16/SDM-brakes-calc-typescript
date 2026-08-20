@@ -1,0 +1,650 @@
+{
+ "functions": {
+  "caliper_area_check": [
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeHardware",
+      "caliper_stiffness_n_per_m": 100000000.0,
+      "front": {
+       "__dataclass__": "AxleBrake",
+       "bobbin_button_diameter_mm": 8.0,
+       "bobbin_circle_diameter_mm": 145.0,
+       "bobbin_count": 6,
+       "bobbin_material": "Ti-6Al-4V",
+       "caliper": {
+        "__dataclass__": "Caliper",
+        "area_convention": "total_active_piston_area",
+        "name": "Brembo P4.24",
+        "piston_count": 4,
+        "piston_diameter_mm": 24.0
+       },
+       "pad_height_mm": 34.5,
+       "pad_swept_inner_diameter_mm": 148.0,
+       "pad_swept_outer_diameter_mm": 182.0,
+       "rotor_mass_kg": 0.83461128,
+       "rotor_material": "1020 steel",
+       "rotor_outer_diameter_mm": 183.0,
+       "rotor_thickness_mm": 4.0
+      },
+      "front_master_cylinder_bore_mm": 15.875,
+      "front_pressure_fraction": 0.55,
+      "line_rated_pressure_pa": 17236893.0,
+      "max_pedal_travel_deg": 10.0,
+      "pad_friction_coefficient": 0.48,
+      "pad_friction_model": null,
+      "pedal_arm_length_mm": 190.5,
+      "pedal_efficiency": 0.8,
+      "pedal_ratio": 3.4,
+      "rear": {
+       "__dataclass__": "AxleBrake",
+       "bobbin_button_diameter_mm": 8.0,
+       "bobbin_circle_diameter_mm": 132.0,
+       "bobbin_count": 6,
+       "bobbin_material": "Ti-6Al-4V",
+       "caliper": {
+        "__dataclass__": "Caliper",
+        "area_convention": "total_active_piston_area",
+        "name": "2 x 24 mm piston rear caliper",
+        "piston_count": 2,
+        "piston_diameter_mm": 24.0
+       },
+       "pad_height_mm": 25.0,
+       "pad_swept_inner_diameter_mm": 138.0,
+       "pad_swept_outer_diameter_mm": 162.0,
+       "rotor_mass_kg": 0.6123495,
+       "rotor_material": "1020 steel",
+       "rotor_outer_diameter_mm": 165.0,
+       "rotor_thickness_mm": 4.0
+      },
+      "rear_master_cylinder_bore_mm": 15.875,
+      "rear_pressure_fraction": 0.45,
+      "system_fluid_volume_ml": 500.0
+     },
+     "front",
+     785.526786576,
+     418.1
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "CaliperAreaCheck",
+     "actual_active_area_mm2": 1809.5573684677208,
+     "adequate": false,
+     "area_margin_ratio": 0.28929102229774345,
+     "axle_name": "front",
+     "circuit_pressure_pa": 3160053.328701513,
+     "required_active_area_mm2": 6255.145265466594,
+     "target_axle_torque_nm": 785.526786576
+    }
+   }
+  ],
+  "caliper_required_active_area_mm2": [
+   {
+    "args": [
+     223.574431931136,
+     3000000.0,
+     0.48,
+     0.0858
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1809.557368
+   },
+   {
+    "args": [
+     100.0,
+     0.0,
+     0.48,
+     0.08
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "ValueError"
+    }
+   },
+   {
+    "args": [
+     785.526786576,
+     3160053.328701513,
+     0.48,
+     0.08279191919191917
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 6255.145265466594
+   }
+  ],
+  "line_pressure_safety_factor": [
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeHardware",
+      "caliper_stiffness_n_per_m": 100000000.0,
+      "front": {
+       "__dataclass__": "AxleBrake",
+       "bobbin_button_diameter_mm": 8.0,
+       "bobbin_circle_diameter_mm": 145.0,
+       "bobbin_count": 6,
+       "bobbin_material": "Ti-6Al-4V",
+       "caliper": {
+        "__dataclass__": "Caliper",
+        "area_convention": "total_active_piston_area",
+        "name": "Brembo P4.24",
+        "piston_count": 4,
+        "piston_diameter_mm": 24.0
+       },
+       "pad_height_mm": 34.5,
+       "pad_swept_inner_diameter_mm": 148.0,
+       "pad_swept_outer_diameter_mm": 182.0,
+       "rotor_mass_kg": 0.83461128,
+       "rotor_material": "1020 steel",
+       "rotor_outer_diameter_mm": 183.0,
+       "rotor_thickness_mm": 4.0
+      },
+      "front_master_cylinder_bore_mm": 15.875,
+      "front_pressure_fraction": 0.55,
+      "line_rated_pressure_pa": 17236893.0,
+      "max_pedal_travel_deg": 10.0,
+      "pad_friction_coefficient": 0.48,
+      "pad_friction_model": null,
+      "pedal_arm_length_mm": 190.5,
+      "pedal_efficiency": 0.8,
+      "pedal_ratio": 3.4,
+      "rear": {
+       "__dataclass__": "AxleBrake",
+       "bobbin_button_diameter_mm": 8.0,
+       "bobbin_circle_diameter_mm": 132.0,
+       "bobbin_count": 6,
+       "bobbin_material": "Ti-6Al-4V",
+       "caliper": {
+        "__dataclass__": "Caliper",
+        "area_convention": "total_active_piston_area",
+        "name": "2 x 24 mm piston rear caliper",
+        "piston_count": 2,
+        "piston_diameter_mm": 24.0
+       },
+       "pad_height_mm": 25.0,
+       "pad_swept_inner_diameter_mm": 138.0,
+       "pad_swept_outer_diameter_mm": 162.0,
+       "rotor_mass_kg": 0.6123495,
+       "rotor_material": "1020 steel",
+       "rotor_outer_diameter_mm": 165.0,
+       "rotor_thickness_mm": 4.0
+      },
+      "rear_master_cylinder_bore_mm": 15.875,
+      "rear_pressure_fraction": 0.45,
+      "system_fluid_volume_ml": 500.0
+     },
+     418.1
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "LinePressureSafetyFactor",
+     "front_pressure_pa": 3160053.328701513,
+     "max_circuit_pressure_pa": 3160053.328701513,
+     "pedal_force_n": 418.1,
+     "rated_pressure_pa": 17236893.0,
+     "rear_pressure_pa": 2585498.1780285104,
+     "safety_factor": 5.454620921566142,
+     "within_limit": true
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeHardware",
+      "caliper_stiffness_n_per_m": 100000000.0,
+      "front": {
+       "__dataclass__": "AxleBrake",
+       "bobbin_button_diameter_mm": 8.0,
+       "bobbin_circle_diameter_mm": 145.0,
+       "bobbin_count": 6,
+       "bobbin_material": "Ti-6Al-4V",
+       "caliper": {
+        "__dataclass__": "Caliper",
+        "area_convention": "total_active_piston_area",
+        "name": "Brembo P4.24",
+        "piston_count": 4,
+        "piston_diameter_mm": 24.0
+       },
+       "pad_height_mm": 34.5,
+       "pad_swept_inner_diameter_mm": 148.0,
+       "pad_swept_outer_diameter_mm": 182.0,
+       "rotor_mass_kg": 0.83461128,
+       "rotor_material": "1020 steel",
+       "rotor_outer_diameter_mm": 183.0,
+       "rotor_thickness_mm": 4.0
+      },
+      "front_master_cylinder_bore_mm": 15.875,
+      "front_pressure_fraction": 0.55,
+      "line_rated_pressure_pa": 17236893.0,
+      "max_pedal_travel_deg": 10.0,
+      "pad_friction_coefficient": 0.48,
+      "pad_friction_model": null,
+      "pedal_arm_length_mm": 190.5,
+      "pedal_efficiency": 0.8,
+      "pedal_ratio": 3.4,
+      "rear": {
+       "__dataclass__": "AxleBrake",
+       "bobbin_button_diameter_mm": 8.0,
+       "bobbin_circle_diameter_mm": 132.0,
+       "bobbin_count": 6,
+       "bobbin_material": "Ti-6Al-4V",
+       "caliper": {
+        "__dataclass__": "Caliper",
+        "area_convention": "total_active_piston_area",
+        "name": "2 x 24 mm piston rear caliper",
+        "piston_count": 2,
+        "piston_diameter_mm": 24.0
+       },
+       "pad_height_mm": 25.0,
+       "pad_swept_inner_diameter_mm": 138.0,
+       "pad_swept_outer_diameter_mm": 162.0,
+       "rotor_mass_kg": 0.6123495,
+       "rotor_material": "1020 steel",
+       "rotor_outer_diameter_mm": 165.0,
+       "rotor_thickness_mm": 4.0
+      },
+      "rear_master_cylinder_bore_mm": 15.875,
+      "rear_pressure_fraction": 0.45,
+      "system_fluid_volume_ml": 500.0
+     },
+     4000.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "__dataclass__": "LinePressureSafetyFactor",
+     "front_pressure_pa": 30232512.11386284,
+     "max_circuit_pressure_pa": 30232512.11386284,
+     "pedal_force_n": 4000.0,
+     "rated_pressure_pa": 17236893.0,
+     "rear_pressure_pa": 24735691.729524136,
+     "safety_factor": 0.5701442518267009,
+     "within_limit": false
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "BrakeHardware",
+      "caliper_stiffness_n_per_m": 100000000.0,
+      "front": {
+       "__dataclass__": "AxleBrake",
+       "bobbin_button_diameter_mm": 8.0,
+       "bobbin_circle_diameter_mm": 145.0,
+       "bobbin_count": 6,
+       "bobbin_material": "Ti-6Al-4V",
+       "caliper": {
+        "__dataclass__": "Caliper",
+        "area_convention": "total_active_piston_area",
+        "name": "Brembo P4.24",
+        "piston_count": 4,
+        "piston_diameter_mm": 24.0
+       },
+       "pad_height_mm": 34.5,
+       "pad_swept_inner_diameter_mm": 148.0,
+       "pad_swept_outer_diameter_mm": 182.0,
+       "rotor_mass_kg": 0.83461128,
+       "rotor_material": "1020 steel",
+       "rotor_outer_diameter_mm": 183.0,
+       "rotor_thickness_mm": 4.0
+      },
+      "front_master_cylinder_bore_mm": 15.875,
+      "front_pressure_fraction": 0.55,
+      "line_rated_pressure_pa": null,
+      "max_pedal_travel_deg": 10.0,
+      "pad_friction_coefficient": 0.48,
+      "pad_friction_model": null,
+      "pedal_arm_length_mm": 190.5,
+      "pedal_efficiency": 0.8,
+      "pedal_ratio": 3.4,
+      "rear": {
+       "__dataclass__": "AxleBrake",
+       "bobbin_button_diameter_mm": 8.0,
+       "bobbin_circle_diameter_mm": 132.0,
+       "bobbin_count": 6,
+       "bobbin_material": "Ti-6Al-4V",
+       "caliper": {
+        "__dataclass__": "Caliper",
+        "area_convention": "total_active_piston_area",
+        "name": "2 x 24 mm piston rear caliper",
+        "piston_count": 2,
+        "piston_diameter_mm": 24.0
+       },
+       "pad_height_mm": 25.0,
+       "pad_swept_inner_diameter_mm": 138.0,
+       "pad_swept_outer_diameter_mm": 162.0,
+       "rotor_mass_kg": 0.6123495,
+       "rotor_material": "1020 steel",
+       "rotor_outer_diameter_mm": 165.0,
+       "rotor_thickness_mm": 4.0
+      },
+      "rear_master_cylinder_bore_mm": 15.875,
+      "rear_pressure_fraction": 0.45,
+      "system_fluid_volume_ml": 500.0
+     },
+     418.1
+    ],
+    "kwargs": {},
+    "ok": false,
+    "result": {
+     "__raises__": "NeedsInputError"
+    }
+   }
+  ],
+  "required_axle_torque_nm": [
+   {
+    "args": [
+     274.02,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 452.91864318106076
+   },
+   {
+    "args": [
+     274.02,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 168.2049791945593
+   },
+   {
+    "args": [
+     300.0,
+     1.8,
+     0.2032,
+     0.73
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 785.526786576
+   },
+   {
+    "args": [
+     241.66000000000003,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 399.43186377321047
+   },
+   {
+    "args": [
+     241.66000000000003,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 148.3410527412495
+   },
+   {
+    "args": [
+     250.10750000000002,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 413.3944586139959
+   },
+   {
+    "args": [
+     250.10750000000002,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 153.52648286221165
+   },
+   {
+    "args": [
+     258.555,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 427.3570534547813
+   },
+   {
+    "args": [
+     258.555,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 158.71191298317376
+   },
+   {
+    "args": [
+     267.0025,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 441.3196482955666
+   },
+   {
+    "args": [
+     267.0025,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 163.89734310413587
+   },
+   {
+    "args": [
+     275.45000000000005,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 455.2822431363522
+   },
+   {
+    "args": [
+     275.45000000000005,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 169.08277322509804
+   },
+   {
+    "args": [
+     283.89750000000004,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 469.2448379771375
+   },
+   {
+    "args": [
+     283.89750000000004,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 174.26820334606015
+   },
+   {
+    "args": [
+     292.345,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 483.2074328179229
+   },
+   {
+    "args": [
+     292.345,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 179.45363346702226
+   },
+   {
+    "args": [
+     300.7925,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 497.1700276587082
+   },
+   {
+    "args": [
+     300.7925,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 184.63906358798437
+   },
+   {
+    "args": [
+     309.24,
+     1.3,
+     0.1778,
+     0.7291924294374389
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 511.1326224994936
+   },
+   {
+    "args": [
+     309.24,
+     1.3,
+     0.1778,
+     0.2708075705625611
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 189.82449370894648
+   }
+  ]
+ },
+ "module": "sdm_brakes.solvers.sizing",
+ "signatures": {
+  "caliper_area_check": [
+   {
+    "hasDefault": false,
+    "name": "brakes"
+   },
+   {
+    "hasDefault": false,
+    "name": "axle_name"
+   },
+   {
+    "hasDefault": false,
+    "name": "target_axle_torque_nm"
+   },
+   {
+    "hasDefault": false,
+    "name": "pedal_force_n"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "pad_temperature_c"
+   },
+   {
+    "default": "uniform_pressure",
+    "hasDefault": true,
+    "name": "method"
+   }
+  ],
+  "caliper_required_active_area_mm2": [
+   {
+    "hasDefault": false,
+    "name": "target_axle_torque_nm"
+   },
+   {
+    "hasDefault": false,
+    "name": "circuit_pressure_pa"
+   },
+   {
+    "hasDefault": false,
+    "name": "pad_mu_value"
+   },
+   {
+    "hasDefault": false,
+    "name": "effective_radius_m"
+   }
+  ],
+  "line_pressure_safety_factor": [
+   {
+    "hasDefault": false,
+    "name": "brakes"
+   },
+   {
+    "hasDefault": false,
+    "name": "pedal_force_n"
+   }
+  ],
+  "required_axle_torque_nm": [
+   {
+    "hasDefault": false,
+    "name": "total_mass_kg"
+   },
+   {
+    "hasDefault": false,
+    "name": "deceleration_g"
+   },
+   {
+    "hasDefault": false,
+    "name": "tire_rolling_radius_m"
+   },
+   {
+    "hasDefault": false,
+    "name": "axle_torque_distribution"
+   }
+  ]
+ }
+}

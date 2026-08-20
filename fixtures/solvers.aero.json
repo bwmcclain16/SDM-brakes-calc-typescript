@@ -1,0 +1,848 @@
+{
+ "functions": {
+  "AeroMapTable.lookup": [
+   {
+    "args": [
+     {
+      "__dataclass__": "AeroMapTable",
+      "table": {
+       "__dataframe__": true,
+       "columns": [
+        "speed_mps",
+        "pitch_deg",
+        "front_ride_height_mm",
+        "rear_ride_height_mm",
+        "yaw_deg",
+        "CL",
+        "CD",
+        "CP_x_m"
+       ],
+       "records": [
+        {
+         "CD": 1.38,
+         "CL": 2.9,
+         "CP_x_m": 0.835,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.4,
+         "CL": 3.0,
+         "CP_x_m": 0.842,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.41,
+         "CL": 3.05,
+         "CP_x_m": 0.848,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.42,
+         "CL": 3.0,
+         "CP_x_m": 0.82,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.44,
+         "CL": 3.1,
+         "CP_x_m": 0.827,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.45,
+         "CL": 3.15,
+         "CP_x_m": 0.833,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        }
+       ]
+      }
+     }
+    ],
+    "kwargs": {
+     "pitch_deg": 0.0,
+     "speed_mps": 15.0
+    },
+    "ok": true,
+    "result": {
+     "CD": 1.39,
+     "CL": 2.95,
+     "CP_x_m": 0.8385
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "AeroMapTable",
+      "table": {
+       "__dataframe__": true,
+       "columns": [
+        "speed_mps",
+        "pitch_deg",
+        "front_ride_height_mm",
+        "rear_ride_height_mm",
+        "yaw_deg",
+        "CL",
+        "CD",
+        "CP_x_m"
+       ],
+       "records": [
+        {
+         "CD": 1.38,
+         "CL": 2.9,
+         "CP_x_m": 0.835,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.4,
+         "CL": 3.0,
+         "CP_x_m": 0.842,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.41,
+         "CL": 3.05,
+         "CP_x_m": 0.848,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.42,
+         "CL": 3.0,
+         "CP_x_m": 0.82,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.44,
+         "CL": 3.1,
+         "CP_x_m": 0.827,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.45,
+         "CL": 3.15,
+         "CP_x_m": 0.833,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        }
+       ]
+      }
+     }
+    ],
+    "kwargs": {
+     "pitch_deg": 0.8,
+     "speed_mps": 10.0
+    },
+    "ok": true,
+    "result": {
+     "CD": 1.42,
+     "CL": 3.0,
+     "CP_x_m": 0.82
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "AeroMapTable",
+      "table": {
+       "__dataframe__": true,
+       "columns": [
+        "speed_mps",
+        "pitch_deg",
+        "front_ride_height_mm",
+        "rear_ride_height_mm",
+        "yaw_deg",
+        "CL",
+        "CD",
+        "CP_x_m"
+       ],
+       "records": [
+        {
+         "CD": 1.38,
+         "CL": 2.9,
+         "CP_x_m": 0.835,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.4,
+         "CL": 3.0,
+         "CP_x_m": 0.842,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.41,
+         "CL": 3.05,
+         "CP_x_m": 0.848,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.42,
+         "CL": 3.0,
+         "CP_x_m": 0.82,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.44,
+         "CL": 3.1,
+         "CP_x_m": 0.827,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.45,
+         "CL": 3.15,
+         "CP_x_m": 0.833,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        }
+       ]
+      }
+     }
+    ],
+    "kwargs": {
+     "pitch_deg": 0.0,
+     "speed_mps": 50.0
+    },
+    "ok": true,
+    "result": {
+     "CD": 1.41,
+     "CL": 3.05,
+     "CP_x_m": 0.848
+    }
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "AeroMapTable",
+      "table": {
+       "__dataframe__": true,
+       "columns": [
+        "speed_mps",
+        "pitch_deg",
+        "front_ride_height_mm",
+        "rear_ride_height_mm",
+        "yaw_deg",
+        "CL",
+        "CD",
+        "CP_x_m"
+       ],
+       "records": [
+        {
+         "CD": 1.38,
+         "CL": 2.9,
+         "CP_x_m": 0.835,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.4,
+         "CL": 3.0,
+         "CP_x_m": 0.842,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.41,
+         "CL": 3.05,
+         "CP_x_m": 0.848,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.42,
+         "CL": 3.0,
+         "CP_x_m": 0.82,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.44,
+         "CL": 3.1,
+         "CP_x_m": 0.827,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.45,
+         "CL": 3.15,
+         "CP_x_m": 0.833,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        }
+       ]
+      }
+     },
+     20.0,
+     0.0,
+     null,
+     null,
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": {
+     "CD": 1.4,
+     "CL": 3.0,
+     "CP_x_m": 0.842
+    }
+   }
+  ],
+  "aero_from_map": [
+   {
+    "args": [
+     {
+      "__dataclass__": "AeroMapTable",
+      "table": {
+       "__dataframe__": true,
+       "columns": [
+        "speed_mps",
+        "pitch_deg",
+        "front_ride_height_mm",
+        "rear_ride_height_mm",
+        "yaw_deg",
+        "CL",
+        "CD",
+        "CP_x_m"
+       ],
+       "records": [
+        {
+         "CD": 1.38,
+         "CL": 2.9,
+         "CP_x_m": 0.835,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.4,
+         "CL": 3.0,
+         "CP_x_m": 0.842,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.41,
+         "CL": 3.05,
+         "CP_x_m": 0.848,
+         "front_ride_height_mm": 30,
+         "pitch_deg": 0.0,
+         "rear_ride_height_mm": 30,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.42,
+         "CL": 3.0,
+         "CP_x_m": 0.82,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 10,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.44,
+         "CL": 3.1,
+         "CP_x_m": 0.827,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 20,
+         "yaw_deg": 0
+        },
+        {
+         "CD": 1.45,
+         "CL": 3.15,
+         "CP_x_m": 0.833,
+         "front_ride_height_mm": 25,
+         "pitch_deg": 1.0,
+         "rear_ride_height_mm": 35,
+         "speed_mps": 30,
+         "yaw_deg": 0
+        }
+       ]
+      }
+     }
+    ],
+    "kwargs": {
+     "air_density_kg_m3": 1.16,
+     "frontal_area_m2": 1.0,
+     "speed_mps": 20.0
+    },
+    "ok": true,
+    "result": {
+     "__dataclass__": "CoefficientAero",
+     "air_density_kg_m3": 1.16,
+     "cd": 1.4,
+     "cl": 3.0,
+     "frontal_area_m2": 1.0,
+     "k_pitch_m_per_deg": 0.0,
+     "k_v_m_per_mps2": 0.0,
+     "x_cp0_m": 0.842
+    }
+   }
+  ],
+  "coefficient_axle_downforce_n": [
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": 0.0,
+      "k_v_m_per_mps2": 0.0,
+      "x_cp0_m": 0.8415
+     },
+     20.0,
+     1.53
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     313.19999999999993,
+     382.79999999999995
+    ]
+   }
+  ],
+  "coefficient_downforce_n": [
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": 0.0,
+      "k_v_m_per_mps2": 0.0,
+      "x_cp0_m": 0.8415
+     },
+     20.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 695.9999999999999
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": 0.0,
+      "k_v_m_per_mps2": 0.0,
+      "x_cp0_m": 0.8415
+     },
+     10.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 173.99999999999997
+   }
+  ],
+  "coefficient_drag_n": [
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": 0.0,
+      "k_v_m_per_mps2": 0.0,
+      "x_cp0_m": 0.8415
+     },
+     20.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 324.79999999999995
+   }
+  ],
+  "cp_position_m": [
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": 0.0,
+      "k_v_m_per_mps2": 0.0,
+      "x_cp0_m": 0.8415
+     },
+     20.0,
+     0.0,
+     1.53
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.8415
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": -0.015,
+      "k_v_m_per_mps2": 5e-05,
+      "x_cp0_m": 0.8415
+     },
+     0.0,
+     0.0,
+     1.53
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.8415
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": -0.015,
+      "k_v_m_per_mps2": 5e-05,
+      "x_cp0_m": 0.8415
+     },
+     0.0,
+     2.0,
+     1.53
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.8115
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": -0.015,
+      "k_v_m_per_mps2": 5e-05,
+      "x_cp0_m": 0.8415
+     },
+     30.0,
+     0.0,
+     1.53
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.8865000000000001
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "CoefficientAero",
+      "air_density_kg_m3": 1.16,
+      "cd": 1.4,
+      "cl": 3.0,
+      "frontal_area_m2": 1.0,
+      "k_pitch_m_per_deg": -0.015,
+      "k_v_m_per_mps2": 5e-05,
+      "x_cp0_m": 0.8415
+     },
+     0.0,
+     1000.0,
+     1.53
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 0.0
+   }
+  ],
+  "downforce_at_speed": [
+   {
+    "args": [
+     {
+      "__dataclass__": "AeroMap",
+      "points": [
+       {
+        "__dataclass__": "AeroPoint",
+        "front_downforce_n": 147.5279388,
+        "rear_downforce_n": 136.17963582,
+        "speed_mph": 25.0
+       },
+       {
+        "__dataclass__": "AeroPoint",
+        "front_downforce_n": 289.13440499,
+        "rear_downforce_n": 266.89329692,
+        "speed_mph": 35.0
+       },
+       {
+        "__dataclass__": "AeroPoint",
+        "front_downforce_n": 477.95073683,
+        "rear_downforce_n": 441.18529553,
+        "speed_mph": 45.0
+       }
+      ]
+     },
+     35.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": [
+     289.13440499,
+     266.89329692
+    ]
+   }
+  ],
+  "load_aero_map": [],
+  "load_aero_map_csv": []
+ },
+ "module": "sdm_brakes.solvers.aero",
+ "signatures": {
+  "AeroMapTable.lookup": [
+   {
+    "hasDefault": false,
+    "name": "self"
+   },
+   {
+    "hasDefault": false,
+    "name": "speed_mps"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "pitch_deg"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "front_ride_height_mm"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "rear_ride_height_mm"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "yaw_deg"
+   }
+  ],
+  "aero_from_map": [
+   {
+    "hasDefault": false,
+    "name": "table"
+   },
+   {
+    "hasDefault": false,
+    "name": "frontal_area_m2"
+   },
+   {
+    "hasDefault": false,
+    "name": "air_density_kg_m3"
+   },
+   {
+    "hasDefault": false,
+    "name": "speed_mps"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "pitch_deg"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "front_ride_height_mm"
+   },
+   {
+    "default": null,
+    "hasDefault": true,
+    "name": "rear_ride_height_mm"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "yaw_deg"
+   }
+  ],
+  "coefficient_axle_downforce_n": [
+   {
+    "hasDefault": false,
+    "name": "aero"
+   },
+   {
+    "hasDefault": false,
+    "name": "speed_mps"
+   },
+   {
+    "hasDefault": false,
+    "name": "wheelbase_m"
+   },
+   {
+    "default": 0.0,
+    "hasDefault": true,
+    "name": "pitch_deg"
+   }
+  ],
+  "coefficient_downforce_n": [
+   {
+    "hasDefault": false,
+    "name": "aero"
+   },
+   {
+    "hasDefault": false,
+    "name": "speed_mps"
+   }
+  ],
+  "coefficient_drag_n": [
+   {
+    "hasDefault": false,
+    "name": "aero"
+   },
+   {
+    "hasDefault": false,
+    "name": "speed_mps"
+   }
+  ],
+  "cp_position_m": [
+   {
+    "hasDefault": false,
+    "name": "aero"
+   },
+   {
+    "hasDefault": false,
+    "name": "speed_mps"
+   },
+   {
+    "hasDefault": false,
+    "name": "pitch_deg"
+   },
+   {
+    "hasDefault": false,
+    "name": "wheelbase_m"
+   }
+  ],
+  "downforce_at_speed": [
+   {
+    "hasDefault": false,
+    "name": "aero_map"
+   },
+   {
+    "hasDefault": false,
+    "name": "speed_mph"
+   }
+  ],
+  "load_aero_map": [
+   {
+    "hasDefault": false,
+    "name": "path"
+   }
+  ],
+  "load_aero_map_csv": [
+   {
+    "hasDefault": false,
+    "name": "path"
+   }
+  ]
+ }
+}

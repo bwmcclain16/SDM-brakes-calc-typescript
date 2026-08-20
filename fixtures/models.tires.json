@@ -1,0 +1,1519 @@
+{
+ "functions": {
+  "LoadSensitiveTire.longitudinal_capacity_n": [
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "test"
+     },
+     1400.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1971.2000000000003
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "test"
+     },
+     700.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1120.0
+   }
+  ],
+  "LoadSensitiveTire.mu_x": [
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "test"
+     },
+     700.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "test"
+     },
+     1400.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.4080000000000001
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "test"
+     },
+     350.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6960000000000002
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "test"
+     },
+     100000.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.0
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "test"
+     },
+     0.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.7920000000000003
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 0.9,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "t"
+     },
+     700.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     690.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     997.7194586258353
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5143737158606374
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     681.1420868382428
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6024648106189237
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     600.284701424232
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6249642569949962
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     408.0719861116895
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.678449534299356
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     989.3353976905685
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5167066719469724
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     354.2737188094314
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6934194869399843
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     987.0818604744354
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.517333743172331
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     941.6207265871917
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5299837978192163
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     388.29457762871164
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.683952813181576
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     370.22106830966084
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6889819636007901
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     983.6505307755435
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5182885479581096
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     895.0838479665738
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5429331901310404
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     423.50605246699536
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6741548375744015
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     384.97780179088693
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6848757421103622
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     979.0414085938926
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5195710863043084
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     849.7247618287149
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5555548488824447
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     459.9081433242825
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6640255601184606
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     398.5439192531096
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6811008224687
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     973.2544939294828
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5211813582109266
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     805.5434681736149
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.567848774073429
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     497.500850200573
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6535649808137536
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     410.9194206963289
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6776572046758043
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     966.289786782314
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.523119363677965
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     762.5399670012739
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5798149657039935
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     536.2841730958669
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6427730996602805
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     422.10430612054483
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6745448887316745
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     958.1472871523862
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.525385102705423
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     720.7142583116919
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.591453423774138
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     576.2581120101642
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6316499166580414
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     432.0985755257573
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6717638746363113
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     948.8269950396996
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.527978575293301
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     680.0663421048687
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6027641482838626
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     617.422666943465
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6201954318070362
+   }
+  ],
+  "LoadSensitiveTire.mu_y": [
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 700.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 0.9,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "t"
+     },
+     700.0
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.4400000000000002
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     997.7194586258353
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5143737158606374
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     681.1420868382428
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6024648106189237
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     600.284701424232
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6249642569949962
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     408.0719861116895
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.678449534299356
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     989.3353976905685
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5167066719469724
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     354.2737188094314
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6934194869399843
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     987.0818604744354
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.517333743172331
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     941.6207265871917
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5299837978192163
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     388.29457762871164
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.683952813181576
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     370.22106830966084
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6889819636007901
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     983.6505307755435
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5182885479581096
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     895.0838479665738
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5429331901310404
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     423.50605246699536
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6741548375744015
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     384.97780179088693
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6848757421103622
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     979.0414085938926
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5195710863043084
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     849.7247618287149
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5555548488824447
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     459.9081433242825
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6640255601184606
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     398.5439192531096
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6811008224687
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     973.2544939294828
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5211813582109266
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     805.5434681736149
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.567848774073429
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     497.500850200573
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6535649808137536
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     410.9194206963289
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6776572046758043
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     966.289786782314
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.523119363677965
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     762.5399670012739
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5798149657039935
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     536.2841730958669
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6427730996602805
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     422.10430612054483
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6745448887316745
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     958.1472871523862
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.525385102705423
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     720.7142583116919
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.591453423774138
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     576.2581120101642
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6316499166580414
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     432.0985755257573
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6717638746363113
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     948.8269950396996
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.527978575293301
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     680.0663421048687
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6027641482838626
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     617.422666943465
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6201954318070362
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     440.90222891196646
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6693141623897139
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     938.3289104442538
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.530899781441599
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     640.5962183808047
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6137471392331673
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     659.7778378957689
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6084096451072645
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     448.5152662791722
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.6671957519918827
+   },
+   {
+    "args": [
+     {
+      "__dataclass__": "LoadSensitiveTire",
+      "fz_ref_n": 690.0,
+      "k_mu": 0.12,
+      "lateral_mu_scale": 1.0,
+      "mu_max": 2.0,
+      "mu_min": 1.0,
+      "mu_ref": 1.6,
+      "name": "generic_fsae_slick"
+     },
+     926.6530333660494
+    ],
+    "kwargs": {},
+    "ok": true,
+    "result": 1.5341487211503169
+   }
+  ]
+ },
+ "module": "sdm_brakes.models.tires",
+ "signatures": {
+  "LoadSensitiveTire.longitudinal_capacity_n": [
+   {
+    "hasDefault": false,
+    "name": "self"
+   },
+   {
+    "hasDefault": false,
+    "name": "fz_n"
+   }
+  ],
+  "LoadSensitiveTire.mu_x": [
+   {
+    "hasDefault": false,
+    "name": "self"
+   },
+   {
+    "hasDefault": false,
+    "name": "fz_n"
+   }
+  ],
+  "LoadSensitiveTire.mu_y": [
+   {
+    "hasDefault": false,
+    "name": "self"
+   },
+   {
+    "hasDefault": false,
+    "name": "fz_n"
+   }
+  ]
+ }
+}
