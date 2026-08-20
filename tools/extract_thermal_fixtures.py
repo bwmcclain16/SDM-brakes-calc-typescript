@@ -28,6 +28,22 @@ import numpy as np
 
 from sdm_brakes.models.internal import CoolingParameters
 from sdm_brakes.models.rotors import RotorGeometry, RotorMaterial
+from sdm_brakes.solvers.thermal_face_plane import (
+    FacePlateModel,
+    RotorFaceGeometry,
+    simulate_face_event_train,
+    simulate_face_single_stop,
+)
+from sdm_brakes.solvers.thermal_fdm_section import (
+    HoleBand,
+    RotorSection,
+    SectionFdmModel,
+    SweptBand,
+    rectangular_section,
+    simulate_section_event_train,
+    simulate_section_single_stop,
+    solve_section_steady_band_temperature,
+)
 from sdm_brakes.solvers.thermal_fdm import (
     HeatPulse,
     RotorFdmModel,
@@ -195,6 +211,177 @@ if __name__ == "__main__":
         },
     }
 
+    annulus_scenarios = dict(SCENARIOS)
+    SCENARIOS.clear()
+
+    # --- section model (uploaded cross-section geometry, NaN outside metal) ---
+    print("")
+    print("thermal_fdm_section scenarios:")
+    ring = rectangular_section(183.0, 148.0, 4.0, STEEL_1020)
+    sec_model = SectionFdmModel(section=ring, cooling=BASELINE,
+                                swept_band=SweptBand(depth_mm=17.5),
+                                n_radial=41, n_axial=9)
+    sec_inputs = {
+        "section": {"outer_diameter_mm": 183.0, "inner_diameter_mm": 148.0,
+                    "thickness_mm": 4.0, "hole_bands": []},
+        "material": dataclasses.asdict(STEEL_1020),
+        "cooling": dataclasses.asdict(BASELINE),
+        "swept_band": {"depth_mm": 17.5, "outer_offset_mm": 0.0},
+        "n_radial": 41, "n_axial": 9,
+    }
+    add("section_baseline_single_stop",
+        {**sec_inputs, "pulse": {"energy_j": 34_200.0, "duration_s": 2.5}, "cool_down_s": 8.0},
+        simulate_section_single_stop(
+            sec_model, HeatPulse(energy_j=34_200.0, duration_s=2.5), cool_down_s=8.0))
+    add("section_event_train",
+        {**sec_inputs, "pulse": {"energy_j": 34_200.0, "duration_s": 2.5}, "gap_s": 8.0},
+        simulate_section_event_train(
+            sec_model, HeatPulse(energy_j=34_200.0, duration_s=2.5), gap_s=8.0))
+    add("section_steady_band_450c",
+        {**sec_inputs, "band_temperature_c": 450.0},
+        solve_section_steady_band_temperature(sec_model, 450.0))
+
+    # Cross-drilled variant: exercises the hole-band void masking.
+    drilled = rectangular_section(183.0, 148.0, 4.0, STEEL_1020,
+                                  hole_bands=(HoleBand(count=23, hole_diameter_mm=4.5,
+                                                       center_radius_mm=79.0),))
+    drilled_model = SectionFdmModel(section=drilled, cooling=BASELINE,
+                                    swept_band=SweptBand(depth_mm=17.5),
+                                    n_radial=41, n_axial=9)
+    add("section_cross_drilled_single_stop",
+        {**sec_inputs,
+         "section": {**sec_inputs["section"],
+                     "hole_bands": [{"count": 23, "hole_diameter_mm": 4.5,
+                                     "center_radius_mm": 79.0}]},
+         "pulse": {"energy_j": 34_200.0, "duration_s": 2.5}, "cool_down_s": 8.0},
+        simulate_section_single_stop(
+            drilled_model, HeatPulse(energy_j=34_200.0, duration_s=2.5), cool_down_s=8.0))
+
+    # Stepped, NON-rectangular profile with diagonal edges -- what an imported
+    # DXF cross-section actually looks like. The rectangular scenarios leave
+    # every cell center trivially interior, so they never exercise the
+    # point-in-polygon rasterizer's edge handling; this one does.
+    stepped_points = ((43.0, -1.5), (60.0, -1.5), (62.0, -2.0), (91.5, -2.0),
+                      (91.5, 2.0), (62.0, 2.0), (60.0, 1.5), (43.0, 1.5))
+    stepped = RotorSection(points_mm=stepped_points, material=STEEL_1020)
+    stepped_model = SectionFdmModel(section=stepped, cooling=BASELINE,
+                                    swept_band=SweptBand(depth_mm=17.5),
+                                    n_radial=41, n_axial=9)
+    add("section_stepped_profile_single_stop",
+        {"section": {"points_mm": [list(pt) for pt in stepped_points], "hole_bands": []},
+         "material": dataclasses.asdict(STEEL_1020),
+         "cooling": dataclasses.asdict(BASELINE),
+         "swept_band": {"depth_mm": 17.5, "outer_offset_mm": 0.0},
+         "n_radial": 41, "n_axial": 9,
+         "pulse": {"energy_j": 34_200.0, "duration_s": 2.5}, "cool_down_s": 8.0},
+        simulate_section_single_stop(
+            stepped_model, HeatPulse(energy_j=34_200.0, duration_s=2.5), cool_down_s=8.0))
+
+    path = OUT / "thermal.section.json"
+    path.write_text(json.dumps(
+        {"module": "sdm_brakes.solvers.thermal_fdm_section", "scenarios": SCENARIOS},
+        separators=(",", ":"), sort_keys=True), encoding="utf-8")
+    print(f"  -> {path.name} ({path.stat().st_size / 1024:.0f} KB)")
+    SCENARIOS.clear()
+
+    # --- face-resolved plate model (2-D in-plane, real hot spots) -------------
+    # n_pixels kept modest: a frame is n^2 cells, and the fixture stores the
+    # final field in full. Same code paths, a fraction of the bytes.
+    print("")
+    print("thermal_face_plane scenarios:")
+    import math as _math
+    holes = tuple(
+        (79.0 * _math.cos(2.0 * _math.pi * k / 23), 79.0 * _math.sin(2.0 * _math.pi * k / 23), 2.25)
+        for k in range(23)
+    )
+    for label, n_px, hole_set in [
+        ("face_plain_single_stop", 81, ()),
+        ("face_cross_drilled_single_stop", 81, holes),
+    ]:
+        geom = RotorFaceGeometry(outer_diameter_mm=183.0, inner_diameter_mm=148.0,
+                                 thickness_mm=4.0, material=STEEL_1020,
+                                 hole_centers_mm=hole_set)
+        fmodel = FacePlateModel(geometry=geom, cooling=BASELINE,
+                                swept_band=SweptBand(depth_mm=17.5), n_pixels=n_px)
+        add(label,
+            {"geometry": {"outer_diameter_mm": 183.0, "inner_diameter_mm": 148.0,
+                          "thickness_mm": 4.0,
+                          "hole_centers_mm": [list(h) for h in hole_set]},
+             "material": dataclasses.asdict(STEEL_1020),
+             "cooling": dataclasses.asdict(BASELINE),
+             "swept_band": {"depth_mm": 17.5, "outer_offset_mm": 0.0},
+             "n_pixels": n_px,
+             "pulse": {"energy_j": 34_200.0, "duration_s": 2.5}, "cool_down_s": 8.0},
+            simulate_face_single_stop(
+                fmodel, HeatPulse(energy_j=34_200.0, duration_s=2.5), cool_down_s=8.0))
+
+    geom = RotorFaceGeometry(outer_diameter_mm=183.0, inner_diameter_mm=148.0,
+                             thickness_mm=4.0, material=STEEL_1020, hole_centers_mm=holes)
+    fmodel = FacePlateModel(geometry=geom, cooling=BASELINE,
+                            swept_band=SweptBand(depth_mm=17.5), n_pixels=81)
+    add("face_event_train",
+        {"geometry": {"outer_diameter_mm": 183.0, "inner_diameter_mm": 148.0,
+                      "thickness_mm": 4.0, "hole_centers_mm": [list(h) for h in holes]},
+         "material": dataclasses.asdict(STEEL_1020),
+         "cooling": dataclasses.asdict(BASELINE),
+         "swept_band": {"depth_mm": 17.5, "outer_offset_mm": 0.0},
+         "n_pixels": 81,
+         "pulse": {"energy_j": 34_200.0, "duration_s": 2.5}, "gap_s": 8.0,
+         "max_events": 6, "snapshots": 6},
+        simulate_face_event_train(
+            fmodel, HeatPulse(energy_j=34_200.0, duration_s=2.5), gap_s=8.0,
+            max_events=6, snapshots=6))
+
+    # Slots + a non-circular inner contour: the ONLY scenarios that reach the
+    # point-in-polygon rasterizer. The circular-hole scenarios above are handled
+    # by an exact squared-distance test and never exercise it, so without this
+    # the polygon path ships unverified.
+    slot_loops = tuple(
+        tuple(
+            (rr * _math.cos(_math.radians(ang)), rr * _math.sin(_math.radians(ang)))
+            for rr, ang in corners
+        )
+        for corners in (
+            [(56.3, 60 * k + 7.3), (61.7, 60 * k + 7.3),
+             (61.7, 60 * k + 25.1), (56.3, 60 * k + 25.1)]
+            for k in range(6)
+        )
+    )
+    lobed_inner = tuple(
+        ((43.37 + 6.0 * max(0.0, _math.cos(3.0 * (2.0 * _math.pi * t / 120 + 0.21) - _math.pi)))
+         * _math.cos(2.0 * _math.pi * t / 120),
+         (43.37 + 6.0 * max(0.0, _math.cos(3.0 * (2.0 * _math.pi * t / 120 + 0.21) - _math.pi)))
+         * _math.sin(2.0 * _math.pi * t / 120))
+        for t in range(120)
+    )
+    geom = RotorFaceGeometry(outer_diameter_mm=183.0, inner_diameter_mm=148.0,
+                             thickness_mm=4.0, material=STEEL_1020,
+                             inner_boundary_mm=lobed_inner,
+                             hole_centers_mm=holes, slot_loops_mm=slot_loops)
+    fmodel = FacePlateModel(geometry=geom, cooling=BASELINE,
+                            swept_band=SweptBand(depth_mm=17.5), n_pixels=81)
+    add("face_slots_and_inner_contour_single_stop",
+        {"geometry": {"outer_diameter_mm": 183.0, "inner_diameter_mm": 148.0,
+                      "thickness_mm": 4.0,
+                      "hole_centers_mm": [list(h) for h in holes],
+                      "slot_loops_mm": [[list(pt) for pt in loop] for loop in slot_loops],
+                      "inner_boundary_mm": [list(pt) for pt in lobed_inner]},
+         "material": dataclasses.asdict(STEEL_1020),
+         "cooling": dataclasses.asdict(BASELINE),
+         "swept_band": {"depth_mm": 17.5, "outer_offset_mm": 0.0},
+         "n_pixels": 81,
+         "pulse": {"energy_j": 34_200.0, "duration_s": 2.5}, "cool_down_s": 8.0},
+        simulate_face_single_stop(
+            fmodel, HeatPulse(energy_j=34_200.0, duration_s=2.5), cool_down_s=8.0))
+
+    path = OUT / "thermal.face.json"
+    path.write_text(json.dumps(
+        {"module": "sdm_brakes.solvers.thermal_face_plane", "scenarios": SCENARIOS},
+        separators=(",", ":"), sort_keys=True), encoding="utf-8")
+    print(f"  -> {path.name} ({path.stat().st_size / 1024:.0f} KB)")
+
+    SCENARIOS.clear()
+    SCENARIOS.update(annulus_scenarios)
     OUT.mkdir(parents=True, exist_ok=True)
     path = OUT / "thermal.annulus.json"
     # Compact: fixtures are machine-read, and pretty-printing tripled the file.

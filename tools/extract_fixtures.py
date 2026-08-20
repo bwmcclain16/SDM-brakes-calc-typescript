@@ -53,6 +53,10 @@ TRACE_MODULES = [
     "sdm_brakes.solvers.trail_braking",
     "sdm_brakes.solvers.aero",
     "sdm_brakes.solvers.bobbins",
+    # These two return 1-D arrays and small point lists, so whole-value recording
+    # works; only the 2-D/3-D field solvers need the digest fixtures.
+    "sdm_brakes.solvers.thermal_expansion",
+    "sdm_brakes.solvers.thermal_growth_geometry",
     "sdm_brakes.models.rotors",
     "sdm_brakes.models.tires",
     "sdm_brakes.models.pad_friction",
