@@ -256,6 +256,7 @@ function NumberField({
       <label>{label}</label>
       <input
         type="number"
+        autoComplete="off"
         value={value}
         step={step}
         disabled={disabled}
@@ -357,7 +358,7 @@ export function Hydraulics({ scenario, compared, comparing }: PageProps) {
           <NumberField label="Pad/rotor operating temp, °C" value={padTempC} step={10} onChange={setPadTempC} />
           <div>
             <label htmlFor="hyd-fluid">Brake fluid</label>
-            <select id="hyd-fluid" value={fluidName} onChange={(e) => setFluidName(e.target.value)}>
+            <select id="hyd-fluid" autoComplete="off" value={fluidName} onChange={(e) => setFluidName(e.target.value)}>
               {FLUIDS.map((f) => (
                 <option key={f.name} value={f.name}>
                   {f.name}
@@ -463,6 +464,7 @@ export function Hydraulics({ scenario, compared, comparing }: PageProps) {
           <label htmlFor="hyd-application">Brake application</label>
           <select
             id="hyd-application"
+            autoComplete="off"
             value={application}
             onChange={(e) => setApplication(e.target.value as Application)}
           >

@@ -14,6 +14,7 @@ import type { Dispatch, JSX } from "react";
 import type { Action, Scenario } from "../state/store.ts";
 import { Hydraulics } from "./Hydraulics.tsx";
 import { Bobbins } from "./Bobbins.tsx";
+import { Setup } from "./Setup.tsx";
 import { StraightLine } from "./StraightLine.tsx";
 import { Curved } from "./Curved.tsx";
 import { Trail } from "./Trail.tsx";
@@ -65,7 +66,7 @@ export const PAGES: Record<PageId, PageEntry> = {
     blurb:
       "The car itself: mass and geometry, brake hardware, rotor, materials, suspension and aero. " +
       "Set once per configuration — the stop conditions live in the bar above.",
-    Component: pending("Setup"),
+    Component: Setup,
   },
   "straight-line": {
     title: "Straight-Line Braking",

@@ -179,6 +179,7 @@ function NumberField({
       <label>{label}</label>
       <input
         type="number"
+        autoComplete="off"
         value={value}
         step={step}
         onChange={(e) => {
@@ -204,7 +205,7 @@ function SelectField({
   return (
     <div>
       <label>{label}</label>
-      <select value={value} onChange={(e) => onChange(e.target.value)}>
+      <select value={value} autoComplete="off" onChange={(e) => onChange(e.target.value)}>
         {options.map((o) => (
           <option key={o} value={o}>
             {o}
@@ -601,6 +602,7 @@ export function Bobbins({ scenario, compared, comparing }: PageProps) {
         <label htmlFor="bobbin-diameters">Candidate diameters, mm (comma-separated)</label>
         <input
           id="bobbin-diameters"
+          autoComplete="off"
           style={{ width: "100%", maxWidth: 480 }}
           value={diametersText}
           onChange={(e) => setDiametersText(e.target.value)}
