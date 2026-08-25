@@ -613,7 +613,7 @@ function buildSectionMesh(model: SectionFdmModel): Mesh {
 
 interface SectionRunOutput {
   result: SectionThermalResult;
-  field: Float64Array;
+  field: Float64Array<ArrayBuffer>;
 }
 
 function runSectionCore(
@@ -681,13 +681,13 @@ function runSectionCore(
     for (let j = 0; j < nZ - 1; j++) {
       for (let i = 0; i < nR; i++) {
         const qz = mesh.gAxial[j * nR + i]! * (field[(j + 1) * nR + i]! - field[j * nR + i]!);
-        heat[j * nR + i] += qz;
+        heat[j * nR + i]! += qz;
       }
     }
     for (let j = 0; j < nZ - 1; j++) {
       for (let i = 0; i < nR; i++) {
         const qz = mesh.gAxial[j * nR + i]! * (field[(j + 1) * nR + i]! - field[j * nR + i]!);
-        heat[(j + 1) * nR + i] -= qz;
+        heat[(j + 1) * nR + i]! -= qz;
       }
     }
 
@@ -695,13 +695,13 @@ function runSectionCore(
     for (let j = 0; j < nZ; j++) {
       for (let kk = 0; kk < nR - 1; kk++) {
         const qr = mesh.gRadial[j * (nR - 1) + kk]! * (field[j * nR + kk + 1]! - field[j * nR + kk]!);
-        heat[j * nR + kk] += qr;
+        heat[j * nR + kk]! += qr;
       }
     }
     for (let j = 0; j < nZ; j++) {
       for (let kk = 0; kk < nR - 1; kk++) {
         const qr = mesh.gRadial[j * (nR - 1) + kk]! * (field[j * nR + kk + 1]! - field[j * nR + kk]!);
-        heat[j * nR + kk + 1] -= qr;
+        heat[j * nR + kk + 1]! -= qr;
       }
     }
 
@@ -710,7 +710,7 @@ function runSectionCore(
     let qInSum = 0.0;
     for (let idx = 0; idx < nCells; idx++) {
       const qIn = qFluxScale * mesh.aFlux[idx]!;
-      heat[idx] += qIn;
+      heat[idx]! += qIn;
       qInSum += qIn;
     }
     energyIn += qInSum * dt;
@@ -723,7 +723,7 @@ function runSectionCore(
       const t = field[idx]!;
       const conv = h * mesh.aCool[idx]! * (t - tInf);
       const rad = eps * sigma * mesh.aCool[idx]! * ((t + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[idx] -= conv + rad;
+      heat[idx]! -= conv + rad;
       sumConv += conv;
       sumRad += rad;
     }
@@ -731,7 +731,7 @@ function runSectionCore(
     energyRad += sumRad * dt;
 
     for (let idx = 0; idx < nCells; idx++) {
-      if (mask[idx]) field[idx] += dt * (heat[idx]! / capacity[idx]!);
+      if (mask[idx]) field[idx]! += dt * (heat[idx]! / capacity[idx]!);
     }
 
     const bandPeakNow = fluxMax(field, mesh.fluxMask);
@@ -961,25 +961,25 @@ export function solveSectionSteadyBandTemperature(
     for (let j = 0; j < nZ - 1; j++) {
       for (let i = 0; i < nR; i++) {
         const qz = mesh.gAxial[j * nR + i]! * (field[(j + 1) * nR + i]! - field[j * nR + i]!);
-        heat[j * nR + i] += qz;
+        heat[j * nR + i]! += qz;
       }
     }
     for (let j = 0; j < nZ - 1; j++) {
       for (let i = 0; i < nR; i++) {
         const qz = mesh.gAxial[j * nR + i]! * (field[(j + 1) * nR + i]! - field[j * nR + i]!);
-        heat[(j + 1) * nR + i] -= qz;
+        heat[(j + 1) * nR + i]! -= qz;
       }
     }
     for (let j = 0; j < nZ; j++) {
       for (let kk = 0; kk < nR - 1; kk++) {
         const qr = mesh.gRadial[j * (nR - 1) + kk]! * (field[j * nR + kk + 1]! - field[j * nR + kk]!);
-        heat[j * nR + kk] += qr;
+        heat[j * nR + kk]! += qr;
       }
     }
     for (let j = 0; j < nZ; j++) {
       for (let kk = 0; kk < nR - 1; kk++) {
         const qr = mesh.gRadial[j * (nR - 1) + kk]! * (field[j * nR + kk + 1]! - field[j * nR + kk]!);
-        heat[j * nR + kk + 1] -= qr;
+        heat[j * nR + kk + 1]! -= qr;
       }
     }
 
@@ -987,11 +987,11 @@ export function solveSectionSteadyBandTemperature(
       const t = field[idx]!;
       const loss =
         h * mesh.aCool[idx]! * (t - tInf) + eps * sigma * mesh.aCool[idx]! * ((t + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[idx] -= loss;
+      heat[idx]! -= loss;
     }
 
     for (let idx = 0; idx < nCells; idx++) {
-      if (mask[idx]) field[idx] += dt * (heat[idx]! / capacity[idx]!);
+      if (mask[idx]) field[idx]! += dt * (heat[idx]! / capacity[idx]!);
     }
     for (let idx = 0; idx < nCells; idx++) {
       if (mesh.fluxMask[idx]) field[idx] = bandTemperatureC; // Dirichlet clamp

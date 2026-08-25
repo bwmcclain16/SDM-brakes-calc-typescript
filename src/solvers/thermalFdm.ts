@@ -416,7 +416,7 @@ function buildMesh(model: RotorFdmModel): Mesh {
 
 interface RunOutput {
   result: ThermalFieldResult;
-  field: Float64Array; // final flat field (nZ*nR), for event-train chaining
+  field: Float64Array<ArrayBuffer>; // final flat field (nZ*nR), for event-train chaining
 }
 
 function runCore(
@@ -482,13 +482,13 @@ function runCore(
     for (let j = 0; j < nZ - 1; j++) {
       for (let i = 0; i < nR; i++) {
         const qz = mesh.gAxial[i]! * (field[(j + 1) * nR + i]! - field[j * nR + i]!);
-        heat[j * nR + i] += qz;
+        heat[j * nR + i]! += qz;
       }
     }
     for (let j = 0; j < nZ - 1; j++) {
       for (let i = 0; i < nR; i++) {
         const qz = mesh.gAxial[i]! * (field[(j + 1) * nR + i]! - field[j * nR + i]!);
-        heat[(j + 1) * nR + i] -= qz;
+        heat[(j + 1) * nR + i]! -= qz;
       }
     }
 
@@ -496,13 +496,13 @@ function runCore(
     for (let j = 0; j < nZ; j++) {
       for (let kk = 0; kk < nR - 1; kk++) {
         const qr = mesh.gRadial[j * (nR - 1) + kk]! * (field[j * nR + kk + 1]! - field[j * nR + kk]!);
-        heat[j * nR + kk] += qr;
+        heat[j * nR + kk]! += qr;
       }
     }
     for (let j = 0; j < nZ; j++) {
       for (let kk = 0; kk < nR - 1; kk++) {
         const qr = mesh.gRadial[j * (nR - 1) + kk]! * (field[j * nR + kk + 1]! - field[j * nR + kk]!);
-        heat[j * nR + kk + 1] -= qr;
+        heat[j * nR + kk + 1]! -= qr;
       }
     }
 
@@ -511,7 +511,7 @@ function runCore(
     let qInSum = 0.0;
     for (let i = 0; i < nR; i++) {
       const qIn = qFlux * mesh.aFlux[i]!;
-      heat[surfRow + i] += qIn;
+      heat[surfRow + i]! += qIn;
       qInSum += qIn;
     }
     energyIn += qInSum * dt;
@@ -525,7 +525,7 @@ function runCore(
       const surf = field[surfRow + i]!;
       const convFace = h * mesh.aFace[i]! * (surf - tInf);
       const radFace = eps * sigma * mesh.aFace[i]! * ((surf + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[surfRow + i] -= convFace + radFace;
+      heat[surfRow + i]! -= convFace + radFace;
       sumConvFace += convFace;
       sumRadFace += radFace;
     }
@@ -535,7 +535,7 @@ function runCore(
       const inner = field[j * nR]!;
       const convInner = h * mesh.aEdgeInner[j]! * (inner - tInf);
       const radInner = eps * sigma * mesh.aEdgeInner[j]! * ((inner + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[j * nR] -= convInner + radInner;
+      heat[j * nR]! -= convInner + radInner;
       sumConvInner += convInner;
       sumRadInner += radInner;
     }
@@ -545,7 +545,7 @@ function runCore(
       const outer = field[j * nR + nR - 1]!;
       const convOuter = h * mesh.aEdgeOuter[j]! * (outer - tInf);
       const radOuter = eps * sigma * mesh.aEdgeOuter[j]! * ((outer + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[j * nR + nR - 1] -= convOuter + radOuter;
+      heat[j * nR + nR - 1]! -= convOuter + radOuter;
       sumConvOuter += convOuter;
       sumRadOuter += radOuter;
     }
@@ -553,7 +553,7 @@ function runCore(
     energyRad += (sumRadFace + sumRadInner + sumRadOuter) * dt;
 
     for (let idx = 0; idx < nCells; idx++) {
-      field[idx] += (dt * heat[idx]!) / capacity[idx]!;
+      field[idx]! += (dt * heat[idx]!) / capacity[idx]!;
     }
 
     const peak = bandPeak(field, nR, nZ, mesh.sweptMask);
@@ -811,25 +811,25 @@ export function solveSteadyBandTemperature(
     for (let j = 0; j < nZ - 1; j++) {
       for (let i = 0; i < nR; i++) {
         const qz = mesh.gAxial[i]! * (field[(j + 1) * nR + i]! - field[j * nR + i]!);
-        heat[j * nR + i] += qz;
+        heat[j * nR + i]! += qz;
       }
     }
     for (let j = 0; j < nZ - 1; j++) {
       for (let i = 0; i < nR; i++) {
         const qz = mesh.gAxial[i]! * (field[(j + 1) * nR + i]! - field[j * nR + i]!);
-        heat[(j + 1) * nR + i] -= qz;
+        heat[(j + 1) * nR + i]! -= qz;
       }
     }
     for (let j = 0; j < nZ; j++) {
       for (let kk = 0; kk < nR - 1; kk++) {
         const qr = mesh.gRadial[j * (nR - 1) + kk]! * (field[j * nR + kk + 1]! - field[j * nR + kk]!);
-        heat[j * nR + kk] += qr;
+        heat[j * nR + kk]! += qr;
       }
     }
     for (let j = 0; j < nZ; j++) {
       for (let kk = 0; kk < nR - 1; kk++) {
         const qr = mesh.gRadial[j * (nR - 1) + kk]! * (field[j * nR + kk + 1]! - field[j * nR + kk]!);
-        heat[j * nR + kk + 1] -= qr;
+        heat[j * nR + kk + 1]! -= qr;
       }
     }
 
@@ -838,25 +838,25 @@ export function solveSteadyBandTemperature(
       const loss =
         h * mesh.aFace[i]! * (surf - tInf) +
         eps * sigma * mesh.aFace[i]! * ((surf + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[surfRow + i] -= loss;
+      heat[surfRow + i]! -= loss;
     }
     for (let j = 0; j < nZ; j++) {
       const inner = field[j * nR]!;
       const loss =
         h * mesh.aEdgeInner[j]! * (inner - tInf) +
         eps * sigma * mesh.aEdgeInner[j]! * ((inner + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[j * nR] -= loss;
+      heat[j * nR]! -= loss;
     }
     for (let j = 0; j < nZ; j++) {
       const outer = field[j * nR + nR - 1]!;
       const loss =
         h * mesh.aEdgeOuter[j]! * (outer - tInf) +
         eps * sigma * mesh.aEdgeOuter[j]! * ((outer + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[j * nR + nR - 1] -= loss;
+      heat[j * nR + nR - 1]! -= loss;
     }
 
     for (let idx = 0; idx < nCells; idx++) {
-      field[idx] += (dt * heat[idx]!) / capacity[idx]!;
+      field[idx]! += (dt * heat[idx]!) / capacity[idx]!;
     }
     for (let i = 0; i < nR; i++) {
       if (mesh.sweptMask[i]) field[surfRow + i] = bandTemperatureC; // Dirichlet clamp

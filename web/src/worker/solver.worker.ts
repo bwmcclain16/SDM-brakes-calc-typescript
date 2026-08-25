@@ -19,7 +19,7 @@ import {
 } from "@core/solvers/thermalFdm.ts";
 import type { FieldSnapshot, ThermalFieldResult } from "@core/solvers/thermalFdm.ts";
 import type { CoolingParameters } from "@core/models/internal.ts";
-import type { RotorGeometry, RotorMaterial } from "@core/models/rotors.ts";
+import type { RotorGeometry } from "@core/models/rotors.ts";
 
 export interface AnnulusRequest {
   kind: "annulus";

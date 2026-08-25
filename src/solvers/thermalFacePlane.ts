@@ -538,7 +538,7 @@ function maskSumOf(f: Float64Array, mask: Uint8Array): number {
 
 interface RunOutput {
   result: FaceFieldResult;
-  field: Float64Array;
+  field: Float64Array<ArrayBuffer>;
 }
 
 /** One event on a prebuilt mesh from a given start field.
@@ -596,7 +596,7 @@ function runFace(
   }
 
   const coolArea = new Float64Array(nn);
-  for (let idx = 0; idx < nn; idx++) coolArea[idx] = mesh.faceArea * mask[idx] + mesh.wallArea[idx]!;
+  for (let idx = 0; idx < nn; idx++) coolArea[idx] = mesh.faceArea * mask[idx]! + mesh.wallArea[idx]!;
 
   const snapshots = Math.max(2, snapshotsIn);
   const snapStepsArr: number[] = [];
@@ -637,7 +637,7 @@ function runFace(
       for (let col = 0; col < n - 1; col++) {
         const idxL = row * n + col;
         const qx = bothX[row * (n - 1) + col] ? g * (field[idxL + 1]! - field[idxL]!) : 0.0;
-        heat[idxL] += qx;
+        heat[idxL]! += qx;
       }
     }
     // heat[:, 1:] -= qx
@@ -645,7 +645,7 @@ function runFace(
       for (let col = 0; col < n - 1; col++) {
         const idxL = row * n + col;
         const qx = bothX[row * (n - 1) + col] ? g * (field[idxL + 1]! - field[idxL]!) : 0.0;
-        heat[idxL + 1] -= qx;
+        heat[idxL + 1]! -= qx;
       }
     }
     // qy = g * (field[1:, :] - field[:-1, :]) * both_y
@@ -654,7 +654,7 @@ function runFace(
       for (let col = 0; col < n; col++) {
         const idxT = row * n + col;
         const qy = bothY[row * n + col] ? g * (field[idxT + n]! - field[idxT]!) : 0.0;
-        heat[idxT] += qy;
+        heat[idxT]! += qy;
       }
     }
     // heat[1:, :] -= qy
@@ -662,12 +662,12 @@ function runFace(
       for (let col = 0; col < n; col++) {
         const idxT = row * n + col;
         const qy = bothY[row * n + col] ? g * (field[idxT + n]! - field[idxT]!) : 0.0;
-        heat[idxT + n] -= qy;
+        heat[idxT + n]! -= qy;
       }
     }
 
     const qFlux = qScale * heatPulsePowerW(pulse, tMid) * mesh.dx ** 2;
-    for (let idx = 0; idx < nn; idx++) if (band[idx]) heat[idx] += qFlux;
+    for (let idx = 0; idx < nn; idx++) if (band[idx]) heat[idx]! += qFlux;
     energyIn += qFlux * bandCount * dt;
 
     // Separate conv/rad terms so the joule-level dissipation split is reported.
@@ -676,7 +676,7 @@ function runFace(
     for (let idx = 0; idx < nn; idx++) {
       const conv = h * coolArea[idx]! * (field[idx]! - tInf);
       const rad = eps * sigma * coolArea[idx]! * ((field[idx]! + ZERO_CELSIUS_K) ** 4 - tInfK4);
-      heat[idx] -= conv + rad;
+      heat[idx]! -= conv + rad;
       if (mask[idx]) {
         sumConv += conv;
         sumRad += rad;
@@ -686,7 +686,7 @@ function runFace(
     energyRad += sumRad * dt;
 
     for (let idx = 0; idx < nn; idx++) {
-      if (mask[idx]) field[idx] += (dt * heat[idx]!) / capacity;
+      if (mask[idx]) field[idx]! += (dt * heat[idx]!) / capacity;
     }
 
     const bandPeakNow = bandMaxOf(field, band);

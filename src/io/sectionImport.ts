@@ -881,7 +881,7 @@ const LOOP_SEARCH_STEP_LIMIT = 200_000;
  * that doesn't change the result set. Returns `[]` (rather than throwing)
  * if the step budget above is exhausted, matching Python's "best effort"
  * TimeoutError handling in `_closed_feature_loops`. */
-function findAllLoops(edges: readonly RawEdge[]): DirectedEdge[][] {
+function findAllLoops(edges: readonly RawEdge[], gapTol: number): DirectedEdge[][] {
   if (edges.length < 2) return [];
   const solutions = new Map<string, DirectedEdge[]>();
   let steps = 0;
@@ -924,7 +924,7 @@ function findAllLoops(edges: readonly RawEdge[]): DirectedEdge[][] {
   };
 
   for (const e of edges) {
-    search(e, LOOP_GAP_TOL_MM);
+    search(e, gapTol);
     if (exhausted) return Array.from(solutions.values());
   }
   return Array.from(solutions.values());
@@ -1015,7 +1015,7 @@ function closedFeatureLoops(
     try {
       const edges = edgesFromEntities2d(loose, gapTol);
       if (edges.length >= 2) {
-        for (const loop of findAllLoops(edges)) {
+        for (const loop of findAllLoops(edges, gapTol)) {
           const points = path2dFromChain(loop, flattenDistance);
           if (points.length >= 3) loopsPoints.push(points);
         }

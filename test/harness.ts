@@ -149,7 +149,7 @@ export function runFixture(
         continue;
       }
       if (!c.ok) {
-        const expectedError = (c.result as Record<string, string>)["__raises__"];
+        const expectedError = (c.result as Record<string, string>)["__raises__"]!;
         try {
           (impl as (...a: unknown[]) => unknown)(...callArgs);
           report.failures.push(`${where}: expected throw ${expectedError}, returned normally`);
