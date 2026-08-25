@@ -1,0 +1,40 @@
+{
+ "previous_year_brake_bias": {
+  "piston_area_single_24mm_mm2": 452.3893421169302,
+  "front_area_mm2": 1809.5573684677208,
+  "rear_area_mm2": 904.7786842338604,
+  "front_area_ratio_to_rear": 2.0,
+  "front_pressure_ratio_to_rear": 1.2222222222222223,
+  "front_axle_torque_distribution": 0.7216699801192843,
+  "front_axle_torque_distribution_od_ratio_handcheck": 0.7305389221556886
+ },
+ "ideal_front_brake_bias": {
+  "at_1p3g": 0.7177320261437908,
+  "at_1p6g": 0.773516339869281
+ },
+ "bobbin_loads": {
+  "rotor_torque_nm": 250.0,
+  "bolt_circle_diameter_mm": 145.0,
+  "total_tangential_force_n": 3448.2758620689656,
+  "per_button_nominal_force_n": 574.7126436781609,
+  "per_button_design_force_n": 1149.4252873563219,
+  "shear_stress_pa": 22867089.524697606,
+  "allowable_shear_pa": 507760000.0,
+  "shear_safety_factor": 22.204837194151605,
+  "bearing_stress_pa": 35919540.22988506,
+  "bearing_safety_factor": 9.744
+ },
+ "thermal_fdm": {
+  "adiabatic_energy_j": 60000.0,
+  "rotor_mass_kg": 0.83461128,
+  "specific_heat_j_kgk": 486.0,
+  "expected_delta_t_c": 147.9213055009954
+ },
+ "pedal_to_torque_chain": {
+  "pedal_force_n": 2000.0,
+  "front_line_pressure_pa": 15116256.056931,
+  "rear_line_pressure_pa": 12367845.864762,
+  "front_axle_torque_nm": 1087.040646,
+  "rear_axle_torque_nm": 403.705284
+ }
+}

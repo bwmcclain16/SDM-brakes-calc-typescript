@@ -1,0 +1,71 @@
+{
+ "cooling": {
+  "convection_coefficient_W_m2K": 60.0,
+  "emissivity": 0.55,
+  "ambient_temperature_C": 35.0,
+  "allowable_rotor_temperature_C": 500.0,
+  "vane_area_multiplier": 1.0,
+  "air_specific_heat_J_kgK": 1005.0,
+  "air_density_kg_m3": 1.16,
+  "cooling_air_delta_T_C": 30.0,
+  "rotor_heat_fraction": 1.0,
+  "source": {
+   "source_title": "SDM brakes thermal modeling assumptions",
+   "source_url_or_file": "sdm_brakes_calculators_codex_spec.md",
+   "source_type": "engineering_assumption",
+   "date_accessed": "2026-05-31",
+   "confidence": "low",
+   "notes": "h=60 W/m2K is a mid-range estimate for a moderately ducted FSAE rotor at autocross speeds; sweep 30-150. Emissivity 0.55 for oxidized steel (sweep 0.3-0.8). Ambient 35 C and allowable 500 C tie to the H38 pad cap (data/materials/pad_compounds.yaml). vane_area_multiplier=1.0 treats the rotor as solid (conservative); raise toward ~1.8-2.4 once vented-vane area is known. Air props at ~35 C, 1 atm."
+  }
+ },
+ "assumptions": [
+  {
+   "field": "cooling.convection_coefficient_W_m2K",
+   "default": 60.0,
+   "confidence": "low",
+   "source": "engineering assumption (ducted FSAE rotor estimate)",
+   "sweep_range": [
+    30.0,
+    150.0
+   ],
+   "todo": true,
+   "impact": "high"
+  },
+  {
+   "field": "cooling.emissivity",
+   "default": 0.55,
+   "confidence": "low",
+   "source": "oxidized-steel emissivity estimate",
+   "sweep_range": [
+    0.3,
+    0.8
+   ],
+   "todo": true,
+   "impact": "medium"
+  },
+  {
+   "field": "cooling.vane_area_multiplier",
+   "default": 1.0,
+   "confidence": "low",
+   "source": "solid-rotor conservative placeholder; CAD vane area TODO",
+   "sweep_range": [
+    1.0,
+    2.4
+   ],
+   "todo": true,
+   "impact": "high"
+  },
+  {
+   "field": "cooling.rotor_heat_fraction",
+   "default": 1.0,
+   "confidence": "low",
+   "source": "Fraction of friction heat entering the rotor (remainder to the pads). 1.0 keeps the conservative all-heat-to-rotor lumped assumption (spec 20.1); thermal effusivity ratios for a steel rotor against an organic pad suggest 0.85-0.95. Confirm with pad-material effusivity data.",
+   "sweep_range": [
+    0.8,
+    1.0
+   ],
+   "todo": true,
+   "impact": "medium"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "suspension": {
+  "front": {
+   "spring_rate_n_per_m": 35000.0,
+   "motion_ratio": 0.95,
+   "arb_roll_stiffness_nm_per_rad": 6000.0,
+   "roll_center_height_m": 0.03,
+   "unsprung_mass_kg": 18.0,
+   "unsprung_cg_height_m": 0.23,
+   "tire_vertical_rate_n_per_m": 100000.0
+  },
+  "rear": {
+   "spring_rate_n_per_m": 43800.0,
+   "motion_ratio": 0.9,
+   "arb_roll_stiffness_nm_per_rad": 0.0,
+   "roll_center_height_m": 0.055,
+   "unsprung_mass_kg": 20.0,
+   "unsprung_cg_height_m": 0.23,
+   "tire_vertical_rate_n_per_m": 100000.0
+  },
+  "source": {
+   "source_title": "Placeholder SDM26 suspension setup for load-transfer screening",
+   "source_type": "assumption",
+   "confidence": "assumption",
+   "notes": "All values entered 2026-06-10 as typical-FSAE placeholders pending the Suspension sub-team's SDM26 setup sheet. Spring rates 200/250 lb-in, pushrod motion ratios, front-bar-only ARB, roll centers 30/55 mm, unsprung 18/20 kg per axle at wheel-center height, 100 kN/m tire rate.\n"
+  }
+ }
+}

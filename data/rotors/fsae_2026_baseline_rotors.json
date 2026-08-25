@@ -1,0 +1,30 @@
+{
+ "rotors": {
+  "front": {
+   "rotor_outer_diameter_mm": 183.0,
+   "rotor_thickness_mm": 4.0,
+   "rotor_mass_kg": 0.83461128,
+   "rotor_material": "1020 steel",
+   "pad_height_mm": 34.5,
+   "pad_swept_outer_diameter_mm": 182.0,
+   "pad_swept_inner_diameter_mm": 148.0,
+   "bobbin_count": 6,
+   "bobbin_circle_diameter_mm": 145.0,
+   "bobbin_button_diameter_mm": 8.0,
+   "bobbin_material": "Ti-6Al-4V"
+  },
+  "rear": {
+   "rotor_outer_diameter_mm": 165.0,
+   "rotor_thickness_mm": 4.0,
+   "rotor_mass_kg": 0.6123495,
+   "rotor_material": "1020 steel",
+   "pad_height_mm": 25.0,
+   "pad_swept_outer_diameter_mm": 162.0,
+   "pad_swept_inner_diameter_mm": 138.0,
+   "bobbin_count": 6,
+   "bobbin_circle_diameter_mm": 132.0,
+   "bobbin_button_diameter_mm": 8.0,
+   "bobbin_material": "Ti-6Al-4V"
+  }
+ }
+}

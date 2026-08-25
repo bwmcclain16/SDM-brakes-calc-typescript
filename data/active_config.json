@@ -1,0 +1,4 @@
+{
+ "vehicle_config": "data/vehicles/fsae_2026_baseline.yaml",
+ "rotor_config": "data/rotors/SDM26_Rotor.yaml"
+}

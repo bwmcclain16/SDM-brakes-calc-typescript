@@ -1,0 +1,152 @@
+/* Helios design tokens.
+ *
+ * Lifted verbatim from NIXELFi/helios packages/ui/src/theme.ts so this app and
+ * the Helios desktop tool read as one family. The Python/Streamlit calculator
+ * carries the same values in its .streamlit/config.toml — if these ever drift,
+ * that file and theme.ts are the sources of truth, not this one.
+ *
+ * Single-theme by choice: the calculator is a dark instrument panel, and Helios
+ * ships no light variant. Everything is painted explicitly so the page never
+ * borrows a host background.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --base: #0e0e10;
+  --panel: #16171b;
+  --line: #2a2c32;
+  --text: #d8dce2;
+  --dim: #7b8088;
+  --maroon: #8c1d40;
+  --gold: #ffc627;
+  --chart-grid: #23252b;
+  --chart-axis: #5a5f66;
+
+  /* Semantic, kept separate from the accent so a warning never reads as brand. */
+  --ok: #66bb6a;
+  --warn: #ffb800;
+  --bad: #ef5350;
+
+  --sans: Inter, system-ui, -apple-system, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  --rail-w: 232px;
+  --bar-h: 56px;
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; margin: 0; }
+
+body {
+  background: var(--base);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Digits that line up in columns — metric values, tables, anything compared. */
+.num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.1rem; }
+h3 { font-size: 0.95rem; }
+
+a { color: var(--gold); }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+/* --- controls --------------------------------------------------------------- */
+
+input, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--text);
+  background: var(--base);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 9px;
+}
+
+input[type="number"] { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+input:focus-visible, select:focus-visible, button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+}
+
+button { cursor: pointer; }
+button:hover:not(:disabled) { border-color: var(--dim); }
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+button.primary {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #16171b;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  font-size: 11px;
+  color: var(--dim);
+  margin-bottom: 3px;
+}
+
+/* --- tables ----------------------------------------------------------------- */
+
+table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+
+th, td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+th {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dim);
+  font-weight: 500;
+}
+
+td.num, td:not(:first-child) {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.scroll-x { overflow-x: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

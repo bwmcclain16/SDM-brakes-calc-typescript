@@ -1,0 +1,196 @@
+{
+ "pads": [
+  {
+   "name": "Brembo H38 sintered",
+   "manufacturer": "Brembo",
+   "compound": "sintered",
+   "friction_coefficient": 0.48,
+   "mu_range": [
+    0.48,
+    0.6
+   ],
+   "mu_vs_temperature": {
+    "note": "mu held within 0.48-0.60 over the 100-480 C operating band; steeper drop in mu above ~480 C. Brembo Temperature vs. Friction Coefficient graph (binder p17, sec 4.1.1) digitized below as a trendline lookup."
+   },
+   "mu_vs_temperature_table": {
+    "design_mu": 0.48,
+    "points": [
+     [
+      100,
+      0.54
+     ],
+     [
+      200,
+      0.55
+     ],
+     [
+      300,
+      0.545
+     ],
+     [
+      400,
+      0.54
+     ],
+     [
+      450,
+      0.535
+     ],
+     [
+      500,
+      0.525
+     ],
+     [
+      550,
+      0.505
+     ],
+     [
+      600,
+      0.475
+     ]
+    ]
+   },
+   "max_recommended_temperature_C": 480,
+   "hard_temperature_cap_C": 500,
+   "min_recommended_temperature_C": 100,
+   "pad_wear_note": "Pad wear increases rapidly above ~573-623 K (600 F).",
+   "compatible_rotor_materials": [
+    "1020 steel",
+    "420 stainless steel",
+    "cast iron"
+   ],
+   "caliper_compatibility_note": "Front P4.24 calipers accept H38 pads only, per binder sec 4.1.1.",
+   "source": {
+    "source_title": "SDM26 Brakes Comp Design Binder (p17, p26); data supplied directly from Brembo",
+    "source_url_or_file": "SDM26 Brakes Comp Design Binder.pdf",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-05-31",
+    "confidence": "medium",
+    "notes": "Numeric mu band and temperature limits transcribed from binder prose. Digitize the Brembo mu-vs-T graphs for an mu(T) lookup before final thermal pass/fail. design value 0.48 (conservative end of the 0.48-0.60 band)."
+   }
+  },
+  {
+   "name": "Performance Friction (PFC) 450 (ID 450)",
+   "manufacturer": "Performance Friction",
+   "compound": "carbon-metallic",
+   "friction_coefficient": 0.45,
+   "mu_range": [
+    0.43,
+    0.48
+   ],
+   "mu_vs_temperature": {
+    "note": "mu approximately 0.43-0.48 from cold up to ~500 C, with noticeable fade above ~500 C. Digitized from the mu-vs-temperature comparison plot in the SDM26 Design Binder (p16)."
+   },
+   "mu_vs_temperature_table": {
+    "design_mu": 0.45,
+    "points": [
+     [
+      100,
+      0.46
+     ],
+     [
+      150,
+      0.48
+     ],
+     [
+      200,
+      0.49
+     ],
+     [
+      300,
+      0.47
+     ],
+     [
+      400,
+      0.45
+     ],
+     [
+      480,
+      0.47
+     ],
+     [
+      500,
+      0.42
+     ],
+     [
+      550,
+      0.37
+     ],
+     [
+      575,
+      0.24
+     ],
+     [
+      600,
+      0.225
+     ]
+    ]
+   },
+   "max_recommended_temperature_C": 500,
+   "min_recommended_temperature_C": 50,
+   "source": {
+    "source_title": "SDM26 Brakes Comp Design Binder (p16 mu-vs-temperature comparison plot)",
+    "source_url_or_file": "SDM26 Brakes Comp Design Binder.pdf",
+    "source_type": "design_binder_graph",
+    "date_accessed": "2026-05-31",
+    "confidence": "low",
+    "notes": "Values read from an image plot; digitize precisely before final thermal pass/fail."
+   }
+  },
+  {
+   "name": "Hawk DTC / TT 2172",
+   "manufacturer": "Tarox/Hawk (TT 2172 compound)",
+   "compound": "high-temperature racing",
+   "friction_coefficient": 0.5,
+   "mu_range": [
+    0.48,
+    0.52
+   ],
+   "mu_vs_temperature": {
+    "note": "mu approximately flat near 0.50 across a wide band, holding to ~800 C per the binder p16 comparison plot. Highest thermal headroom of the compounds evaluated."
+   },
+   "mu_vs_temperature_table": {
+    "design_mu": 0.5,
+    "points": [
+     [
+      100,
+      0.52
+     ],
+     [
+      200,
+      0.535
+     ],
+     [
+      300,
+      0.515
+     ],
+     [
+      400,
+      0.5
+     ],
+     [
+      500,
+      0.5
+     ],
+     [
+      600,
+      0.505
+     ],
+     [
+      700,
+      0.51
+     ]
+    ]
+   },
+   "max_recommended_temperature_C": 800,
+   "min_recommended_temperature_C": 100,
+   "source": {
+    "source_title": "SDM26 Brakes Comp Design Binder (p16 mu-vs-temperature comparison plot)",
+    "source_url_or_file": "SDM26 Brakes Comp Design Binder.pdf",
+    "source_type": "design_binder_graph",
+    "date_accessed": "2026-05-31",
+    "confidence": "low",
+    "notes": "Values read from an image plot; digitize precisely before final thermal pass/fail."
+   }
+  }
+ ]
+}

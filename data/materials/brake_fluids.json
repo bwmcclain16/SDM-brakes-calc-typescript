@@ -1,0 +1,175 @@
+{
+ "fluids": [
+  {
+   "name": "Motul RBF660 Factory Line",
+   "manufacturer": "Motul",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 325.0,
+   "wet_boiling_point_c": 205.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "base_fluid": true,
+   "source": {
+    "source_title": "Motul RBF660 Factory Line technical data sheet",
+    "source_url_or_file": "https://azupim01.motul.com/media/motulData/DO/base/RBF_660_FACTORY_LINE_en_FR_motul_48200_20220113.pdf",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "high",
+    "notes": "Team-selected base fluid. Dry 325 C (617 F) / wet 205 C (401 F)."
+   }
+  },
+  {
+   "name": "Motul RBF600 Factory Line",
+   "manufacturer": "Motul",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 312.0,
+   "wet_boiling_point_c": 216.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "Motul RBF600 technical data sheet",
+    "source_url_or_file": "motul.com",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "medium",
+    "notes": "Dry 312 C / wet 216 C. Verify against current TDS before final BOM."
+   }
+  },
+  {
+   "name": "Motul RBF700 Factory Line",
+   "manufacturer": "Motul",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 336.0,
+   "wet_boiling_point_c": 205.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "Motul RBF700 Factory Line technical data sheet",
+    "source_url_or_file": "motul.com",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "medium",
+    "notes": "Dry 336 C / wet 205 C. Newer high-dry-BP option."
+   }
+  },
+  {
+   "name": "Castrol React SRF Racing",
+   "manufacturer": "Castrol",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 310.0,
+   "wet_boiling_point_c": 270.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "Castrol React SRF Racing product data sheet",
+    "source_url_or_file": "https://msdspds.castrol.com/bpglis/FusionPDS.nsf",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "high",
+    "notes": "Exceptional wet BP 270 C (518 F); dry 310 C (590 F). Silicone-borate ester chemistry resists wet-BP drop -> best worst-case margin."
+   }
+  },
+  {
+   "name": "AP Racing Radi-CAL R3 (PRF660)",
+   "manufacturer": "AP Racing",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 325.0,
+   "wet_boiling_point_c": 195.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "AP Racing Radi-CAL R3 (CP4660) data",
+    "source_url_or_file": "https://apracing.com/race-car/brake-fluid/radi-cal-r3-racing-brake-fluid-cp4660",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "high",
+    "notes": "Formerly PRF660. Dry 325 C / wet 195 C (low wet BP)."
+   }
+  },
+  {
+   "name": "Wilwood EXP 600 Plus",
+   "manufacturer": "Wilwood",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 330.0,
+   "wet_boiling_point_c": 214.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "Wilwood EXP 600 Plus brake fluid",
+    "source_url_or_file": "wilwood.com",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "medium",
+    "notes": "Dry 626 F (330 C) / wet 417 F (214 C)."
+   }
+  },
+  {
+   "name": "StopTech STR-660",
+   "manufacturer": "StopTech",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 330.0,
+   "wet_boiling_point_c": 205.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "StopTech STR-660 racing brake fluid",
+    "source_url_or_file": "stoptech.com",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "medium",
+    "notes": "Dry 626 F (330 C) / wet 401 F (205 C)."
+   }
+  },
+  {
+   "name": "Brembo LCF 600 Plus",
+   "manufacturer": "Brembo",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 300.0,
+   "wet_boiling_point_c": 210.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "Brembo LCF 600 Plus brake fluid",
+    "source_url_or_file": "brembo.com",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "medium",
+    "notes": "Dry 300 C (at the inclusion threshold) / wet 210 C."
+   }
+  },
+  {
+   "name": "Endless RF-650",
+   "manufacturer": "Endless",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 323.0,
+   "wet_boiling_point_c": 218.0,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "Endless RF-650 racing brake fluid",
+    "source_url_or_file": "endless-sport.co.jp",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "medium",
+    "notes": "Dry 323 C / wet 218 C."
+   }
+  },
+  {
+   "name": "Performance Friction RH665",
+   "manufacturer": "Performance Friction",
+   "dot_rating": "DOT 4",
+   "dry_boiling_point_c": 352.0,
+   "wet_boiling_point_c": null,
+   "bulk_modulus_pa": "1.7e9",
+   "density_kg_m3": 1070.0,
+   "source": {
+    "source_title": "PFC RH665 racing brake fluid",
+    "source_url_or_file": "performancefriction.com",
+    "source_type": "manufacturer_datasheet",
+    "date_accessed": "2026-06-02",
+    "confidence": "medium",
+    "notes": "Dry 665 F (352 C), highest dry BP listed; wet BP not confirmed (null)."
+   }
+  }
+ ]
+}

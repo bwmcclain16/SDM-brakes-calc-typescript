@@ -1,0 +1,26 @@
+{
+ "nasa_anthropometry": {
+  "source_title": "NASA OCHMO-HB-004 Revision A",
+  "source_url_or_file": "https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-hb-004-rev-a-dec2023.pdf",
+  "source_type": "NASA_reference",
+  "date_accessed": "2026-05-30",
+  "confidence": "high",
+  "notes": "Driver mass sweep anchor."
+ },
+ "formula_sae_rules": {
+  "source_title": "Formula SAE Rules 2026 Version 1.0",
+  "source_url_or_file": "https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=278fd4d7-aa27-4e33-bc4a-090148e662a0",
+  "source_type": "official_rulebook",
+  "date_accessed": "2026-05-30",
+  "confidence": "high",
+  "notes": "Review annually."
+ },
+ "brake_fluid_standard": {
+  "source_title": "49 CFR 571.116, FMVSS No. 116, Motor Vehicle Brake Fluids",
+  "source_url_or_file": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/subpart-B/section-571.116",
+  "source_type": "official_rulebook",
+  "date_accessed": "2026-05-30",
+  "confidence": "high",
+  "notes": "DOT brake-fluid boiling point requirements."
+ }
+}

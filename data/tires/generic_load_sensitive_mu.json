@@ -1,0 +1,19 @@
+{
+ "tires": [
+  {
+   "name": "generic_fsae_slick",
+   "mu_ref": 1.6,
+   "fz_ref_n": 690.0,
+   "k_mu": 0.12,
+   "mu_min": 1.0,
+   "mu_max": 2.0,
+   "lateral_mu_scale": 1.0,
+   "source": {
+    "source_title": "Placeholder load-sensitive mu for generic FSAE slick",
+    "source_type": "assumption",
+    "confidence": "assumption",
+    "notes": "Values chosen 2026-06-10 to bracket typical TTC-derived FSAE slick behavior. Replace with fitted TTC data (mu vs Fz at operating pressure and camber) before design sign-off.\n"
+   }
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "source": {
+  "source_title": "BrakesCalcs 24-25 Exercise.xlsx",
+  "source_url_or_file": "C:\\Users\\19417\\Downloads\\BrakesCalcs 24-25 Exercise.xlsx",
+  "source_type": "team_reference_calculator",
+  "date_accessed": "2026-05-31",
+  "confidence": "medium",
+  "notes": "Mixed-unit Excel workbook. Values below preserve source units and add SI interpretation."
+ },
+ "vehicle": {
+  "vehicle_mass": {
+   "source_value": 217.724,
+   "source_units": "kg",
+   "si_value_kg": 217.724,
+   "note": "Workbook labels this as vehicle mass; differs from current 199.02 kg baseline."
+  },
+  "driver_mass": {
+   "source_value": 63.5029,
+   "source_units": "kg",
+   "si_value_kg": 63.5029
+  },
+  "total_mass": {
+   "source_value": 281.2269,
+   "source_units": "kg",
+   "si_value_kg": 281.2269
+  },
+  "cg_height": {
+   "source_value": 240,
+   "source_units": "mm",
+   "si_value_m": 0.24
+  },
+  "wheelbase": {
+   "source_value": 1527.175,
+   "source_units": "mm",
+   "si_value_m": 1.527175
+  },
+  "tire_static_rolling_radius": {
+   "source_value": 177.8,
+   "source_units": "mm",
+   "si_value_m": 0.1778
+  },
+  "static_front_weight_fraction": {
+   "source_value": 0.48,
+   "source_units": "fraction"
+  },
+  "static_rear_weight_fraction": {
+   "source_value": 0.52,
+   "source_units": "fraction"
+  }
+ },
+ "hardware": {
+  "front_rotor_diameter": {
+   "source_value": 180,
+   "source_units": "mm",
+   "si_value_m": 0.18
+  },
+  "rear_rotor_diameter": {
+   "source_value": 165,
+   "source_units": "mm",
+   "si_value_m": 0.165
+  },
+  "front_pad_height": {
+   "source_value": 34.5,
+   "source_units": "mm",
+   "note": "Workbook effective radius formula is rotor_radius - pad_height/2."
+  },
+  "rear_pad_height": {
+   "source_value": 25,
+   "source_units": "mm"
+  },
+  "front_effective_radius": {
+   "source_value": 72.75,
+   "source_units": "mm",
+   "si_value_m": 0.07275
+  },
+  "rear_effective_radius": {
+   "source_value": 70,
+   "source_units": "mm",
+   "si_value_m": 0.07
+  },
+  "front_caliper_piston_diameter": {
+   "source_value": 34,
+   "source_units": "mm",
+   "note": "This appears to be the SDM24/25 reference caliper, not the SDM26 P4.24 4 x 24 mm caliper."
+  },
+  "rear_caliper_piston_diameter": {
+   "source_value": 24,
+   "source_units": "mm"
+  },
+  "front_master_cylinder_diameter": {
+   "source_value": 15.875,
+   "source_units": "mm",
+   "imperial_equivalent": "0.625 in"
+  },
+  "rear_master_cylinder_diameter": {
+   "source_value": 15.875,
+   "source_units": "mm",
+   "imperial_equivalent": "0.625 in"
+  },
+  "brake_pad_mu": {
+   "source_value": 0.45,
+   "source_units": "coefficient"
+  },
+  "pedal_ratio": {
+   "source_value": 3.5,
+   "source_units": "ratio"
+  },
+  "pedal_efficiency": {
+   "source_value": 0.8,
+   "source_units": "fraction"
+  },
+  "maximum_working_pressure": {
+   "source_value": 70,
+   "source_units": "bar",
+   "si_value_pa": 7000000
+  }
+ },
+ "aero": {
+  "downforce_values": {
+   "source_units": "N",
+   "note": "Values are axle downforce, not total vehicle downforce. Speeds are mph.",
+   "points": [
+    {
+     "speed_mph": 25,
+     "front_downforce_n": 147.5279388,
+     "rear_downforce_n": 136.17963582
+    },
+    {
+     "speed_mph": 35,
+     "front_downforce_n": 289.13440499,
+     "rear_downforce_n": 266.89329692
+    },
+    {
+     "speed_mph": 45,
+     "front_downforce_n": 477.95073683,
+     "rear_downforce_n": 441.18529553
+    }
+   ]
+  }
+ }
+}

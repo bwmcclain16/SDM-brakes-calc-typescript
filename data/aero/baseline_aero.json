@@ -1,0 +1,27 @@
+{
+ "source": {
+  "source_title": "BrakesCalcs 24-25 Exercise.xlsx",
+  "source_url_or_file": "C:\\Users\\19417\\Downloads\\BrakesCalcs 24-25 Exercise.xlsx",
+  "source_type": "team_reference_calculator",
+  "date_accessed": "2026-05-31",
+  "confidence": "medium",
+  "notes": "Front/rear downforce values extracted from Variables sheet."
+ },
+ "downforce_map": [
+  {
+   "speed_mph": 25.0,
+   "front_downforce_n": 147.5279388,
+   "rear_downforce_n": 136.17963582
+  },
+  {
+   "speed_mph": 35.0,
+   "front_downforce_n": 289.13440499,
+   "rear_downforce_n": 266.89329692
+  },
+  {
+   "speed_mph": 45.0,
+   "front_downforce_n": 477.95073683,
+   "rear_downforce_n": 441.18529553
+  }
+ ]
+}

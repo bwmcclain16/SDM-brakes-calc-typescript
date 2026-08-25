@@ -1,0 +1,17 @@
+{
+ "coefficient_aero": {
+  "cl": 3.0,
+  "cd": 1.4,
+  "frontal_area_m2": 1.0,
+  "air_density_kg_m3": 1.16,
+  "x_cp0_m": 0.8415,
+  "k_pitch_m_per_deg": -0.015,
+  "k_v_m_per_mps2": 5e-05,
+  "source": {
+   "source_title": "Placeholder SDM26 coefficient aero for brakes screening",
+   "source_type": "assumption",
+   "confidence": "assumption",
+   "notes": "Entered 2026-06-10 pending the Aero sub-team's CFD aero map. CL/CD/A bracket typical FSAE winged-car values; CP statics and migration slopes are order-of-magnitude placeholders.\n"
+  }
+ }
+}

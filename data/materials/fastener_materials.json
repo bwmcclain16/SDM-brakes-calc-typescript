@@ -1,0 +1,157 @@
+{
+ "materials": [
+  {
+   "name": "Ti-6Al-4V",
+   "yield_strength_Pa": 880000000,
+   "ultimate_strength_Pa": 950000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 4430,
+   "source": "engineering_assumption (typical annealed Ti-6Al-4V handbook values)",
+   "confidence": "medium"
+  },
+  {
+   "name": "7075-T6 aluminum",
+   "yield_strength_Pa": 503000000,
+   "ultimate_strength_Pa": 572000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 2810,
+   "source": "engineering_assumption (typical 7075-T6 handbook values). ALUMINIUM TEMPERATURE CAVEAT: brake buttons sit at the rotor drive tabs and run hot; this alloy loses substantial strength above ~150-200 C and over-ages with sustained exposure. Room-temperature values only",
+   "confidence": "medium"
+  },
+  {
+   "name": "4140 steel (Q&T)",
+   "yield_strength_Pa": 655000000,
+   "ultimate_strength_Pa": 1020000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 7850,
+   "source": "engineering_assumption (4140 quenched & tempered ~28-32 HRC)",
+   "confidence": "medium"
+  },
+  {
+   "name": "6061-T6 aluminum",
+   "yield_strength_Pa": 276000000,
+   "ultimate_strength_Pa": 310000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 2700,
+   "source": "handbook typical (6061-T6). ALUMINIUM TEMPERATURE CAVEAT: brake buttons sit at the rotor drive tabs and run hot; this alloy loses substantial strength above ~150-200 C and over-ages with sustained exposure. Room-temperature values only. Lowest strength of any candidate here",
+   "confidence": "medium"
+  },
+  {
+   "name": "2024-T4 aluminum",
+   "yield_strength_Pa": 324000000,
+   "ultimate_strength_Pa": 469000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 2780,
+   "source": "handbook typical (2024-T4). ALUMINIUM TEMPERATURE CAVEAT: brake buttons sit at the rotor drive tabs and run hot; this alloy loses substantial strength above ~150-200 C and over-ages with sustained exposure. Room-temperature values only",
+   "confidence": "medium"
+  },
+  {
+   "name": "7050-T7451 aluminum",
+   "yield_strength_Pa": 469000000,
+   "ultimate_strength_Pa": 524000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 2830,
+   "source": "handbook typical (7050-T7451). ALUMINIUM TEMPERATURE CAVEAT: brake buttons sit at the rotor drive tabs and run hot; this alloy loses substantial strength above ~150-200 C and over-ages with sustained exposure. Room-temperature values only",
+   "confidence": "medium"
+  },
+  {
+   "name": "Ti-6Al-4V (STA)",
+   "yield_strength_Pa": 1100000000,
+   "ultimate_strength_Pa": 1170000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 4430,
+   "source": "handbook typical (Ti-6Al-4V, solution treated and aged)",
+   "confidence": "medium"
+  },
+  {
+   "name": "Ti Grade 2 (CP)",
+   "yield_strength_Pa": 275000000,
+   "ultimate_strength_Pa": 345000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 4510,
+   "source": "handbook typical (commercially pure titanium, Grade 2)",
+   "confidence": "medium"
+  },
+  {
+   "name": "4340 steel (Q&T)",
+   "yield_strength_Pa": 1170000000,
+   "ultimate_strength_Pa": 1280000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 7850,
+   "source": "handbook typical (AISI 4340, oil quenched, tempered ~540 C)",
+   "confidence": "medium"
+  },
+  {
+   "name": "4130 steel (Q&T)",
+   "yield_strength_Pa": 703000000,
+   "ultimate_strength_Pa": 890000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 7850,
+   "source": "handbook typical (AISI 4130, oil quenched, tempered ~540 C)",
+   "confidence": "medium"
+  },
+  {
+   "name": "8740 steel (Q&T)",
+   "yield_strength_Pa": 1035000000,
+   "ultimate_strength_Pa": 1210000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 7850,
+   "source": "handbook typical (AISI 8740, Q&T); common aircraft bolt alloy",
+   "confidence": "medium"
+  },
+  {
+   "name": "Alloy steel socket cap (12.9 / A574)",
+   "yield_strength_Pa": 1100000000,
+   "ultimate_strength_Pa": 1220000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 7850,
+   "source": "property class 12.9 / ASTM A574 minimum specified values",
+   "confidence": "high"
+  },
+  {
+   "name": "SAE Grade 8 steel",
+   "yield_strength_Pa": 896000000,
+   "ultimate_strength_Pa": 1035000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 7850,
+   "source": "SAE J429 Grade 8 minimum specified values",
+   "confidence": "high"
+  },
+  {
+   "name": "17-4PH stainless (H900)",
+   "yield_strength_Pa": 1170000000,
+   "ultimate_strength_Pa": 1310000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 7800,
+   "source": "handbook typical (17-4PH, aged 480 C / H900)",
+   "confidence": "medium"
+  },
+  {
+   "name": "A286 superalloy",
+   "yield_strength_Pa": 655000000,
+   "ultimate_strength_Pa": 1000000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 7940,
+   "source": "handbook typical (A286 iron-nickel superalloy, aged); retains strength hot",
+   "confidence": "medium"
+  },
+  {
+   "name": "Inconel 718 (aged)",
+   "yield_strength_Pa": 1035000000,
+   "ultimate_strength_Pa": 1275000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 8190,
+   "source": "handbook typical (Inconel 718, solution treated and aged); excellent hot strength",
+   "confidence": "medium"
+  },
+  {
+   "name": "316 stainless (bolt stock)",
+   "yield_strength_Pa": 290000000,
+   "ultimate_strength_Pa": 580000000,
+   "shear_yield_strength_Pa": null,
+   "density_kg_m3": 8000,
+   "source": "handbook typical (AISI 316 fastener stock, condition A)",
+   "confidence": "medium"
+  }
+ ]
+}
