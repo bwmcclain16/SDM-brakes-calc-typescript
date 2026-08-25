@@ -12,6 +12,13 @@
  */
 import type { Dispatch, JSX } from "react";
 import type { Action, Scenario } from "../state/store.ts";
+import { Hydraulics } from "./Hydraulics.tsx";
+import { Bobbins } from "./Bobbins.tsx";
+import { StraightLine } from "./StraightLine.tsx";
+import { Curved } from "./Curved.tsx";
+import { Trail } from "./Trail.tsx";
+import { Compare } from "./Compare.tsx";
+import { Report } from "./Report.tsx";
 
 export interface PageProps {
   scenario: Scenario;
@@ -63,22 +70,22 @@ export const PAGES: Record<PageId, PageEntry> = {
   "straight-line": {
     title: "Straight-Line Braking",
     blurb: "Parameterised sweep over speed, driver mass, deceleration and front pressure bias.",
-    Component: pending("Straight-line braking"),
+    Component: StraightLine,
   },
   curved: {
     title: "Curved Braking",
     blurb: "Steady-state combined braking and cornering: per-wheel friction ellipse and lock margin.",
-    Component: pending("Curved braking"),
+    Component: Curved,
   },
   trail: {
     title: "Trail Braking",
     blurb: "Quasi-static time history through corner entry. The natural landing point for a lap-sim trace.",
-    Component: pending("Trail braking"),
+    Component: Trail,
   },
   hydraulics: {
     title: "Hydraulics & Fluid",
     blurb: "Dual master-cylinder line pressures, caliper area adequacy, pedal travel and fluid boiling margins.",
-    Component: pending("Hydraulics"),
+    Component: Hydraulics,
   },
   thermal: {
     title: "Thermal",
@@ -88,17 +95,17 @@ export const PAGES: Record<PageId, PageEntry> = {
   bobbins: {
     title: "Bobbins",
     blurb: "Floating-rotor drive buttons: shear, bearing and mount-force checks.",
-    Component: pending("Bobbin optimisation"),
+    Component: Bobbins,
   },
   compare: {
     title: "Compare",
     blurb: "Scenarios side by side — configuration differences and headline metrics.",
-    Component: pending("Compare"),
+    Component: Compare,
   },
   report: {
     title: "Report",
     blurb: "Export the current configuration and results as HTML, CSV, or print to PDF.",
-    Component: pending("Report"),
+    Component: Report,
   },
 };
 

@@ -15,6 +15,11 @@ import type { BrakeHardware, Vehicle } from "@core/models/internal.ts";
 import baselineVehicle from "@data/vehicles/fsae_2026_baseline.json";
 import coolingBaseline from "@data/thermal/cooling_baseline.json";
 import padCompounds from "@data/materials/pad_compounds.json";
+import activeConfig from "@data/active_config.json";
+import sdm26Rotor from "@data/rotors/SDM26_Rotor.json";
+import fsae2026Rotors from "@data/rotors/fsae_2026_baseline_rotors.json";
+
+import { applyRotorSetup, parseRotorSetup } from "@core/config.ts";
 
 import type { AppState, Conditions } from "./store.ts";
 import { makeScenario } from "./store.ts";
@@ -33,6 +38,38 @@ interface CoolingFile {
 
 const baseline = baselineVehicle as unknown as BaselineFile;
 const cooling = (coolingBaseline as unknown as CoolingFile).cooling;
+
+/** Rotor configs available for autoload, keyed by their path in active_config. */
+const ROTOR_CONFIGS: Record<string, unknown> = {
+  "data/rotors/SDM26_Rotor.yaml": sdm26Rotor,
+  "data/rotors/fsae_2026_baseline_rotors.yaml": fsae2026Rotors,
+};
+
+/** Brake hardware with the ACTIVE rotor config overlaid, as the Python app does.
+ *
+ * `data/active_config.yaml` selects which rotor the team is actually running,
+ * and `app/state.py::_brakes_with_active_rotors` overlays it on the vehicle
+ * file. Skipping that is not cosmetic: the current selection (SDM26_Rotor)
+ * moves the front pad swept band from 182.0/148.0 to 183.0/131.8, which shifts
+ * the front torque split from 72.92% to 73.26% and every energy figure derived
+ * from it. Loading the raw vehicle file alone silently analyses a rotor nobody
+ * is running.
+ *
+ * A rotor file that fails to parse must not brick the app — the vehicle file's
+ * own rotor data still applies, matching the Python fallback.
+ */
+function brakesWithActiveRotors(): BrakeHardware {
+  const base = baseline.brake_hardware;
+  const selected = (activeConfig as { rotor_config?: string | null }).rotor_config;
+  if (!selected) return base;
+  const doc = ROTOR_CONFIGS[selected];
+  if (doc === undefined) return base;
+  try {
+    return applyRotorSetup(base, parseRotorSetup(doc));
+  } catch {
+    return base;
+  }
+}
 
 /** First pad compound in the database, matching how the Python sidebar seeds. */
 function defaultPad(): { label: string; mu: number } {
@@ -61,7 +98,7 @@ export function initialState(): AppState {
   const scenario = makeScenario(
     "Baseline",
     baseline.vehicle,
-    baseline.brake_hardware,
+    brakesWithActiveRotors(),
     defaultConditions(),
   );
   return { scenarios: [scenario], activeId: scenario.id, compareIds: [] };
