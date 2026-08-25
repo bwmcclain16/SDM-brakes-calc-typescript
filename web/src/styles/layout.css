@@ -1,0 +1,130 @@
+/* The three-zone shell: identity, conditions, workspace.
+ *
+ * Layout only — every colour and typeface comes from theme.css. The zones exist
+ * because inputs were previously scattered across fifteen pages: what the car IS
+ * lives in Setup, what the STOP is lives in the conditions bar, and analyses are
+ * views over those two rather than holding inputs of their own.
+ */
+
+.shell {
+  display: grid;
+  grid-template-columns: var(--rail-w) 1fr;
+  grid-template-rows: 100%;
+  height: 100%;
+}
+
+/* --- scenario rail ---------------------------------------------------------- */
+
+.rail {
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  padding: 14px 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rail-section { display: flex; flex-direction: column; gap: 7px; }
+
+.scenario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  padding: 7px 9px;
+  background: var(--base);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.scenario.active { border-color: var(--gold); }
+.scenario-name { flex: 1; font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+.scenario-geo { font-family: var(--mono); font-size: 10px; color: var(--dim); }
+
+.nav { display: flex; flex-direction: column; gap: 1px; }
+
+.nav-item {
+  text-align: left;
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  border-radius: 0;
+  padding: 6px 10px;
+  color: var(--dim);
+}
+
+.nav-item:hover { color: var(--text); }
+.nav-item.active { color: var(--gold); border-left-color: var(--gold); }
+.nav-group { margin-top: 10px; }
+
+/* --- workspace -------------------------------------------------------------- */
+
+.work { display: grid; grid-template-rows: auto 1fr; min-width: 0; height: 100%; }
+
+.conditions {
+  border-bottom: 1px solid var(--line);
+  padding: 9px 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  flex-wrap: wrap;
+  background: var(--panel);
+}
+
+.conditions .field { display: flex; flex-direction: column; }
+.conditions input, .conditions select { width: 104px; }
+
+.page { padding: 20px; overflow-y: auto; min-width: 0; }
+.page-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+.page-sub { color: var(--dim); margin: 0 0 18px; max-width: 78ch; }
+
+/* --- the answer row --------------------------------------------------------- */
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.metric { padding: 10px 13px; }
+.metric-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.07em;
+                text-transform: uppercase; color: var(--dim); }
+.metric-value { font-family: var(--mono); font-size: 1.45rem; font-weight: 500;
+                margin-top: 5px; font-variant-numeric: tabular-nums; }
+.metric-delta { font-family: var(--mono); font-size: 11px; color: var(--dim); margin-top: 2px; }
+.metric-value.warn { color: var(--warn); }
+.metric-value.bad  { color: var(--bad); }
+.metric-value.ok   { color: var(--ok); }
+
+/* --- charts ----------------------------------------------------------------- */
+
+.charts { display: grid; gap: 14px; }
+.charts.two { grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); }
+.chart { padding: 6px; min-width: 0; }
+
+.tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+.tab {
+  background: none; border: none; border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding: 7px 13px; color: var(--dim);
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.07em; text-transform: uppercase;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+.compare-banner {
+  border-left: 2px solid var(--gold);
+  background: var(--panel);
+  padding: 8px 13px;
+  margin-bottom: 16px;
+  font-size: 12.5px;
+}
+
+.controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 16px; }
+.controls input, .controls select { width: 128px; }
+
+.note { color: var(--dim); font-size: 12px; margin-top: 8px; max-width: 78ch; }
