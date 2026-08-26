@@ -851,9 +851,6 @@ interface DirectedEdge {
   reversed: boolean;
 }
 
-function directedStart(d: DirectedEdge): Point {
-  return d.reversed ? d.edge.end : d.edge.start;
-}
 function directedEnd(d: DirectedEdge): Point {
   return d.reversed ? d.edge.start : d.edge.end;
 }

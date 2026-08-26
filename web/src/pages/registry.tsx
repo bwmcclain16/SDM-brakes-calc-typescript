@@ -20,6 +20,7 @@ import { Curved } from "./Curved.tsx";
 import { Trail } from "./Trail.tsx";
 import { Compare } from "./Compare.tsx";
 import { Report } from "./Report.tsx";
+import { Thermal } from "./Thermal.tsx";
 
 export interface PageProps {
   scenario: Scenario;
@@ -43,21 +44,6 @@ export interface PageEntry {
   title: string;
   blurb?: string;
   Component: (props: PageProps) => JSX.Element;
-}
-
-/** Placeholder until the real page lands, so the shell is runnable throughout
- *  the port rather than only at the end. */
-function pending(what: string) {
-  return function Pending() {
-    return (
-      <div className="panel" style={{ padding: 18 }}>
-        <p style={{ margin: 0, color: "var(--dim)" }}>
-          {what} is not ported yet. The shell, scenario store and conditions bar are live —
-          this page is the remaining work.
-        </p>
-      </div>
-    );
-  };
 }
 
 export const PAGES: Record<PageId, PageEntry> = {
@@ -91,7 +77,7 @@ export const PAGES: Record<PageId, PageEntry> = {
   thermal: {
     title: "Thermal",
     blurb: "Rotor temperature at two fidelities: lumped quick sizing, or the finite-difference field.",
-    Component: pending("Thermal"),
+    Component: Thermal,
   },
   bobbins: {
     title: "Bobbins",
