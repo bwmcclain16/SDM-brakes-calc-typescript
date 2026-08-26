@@ -14,7 +14,6 @@ import type { BrakeHardware, Vehicle } from "@core/models/internal.ts";
 
 import baselineVehicle from "@data/vehicles/fsae_2026_baseline.json";
 import coolingBaseline from "@data/thermal/cooling_baseline.json";
-import padCompounds from "@data/materials/pad_compounds.json";
 import activeConfig from "@data/active_config.json";
 import sdm26Rotor from "@data/rotors/SDM26_Rotor.json";
 import fsae2026Rotors from "@data/rotors/fsae_2026_baseline_rotors.json";
@@ -23,6 +22,7 @@ import { applyRotorSetup, parseRotorSetup } from "@core/config.ts";
 
 import type { AppState, Conditions } from "./store.ts";
 import { makeScenario } from "./store.ts";
+import { defaultPadSelection } from "./materials.ts";
 
 interface BaselineFile {
   vehicle: Vehicle & Record<string, unknown>;
@@ -71,16 +71,9 @@ function brakesWithActiveRotors(): BrakeHardware {
   }
 }
 
-/** First pad compound in the database, matching how the Python sidebar seeds. */
-function defaultPad(): { label: string; mu: number } {
-  const compounds = padCompounds as unknown as Record<string, { design_mu?: number }>;
-  const entries = Object.entries(compounds).filter(([, v]) => v && typeof v === "object");
-  const [label, value] = entries[0] ?? ["Constant μ", {}];
-  return { label, mu: value?.design_mu ?? 0.48 };
-}
-
 export function defaultConditions(): Conditions {
-  const pad = defaultPad();
+  // First characterized compound at its design mu, matching the Python sidebar.
+  const pad = defaultPadSelection(Number(baseline.brake_hardware.pad_friction_coefficient ?? 0.48));
   return {
     driver_mass_kg: 75.0,
     target_deceleration_g: Number(baseline.vehicle.single_stop_target_g ?? 1.3),

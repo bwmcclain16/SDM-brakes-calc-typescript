@@ -27,6 +27,7 @@ import type { AeroMap } from "@core/solvers/aero.ts";
 import { loadAeroMap } from "@core/solvers/aero.ts";
 import type { StraightLineResult } from "@core/solvers/straightLineBraking.ts";
 import { runParameterizedSweep } from "@core/solvers/straightLineBraking.ts";
+import { ROTOR_MATERIALS, brakesWithPad, padLimitC } from "../state/materials.ts";
 import { frontAxleTorqueDistribution } from "@core/solvers/brakeBias.ts";
 import { idealFrontBrakeFraction } from "@core/solvers/vehicle.ts";
 
@@ -76,12 +77,17 @@ function runSweep(
   brakes: BrakeHardware,
   params: SweepParams,
   aeroMap: AeroMap | null,
-  ambientTemperatureC: number,
+  conditions: Scenario["conditions"],
   label: string,
 ): SweepRow[] {
+  // The pad selection and the rotor material database both feed the solver's
+  // temperature coupling: without the mu(T) curve the pad columns come back
+  // empty, and without the materials the rotor never heats, so mu(T) has no
+  // temperature to follow. Attaching one and not the other looks like it works.
+  const withPad = brakesWithPad(brakes, conditions.pad_label, conditions.pad_mu);
   const rows: SweepRow[] = [];
   for (const bias of params.frontBiases) {
-    const brakesForBias = variantBrakes(brakes, bias);
+    const brakesForBias = variantBrakes(withPad, bias);
     const results = runParameterizedSweep(
       vehicle,
       brakesForBias,
@@ -89,9 +95,9 @@ function runSweep(
       params.speeds,
       params.decelerations,
       aeroMap,
-      null,
+      ROTOR_MATERIALS,
       "uniform_pressure",
-      ambientTemperatureC,
+      conditions.ambient_temperature_c,
     );
     for (const r of results) rows.push({ ...r, front_pressure_fraction: bias, scenario: label });
   }
@@ -378,7 +384,7 @@ export function StraightLine({ scenario, compared, comparing }: PageProps) {
         scenario.brakes,
         params,
         scenario.conditions.include_aero ? AERO_MAP : null,
-        scenario.conditions.ambient_temperature_c,
+        scenario.conditions,
         activeLabel,
       ),
     [scenario, speeds, driverMasses, decelerations, frontBiases, activeLabel, params],
@@ -392,7 +398,7 @@ export function StraightLine({ scenario, compared, comparing }: PageProps) {
         s.brakes,
         params,
         s.conditions.include_aero ? AERO_MAP : null,
-        s.conditions.ambient_temperature_c,
+        s.conditions,
         scenarioLabel(s),
       ),
     );
@@ -601,10 +607,8 @@ export function StraightLine({ scenario, compared, comparing }: PageProps) {
           </div>
           <p className="note">
             Solver: direct algebraic hand checks (no iterative convergence) — matches the Python page's Setup tab.
-            Pad friction is held constant at the conditions bar's μ = {scenario.conditions.pad_mu.toFixed(2)} (
-            {scenario.conditions.pad_label}); temperature-coupled μ(T) and rotor heating live on the Thermal page,
-            so rotor temperature columns are not computed here.
           </p>
+          <PadStatus rows={activeRows} conditions={scenario.conditions} />
         </div>
       )}
 
@@ -722,5 +726,56 @@ export function StraightLine({ scenario, compared, comparing }: PageProps) {
         </div>
       )}
     </div>
+  );
+}
+
+/** Where the pad's μ actually sat across the sweep, and whether the run left
+ *  the compound's characterized band.
+ *
+ * A design μ printed on its own hides the thing that matters: μ(T) is only
+ * measured over a band, and a stop that runs past the top of it is being
+ * extrapolated, not predicted. */
+function PadStatus({
+  rows,
+  conditions,
+}: {
+  rows: SweepRow[];
+  conditions: Scenario["conditions"];
+}) {
+  const limitC = padLimitC(conditions.pad_label);
+  if (limitC === null) {
+    return (
+      <p className="note">
+        <strong>Constant μ:</strong> {conditions.pad_mu.toFixed(2)} (temperature-independent) —
+        pick a characterized compound in the conditions bar to couple μ to rotor temperature.
+      </p>
+    );
+  }
+
+  const mus = rows
+    .flatMap((r) => [r.front_pad_mu_at_temperature, r.rear_pad_mu_at_temperature])
+    .filter((v): v is number => v != null && Number.isFinite(v));
+  const peaks = rows
+    .flatMap((r) => [r.front_rotor_peak_temperature_c, r.rear_rotor_peak_temperature_c])
+    .filter((v): v is number => v != null && Number.isFinite(v));
+  const overLimit = rows.some(
+    (r) => r.front_pad_over_temperature_limit || r.rear_pad_over_temperature_limit,
+  );
+
+  return (
+    <>
+      <p className="note">
+        <strong>{conditions.pad_label}</strong> — μ(T) coupled to rotor peak temperature. Peak
+        rotor temp up to {peaks.length ? Math.max(...peaks).toFixed(0) : "n/a"} °C (ambient{" "}
+        {conditions.ambient_temperature_c.toFixed(0)} °C). μ(T) range{" "}
+        {mus.length ? Math.min(...mus).toFixed(3) : "n/a"}–
+        {mus.length ? Math.max(...mus).toFixed(3) : "n/a"}.
+      </p>
+      {overLimit && (
+        <p className="note" style={{ color: "var(--bad)" }}>
+          OVER LIMIT: at least one case exceeds the pad's characterized band ({limitC.toFixed(0)} °C).
+        </p>
+      )}
+    </>
   );
 }
