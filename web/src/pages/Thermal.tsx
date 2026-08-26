@@ -21,11 +21,11 @@ import type { SolveInput } from "../state/useSolver.ts";
 import type { SolverOk } from "../worker/solver.worker.ts";
 import type { PageProps } from "./registry.tsx";
 import type { Scenario } from "../state/store.ts";
-import { scenarioLabel } from "../state/store.ts";
 
 import { GeometryPanel, defaultGeometryInputs, resolveGeometry } from "./thermal/geometry.tsx";
 import type { GeometryInputs, ResolvedGeometry } from "./thermal/geometry.tsx";
 import { GrowthTab, sweepGrowthMm } from "./thermal/growth.tsx";
+import { QuickSizing } from "./thermal/quickSizing.tsx";
 import {
   circleXY,
   flattenPaths,
@@ -45,11 +45,7 @@ import baselineAeroRaw from "@data/aero/baseline_aero.json";
 import baselineVehicleRaw from "@data/vehicles/fsae_2026_baseline.json";
 
 import type { AxleBrake, CoolingParameters } from "@core/models/internal.ts";
-import type { RotorGeometry, RotorMaterial } from "@core/models/rotors.ts";
-import { convectiveAreaM2, radiationAreaM2, thermalMassJK } from "@core/models/rotors.ts";
-import { lumpedTemperatureRiseC } from "@core/solvers/thermal.ts";
-import { simulateRepeatedEvents } from "@core/solvers/repeatedEvents.ts";
-import type { RepeatedEventResult } from "@core/solvers/repeatedEvents.ts";
+import type { RotorMaterial } from "@core/models/rotors.ts";
 import { loadAeroMap } from "@core/solvers/aero.ts";
 import { runParameterizedSweep } from "@core/solvers/straightLineBraking.ts";
 import type { StraightLineResult } from "@core/solvers/straightLineBraking.ts";
@@ -236,10 +232,6 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
   const [hConv, setHConv] = useState(COOLING_DEFAULTS.convection_coefficient_W_m2K);
   const [heatFraction, setHeatFraction] = useState(COOLING_DEFAULTS.rotor_heat_fraction);
   const [sweepText, setSweepText] = useState("");
-  // Quick sizing carries its OWN emissivity input, as the Python thermal-sizing
-  // section does: it is a lumped radiating-area assumption alongside h, not the
-  // material-surface property the field models read off the rotor material.
-  const [quickEmissivity, setQuickEmissivity] = useState(COOLING_DEFAULTS.emissivity);
 
   const faceMode = geometry.faceMode;
   // The plate model is transient-only: holding the band at a fixed temperature
@@ -253,52 +245,24 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
     [scenario, hConv, emissivity, heatFraction],
   );
 
-  // --- quick sizing: cheap enough to run inline every render -------------------
-  // The MEASURED rotor mass from the hardware config, not one derived from
-  // geometry. Deriving it needs `hat_interface_diameter_mm`, a CAD value the
-  // baseline config does not carry — which is precisely why the solver's
-  // thermalMassJK takes an explicit mass: so thermal sizing works before the
-  // hat radius is known.
-  const quick = useMemo<QuickResult>(() => {
-    try {
-      const mass = hw.rotor_mass_kg;
-      const quickGeometry: RotorGeometry = {
-        outer_diameter_mm: hw.rotor_outer_diameter_mm,
-        inner_swept_diameter_mm: bandInnerDefaultMm,
-        thickness_mm: hw.rotor_thickness_mm,
-        material: annulusMaterial,
-        hat_interface_diameter_mm: null,
-      };
-      const capacity = thermalMassJK(quickGeometry, mass);
-      const quickCooling: CoolingParameters = {
-        ...cooling,
-        emissivity: quickEmissivity,
-        vane_area_multiplier: COOLING_DEFAULTS.vane_area_multiplier,
-        air_specific_heat_j_kgk: COOLING_DEFAULTS.air_specific_heat_J_kgK,
-        air_density_kg_m3: COOLING_DEFAULTS.air_density_kg_m3,
-        cooling_air_delta_t_c: COOLING_DEFAULTS.cooling_air_delta_T_C,
-      };
-      const singleRise = lumpedTemperatureRiseC(
-        worstEnergyJ * heatFraction,
-        mass,
-        annulusMaterial.specific_heat_j_kgk,
-      );
-      const train = simulateRepeatedEvents(
-        worstEnergyJ * heatFraction,
-        scenario.conditions.event_gap_s,
-        quickCooling,
-        convectiveAreaM2(quickGeometry, COOLING_DEFAULTS.vane_area_multiplier),
-        radiationAreaM2(quickGeometry),
-        capacity,
-      );
-      return { mass, capacity, singleRise, train, error: null };
-    } catch (e) {
-      return { error: e instanceof Error ? e.message : String(e) };
-    }
-  }, [
-    hw, bandInnerDefaultMm, annulusMaterial, cooling, quickEmissivity, worstEnergyJ,
-    heatFraction, scenario.conditions.event_gap_s,
-  ]);
+  // Quick sizing runs on the COOLING BASELINE, not the field models' cooling:
+  // it lumps the whole radiating area into one coefficient, so emissivity and
+  // the vane multiplier stay inputs there rather than following the rotor
+  // material's surface property.
+  const quickCooling = useMemo<CoolingParameters>(
+    () => ({
+      convection_coefficient_w_m2k: COOLING_DEFAULTS.convection_coefficient_W_m2K,
+      emissivity: COOLING_DEFAULTS.emissivity,
+      ambient_temperature_c: scenario.conditions.ambient_temperature_c,
+      allowable_rotor_temperature_c: scenario.conditions.allowable_rotor_temperature_c,
+      vane_area_multiplier: COOLING_DEFAULTS.vane_area_multiplier,
+      air_specific_heat_j_kgk: COOLING_DEFAULTS.air_specific_heat_J_kgK,
+      air_density_kg_m3: COOLING_DEFAULTS.air_density_kg_m3,
+      cooling_air_delta_t_c: COOLING_DEFAULTS.cooling_air_delta_T_C,
+      rotor_heat_fraction: COOLING_DEFAULTS.rotor_heat_fraction,
+    }),
+    [scenario.conditions.ambient_temperature_c, scenario.conditions.allowable_rotor_temperature_c],
+  );
 
   // --- the field request ------------------------------------------------------
   const { result, running, error, solve, clear } = useSolver();
@@ -428,7 +392,6 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
   const [detailTab, setDetailTab] = useState<DetailTab>("profiles");
 
   const allowable = scenario.conditions.allowable_rotor_temperature_c;
-  const ambient = scenario.conditions.ambient_temperature_c;
 
   const blocked =
     geometry.error ??
@@ -459,6 +422,9 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
         ))}
       </div>
 
+      {/* Quick sizing reports BOTH axles side by side, so it needs no axle
+          selector and none of the field models' grid or sweep controls. */}
+      {fidelity === "field" && (
       <div className="controls panel" style={{ padding: 12 }}>
         <div className="field">
           <label htmlFor="th-axle">Axle</label>
@@ -467,8 +433,7 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
             <option value="rear">Rear</option>
           </select>
         </div>
-        {fidelity === "field" && (
-          <>
+        <>
             <div className="field">
               <label htmlFor="th-input">Thermal input</label>
               <select
@@ -549,8 +514,7 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
                 />
               </div>
             )}
-          </>
-        )}
+        </>
         <div className="field">
           <label>&nbsp;</label>
           <button onClick={() => setShowTuning((v) => !v)}>
@@ -558,6 +522,7 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
           </button>
         </div>
       </div>
+      )}
 
       {fidelity === "field" && effectiveInput === "energy" && !overrideEvent && (
         <p className="note" style={{ marginTop: 0 }}>
@@ -582,9 +547,9 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
         </p>
       )}
 
-      {showTuning && (
+      {showTuning && fidelity === "field" && (
         <div className="controls panel" style={{ padding: 12 }}>
-          {fidelity === "quick" ? null : faceMode ? (
+          {faceMode ? (
             <>
               <div className="field">
                 <label htmlFor="tn-px">Face grid pixels (per axis)</label>
@@ -644,15 +609,6 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
               onChange={(e) => setHConv(Number(e.target.value))}
             />
           </div>
-          {fidelity === "quick" && (
-            <div className="field">
-              <label htmlFor="tn-eps">Emissivity</label>
-              <input
-                id="tn-eps" type="number" step={0.05} value={quickEmissivity}
-                onChange={(e) => setQuickEmissivity(Number(e.target.value))}
-              />
-            </div>
-          )}
           <div className="field">
             <label htmlFor="tn-frac">Rotor heat fraction</label>
             <input
@@ -660,7 +616,7 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
               onChange={(e) => setHeatFraction(Number(e.target.value))}
             />
           </div>
-          {fidelity === "field" && (
+          {(
             <div className="field">
               <label htmlFor="tn-sweep">
                 {effectiveInput === "band" ? "Sweep band temperatures, °C" : "Sweep energies, kJ"}
@@ -673,22 +629,25 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
             </div>
           )}
           <p className="note" style={{ width: "100%", margin: 0 }}>
-            Convection h and emissivity are low-confidence assumptions; a heat fraction of 1.0
-            sends all friction heat into the rotor, which is the conservative choice.
-            {fidelity === "field"
-              ? ` The field models take emissivity (${emissivity.toFixed(2)}) from the rotor material '${activeMaterial.name}' — it is a property of the oxidized rotor surface, not a free knob. Sweeps are capped at 5 values and run as single stops.`
-              : " Quick sizing keeps emissivity as an input because its radiating area is a lumped assumption rather than a resolved surface."}
+            Convection h is a low-confidence assumption; a heat fraction of 1.0 sends all friction
+            heat into the rotor, which is the conservative choice. Emissivity ({emissivity.toFixed(2)})
+            comes from the rotor material '{activeMaterial.name}' rather than a knob — it is a
+            property of the oxidized rotor surface. Sweeps are capped at 5 values and run as
+            single stops.
           </p>
         </div>
       )}
 
       {fidelity === "quick" ? (
         <QuickSizing
-          quick={quick}
-          energyJ={worstEnergyJ}
-          ambient={ambient}
-          allowable={allowable}
-          scenario={scenario}
+          vehicle={scenario.vehicle}
+          brakes={scenario.brakes}
+          speedSweepMph={SPEED_SWEEP_MPH}
+          aeroMap={AERO_MAP}
+          materialFor={materialByName}
+          cooling={quickCooling}
+          eventGapS={scenario.conditions.event_gap_s}
+          allowableC={allowable}
         />
       ) : (
         <>
@@ -785,89 +744,6 @@ export function Thermal({ scenario, compared, comparing }: PageProps) {
         rasterized onto the grid (curved edges stair-step at cell size; refine the grid for detail)
         and are axisymmetric, so circumferential features can only be smeared — the face-resolved
         model is what represents them properly.
-      </p>
-    </>
-  );
-}
-
-// --- quick sizing -------------------------------------------------------------
-
-interface QuickResult {
-  mass?: number;
-  capacity?: number;
-  singleRise?: number;
-  train?: RepeatedEventResult;
-  error: string | null;
-}
-
-function QuickSizing({
-  quick,
-  energyJ,
-  ambient,
-  allowable,
-  scenario,
-}: {
-  quick: QuickResult;
-  energyJ: number;
-  ambient: number;
-  allowable: number;
-  scenario: Scenario;
-}) {
-  if (quick.error || !quick.train) {
-    return (
-      <div className="panel" style={{ padding: 16, borderLeft: "2px solid var(--bad)" }}>
-        <strong style={{ color: "var(--bad)" }}>Needs input:</strong> {quick.error}
-      </div>
-    );
-  }
-  const train = quick.train;
-  return (
-    <>
-      <div className="metrics">
-        <Metric label="Worst-case event energy" value={`${(energyJ / 1000).toFixed(1)} kJ`} />
-        <Metric label="Rotor mass (modelled)" value={`${(quick.mass ?? 0).toFixed(3)} kg`} />
-        <Metric
-          label="Single-stop rise"
-          value={`${(quick.singleRise ?? 0).toFixed(0)} °C`}
-          delta={`to ${(ambient + (quick.singleRise ?? 0)).toFixed(0)} °C from ${ambient.toFixed(0)} °C`}
-        />
-        <Metric
-          label="Cyclic peak (repeated)"
-          value={`${train.cyclic_peak_temperature_c.toFixed(0)} °C`}
-          delta={`${(train.cyclic_peak_temperature_c - allowable).toFixed(0)} °C vs allowable`}
-          tone={train.cyclic_peak_temperature_c > allowable ? "bad" : "ok"}
-        />
-        <Metric
-          label="Events to converge"
-          value={
-            train.events_to_convergence == null
-              ? "did not converge"
-              : String(train.events_to_convergence)
-          }
-        />
-      </div>
-      <Chart
-        title="Peak temperature per event (lumped)"
-        height={300}
-        data={[
-          {
-            x: train.peak_temperatures_c.map((_, i) => i + 1),
-            y: train.peak_temperatures_c,
-            type: "scatter", mode: "lines+markers", name: scenarioLabel(scenario),
-          },
-          {
-            x: [1, train.peak_temperatures_c.length],
-            y: [allowable, allowable],
-            type: "scatter", mode: "lines", name: "allowable",
-            line: { dash: "dash", color: "#EF5350" },
-          },
-        ]}
-        layout={{ xaxis: { title: { text: "Event" } }, yaxis: { title: { text: "Peak, °C" } } }}
-      />
-      <p className="note">
-        The lumped model spreads each event's energy evenly through the rotor, so it answers "does
-        heat accumulate over a run" but not "where does it get hot". Switch to the field model for
-        the distribution, the real geometry, and thermal growth.
       </p>
     </>
   );
